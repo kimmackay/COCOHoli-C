@@ -5,6 +5,7 @@
 
 % Load the relevant libraries 
 :- lib(gfd). 
+:- lib(gfd_search).
 :- lib(branch_and_bound).
 
 % alldifferent_except(Vars) is true if each term in list Vars is  
@@ -59,7 +60,7 @@ enforce_symmetry(Vars) :-
 
 	% chose a value for X from it's domain
 	gfd_update,
-	indomain(X), 
+	indomain(X, min), 
 
 		% If the value bound to X is non-zero 
 		( (X \= 0) -> 

@@ -73,6 +73,7 @@ print "% PO Box 1866, Mountain View, CA 94042, USA.\n\n";
 
 print "% Load the relevant libraries \n";
 print ":- lib(gfd). \n";
+print ":- lib(gfd_search).\n";
 print ":- lib(branch_and_bound).\n\n";
 
 print "% alldifferent_except(Vars) is true if each term in list Vars is  \n";
@@ -127,7 +128,7 @@ print "enforce_symmetry(Vars) :- \n";
 		
 		print "\t% chose a value for X from it's domain\n";
 		print "\tgfd_update,\n";
-		print "\tindomain(X), \n\n";
+		print "\tindomain(X, min), \n\n";
 
 		print "\t\t% If the value bound to X is non-zero \n";
 		print "\t\t( (X \\= 0) -> \n\n";
