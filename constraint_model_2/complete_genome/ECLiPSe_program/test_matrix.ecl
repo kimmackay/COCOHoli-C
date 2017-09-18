@@ -58,6 +58,7 @@ enforce_symmetry(Vars) :-
 	( foreach(X, Vars), param(Vars) do 
 
 	% chose a value for X from it's domain
+	gfd_update,
 	indomain(X), 
 
 		% If the value bound to X is non-zero 

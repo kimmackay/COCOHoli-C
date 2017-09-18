@@ -126,6 +126,7 @@ print "enforce_symmetry(Vars) :- \n";
 	print "\t( foreach(X, Vars), param(Vars) do \n\n";
 		
 		print "\t% chose a value for X from it's domain\n";
+		print "\tgfd_update,\n";
 		print "\tindomain(X), \n\n";
 
 		print "\t\t% If the value bound to X is non-zero \n";
