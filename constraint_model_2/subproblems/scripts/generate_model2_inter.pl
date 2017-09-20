@@ -320,18 +320,19 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 		if($#unique_values > 0)
 		{
 			$col_counter = 1;
+			print "\t(";	
 			for(my $j = $chr2_start; $j <= $chr2_stop; $j++)
 			{
 				# if it is a non-zero freqncy
 				if($frequencies[$i][$j] != 0)
 				{
-					print "\t (Row".$row_counter." #= ".$col_counter." and Freq".$row_counter." #= ".$frequencies[$i][$j].") or\n";
+					print "(Row".$row_counter." #= ".$col_counter." and Freq".$row_counter." #= ".$frequencies[$i][$j].") or\n\t";
 				}
 				
 				# if it is the last variable, print the no case
 				if($j >= $chr2_stop)
 				{
-					print "\t (Row".$row_counter." #= 0 and Freq".$row_counter." #= 0)), \n\n"; 
+					print "(Row".$row_counter." #= 0 and Freq".$row_counter." #= 0)), \n\n"; 
 				}
 				
 				# increment the col counter
@@ -341,7 +342,7 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 		else
 		{
 			# only print the '0' case
-			print "\t ((Row".$row_counter." #= 0 and Freq".$row_counter." #= 0)), \n\n";
+			print "\t((Row".$row_counter." #= 0 and Freq".$row_counter." #= 0)), \n\n";
 		}
 		
 		# increment the row counter
