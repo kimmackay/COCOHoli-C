@@ -1229,2313 +1229,2313 @@ maximize(RowFile, FreqFile, Rows) :-
 	% whole-genome contact map; A (Row, Freq) pair ground to 
 	% (0,0) encodes that nothing is chosen 
 
-	 ((Row1 #= 0 and Freq1 #= 0)), 
+	((Row1 #= 0 and Freq1 #= 0)), 
 
-	 ((Row2 #= 0 and Freq2 #= 0)), 
+	((Row2 #= 0 and Freq2 #= 0)), 
 
-	 ((Row3 #= 0 and Freq3 #= 0)), 
+	((Row3 #= 0 and Freq3 #= 0)), 
 
-	 ((Row4 #= 0 and Freq4 #= 0)), 
+	((Row4 #= 0 and Freq4 #= 0)), 
 
-	 ((Row5 #= 0 and Freq5 #= 0)), 
+	((Row5 #= 0 and Freq5 #= 0)), 
 
-	 (Row6 #= 245 and Freq6 #= 1) or
-	 (Row6 #= 0 and Freq6 #= 0)), 
+	((Row6 #= 245 and Freq6 #= 1) or
+	(Row6 #= 0 and Freq6 #= 0)), 
 
-	 (Row7 #= 245 and Freq7 #= 1) or
-	 (Row7 #= 0 and Freq7 #= 0)), 
+	((Row7 #= 245 and Freq7 #= 1) or
+	(Row7 #= 0 and Freq7 #= 0)), 
 
-	 (Row8 #= 245 and Freq8 #= 1) or
-	 (Row8 #= 246 and Freq8 #= 1) or
-	 (Row8 #= 0 and Freq8 #= 0)), 
+	((Row8 #= 245 and Freq8 #= 1) or
+	(Row8 #= 246 and Freq8 #= 1) or
+	(Row8 #= 0 and Freq8 #= 0)), 
 
-	 ((Row9 #= 0 and Freq9 #= 0)), 
+	((Row9 #= 0 and Freq9 #= 0)), 
 
-	 (Row10 #= 246 and Freq10 #= 1) or
-	 (Row10 #= 0 and Freq10 #= 0)), 
+	((Row10 #= 246 and Freq10 #= 1) or
+	(Row10 #= 0 and Freq10 #= 0)), 
 
-	 (Row11 #= 245 and Freq11 #= 1) or
-	 (Row11 #= 0 and Freq11 #= 0)), 
+	((Row11 #= 245 and Freq11 #= 1) or
+	(Row11 #= 0 and Freq11 #= 0)), 
 
-	 (Row12 #= 245 and Freq12 #= 1) or
-	 (Row12 #= 246 and Freq12 #= 1) or
-	 (Row12 #= 0 and Freq12 #= 0)), 
+	((Row12 #= 245 and Freq12 #= 1) or
+	(Row12 #= 246 and Freq12 #= 1) or
+	(Row12 #= 0 and Freq12 #= 0)), 
 
-	 (Row13 #= 245 and Freq13 #= 1) or
-	 (Row13 #= 0 and Freq13 #= 0)), 
+	((Row13 #= 245 and Freq13 #= 1) or
+	(Row13 #= 0 and Freq13 #= 0)), 
 
-	 ((Row14 #= 0 and Freq14 #= 0)), 
+	((Row14 #= 0 and Freq14 #= 0)), 
 
-	 ((Row15 #= 0 and Freq15 #= 0)), 
+	((Row15 #= 0 and Freq15 #= 0)), 
 
-	 ((Row16 #= 0 and Freq16 #= 0)), 
+	((Row16 #= 0 and Freq16 #= 0)), 
 
-	 ((Row17 #= 0 and Freq17 #= 0)), 
+	((Row17 #= 0 and Freq17 #= 0)), 
 
-	 ((Row18 #= 0 and Freq18 #= 0)), 
+	((Row18 #= 0 and Freq18 #= 0)), 
 
-	 ((Row19 #= 0 and Freq19 #= 0)), 
+	((Row19 #= 0 and Freq19 #= 0)), 
 
-	 (Row20 #= 245 and Freq20 #= 1) or
-	 (Row20 #= 246 and Freq20 #= 1) or
-	 (Row20 #= 0 and Freq20 #= 0)), 
+	((Row20 #= 245 and Freq20 #= 1) or
+	(Row20 #= 246 and Freq20 #= 1) or
+	(Row20 #= 0 and Freq20 #= 0)), 
 
-	 (Row21 #= 245 and Freq21 #= 1) or
-	 (Row21 #= 0 and Freq21 #= 0)), 
+	((Row21 #= 245 and Freq21 #= 1) or
+	(Row21 #= 0 and Freq21 #= 0)), 
 
-	 (Row22 #= 245 and Freq22 #= 1) or
-	 (Row22 #= 0 and Freq22 #= 0)), 
+	((Row22 #= 245 and Freq22 #= 1) or
+	(Row22 #= 0 and Freq22 #= 0)), 
 
-	 (Row23 #= 245 and Freq23 #= 1) or
-	 (Row23 #= 0 and Freq23 #= 0)), 
+	((Row23 #= 245 and Freq23 #= 1) or
+	(Row23 #= 0 and Freq23 #= 0)), 
 
-	 (Row24 #= 245 and Freq24 #= 1) or
-	 (Row24 #= 0 and Freq24 #= 0)), 
+	((Row24 #= 245 and Freq24 #= 1) or
+	(Row24 #= 0 and Freq24 #= 0)), 
 
-	 (Row25 #= 245 and Freq25 #= 1) or
-	 (Row25 #= 0 and Freq25 #= 0)), 
+	((Row25 #= 245 and Freq25 #= 1) or
+	(Row25 #= 0 and Freq25 #= 0)), 
 
-	 ((Row26 #= 0 and Freq26 #= 0)), 
+	((Row26 #= 0 and Freq26 #= 0)), 
 
-	 ((Row27 #= 0 and Freq27 #= 0)), 
+	((Row27 #= 0 and Freq27 #= 0)), 
 
-	 ((Row28 #= 0 and Freq28 #= 0)), 
+	((Row28 #= 0 and Freq28 #= 0)), 
 
-	 ((Row29 #= 0 and Freq29 #= 0)), 
+	((Row29 #= 0 and Freq29 #= 0)), 
 
-	 (Row30 #= 246 and Freq30 #= 1) or
-	 (Row30 #= 0 and Freq30 #= 0)), 
+	((Row30 #= 246 and Freq30 #= 1) or
+	(Row30 #= 0 and Freq30 #= 0)), 
 
-	 ((Row31 #= 0 and Freq31 #= 0)), 
+	((Row31 #= 0 and Freq31 #= 0)), 
 
-	 ((Row32 #= 0 and Freq32 #= 0)), 
+	((Row32 #= 0 and Freq32 #= 0)), 
 
-	 (Row33 #= 246 and Freq33 #= 1) or
-	 (Row33 #= 0 and Freq33 #= 0)), 
+	((Row33 #= 246 and Freq33 #= 1) or
+	(Row33 #= 0 and Freq33 #= 0)), 
 
-	 (Row34 #= 245 and Freq34 #= 1) or
-	 (Row34 #= 0 and Freq34 #= 0)), 
+	((Row34 #= 245 and Freq34 #= 1) or
+	(Row34 #= 0 and Freq34 #= 0)), 
 
-	 ((Row35 #= 0 and Freq35 #= 0)), 
+	((Row35 #= 0 and Freq35 #= 0)), 
 
-	 (Row36 #= 246 and Freq36 #= 1) or
-	 (Row36 #= 0 and Freq36 #= 0)), 
+	((Row36 #= 246 and Freq36 #= 1) or
+	(Row36 #= 0 and Freq36 #= 0)), 
 
-	 ((Row37 #= 0 and Freq37 #= 0)), 
+	((Row37 #= 0 and Freq37 #= 0)), 
 
-	 ((Row38 #= 0 and Freq38 #= 0)), 
+	((Row38 #= 0 and Freq38 #= 0)), 
 
-	 (Row39 #= 245 and Freq39 #= 1) or
-	 (Row39 #= 0 and Freq39 #= 0)), 
+	((Row39 #= 245 and Freq39 #= 1) or
+	(Row39 #= 0 and Freq39 #= 0)), 
 
-	 ((Row40 #= 0 and Freq40 #= 0)), 
+	((Row40 #= 0 and Freq40 #= 0)), 
 
-	 ((Row41 #= 0 and Freq41 #= 0)), 
+	((Row41 #= 0 and Freq41 #= 0)), 
 
-	 ((Row42 #= 0 and Freq42 #= 0)), 
+	((Row42 #= 0 and Freq42 #= 0)), 
 
-	 ((Row43 #= 0 and Freq43 #= 0)), 
+	((Row43 #= 0 and Freq43 #= 0)), 
 
-	 ((Row44 #= 0 and Freq44 #= 0)), 
+	((Row44 #= 0 and Freq44 #= 0)), 
 
-	 ((Row45 #= 0 and Freq45 #= 0)), 
+	((Row45 #= 0 and Freq45 #= 0)), 
 
-	 ((Row46 #= 0 and Freq46 #= 0)), 
+	((Row46 #= 0 and Freq46 #= 0)), 
 
-	 (Row47 #= 245 and Freq47 #= 1) or
-	 (Row47 #= 0 and Freq47 #= 0)), 
+	((Row47 #= 245 and Freq47 #= 1) or
+	(Row47 #= 0 and Freq47 #= 0)), 
 
-	 (Row48 #= 245 and Freq48 #= 1) or
-	 (Row48 #= 0 and Freq48 #= 0)), 
+	((Row48 #= 245 and Freq48 #= 1) or
+	(Row48 #= 0 and Freq48 #= 0)), 
 
-	 (Row49 #= 245 and Freq49 #= 1) or
-	 (Row49 #= 0 and Freq49 #= 0)), 
+	((Row49 #= 245 and Freq49 #= 1) or
+	(Row49 #= 0 and Freq49 #= 0)), 
 
-	 ((Row50 #= 0 and Freq50 #= 0)), 
+	((Row50 #= 0 and Freq50 #= 0)), 
 
-	 (Row51 #= 245 and Freq51 #= 1) or
-	 (Row51 #= 0 and Freq51 #= 0)), 
+	((Row51 #= 245 and Freq51 #= 1) or
+	(Row51 #= 0 and Freq51 #= 0)), 
 
-	 ((Row52 #= 0 and Freq52 #= 0)), 
+	((Row52 #= 0 and Freq52 #= 0)), 
 
-	 (Row53 #= 245 and Freq53 #= 1) or
-	 (Row53 #= 0 and Freq53 #= 0)), 
+	((Row53 #= 245 and Freq53 #= 1) or
+	(Row53 #= 0 and Freq53 #= 0)), 
 
-	 ((Row54 #= 0 and Freq54 #= 0)), 
+	((Row54 #= 0 and Freq54 #= 0)), 
 
-	 ((Row55 #= 0 and Freq55 #= 0)), 
+	((Row55 #= 0 and Freq55 #= 0)), 
 
-	 (Row56 #= 246 and Freq56 #= 1) or
-	 (Row56 #= 0 and Freq56 #= 0)), 
+	((Row56 #= 246 and Freq56 #= 1) or
+	(Row56 #= 0 and Freq56 #= 0)), 
 
-	 ((Row57 #= 0 and Freq57 #= 0)), 
+	((Row57 #= 0 and Freq57 #= 0)), 
 
-	 (Row58 #= 245 and Freq58 #= 1) or
-	 (Row58 #= 246 and Freq58 #= 1) or
-	 (Row58 #= 0 and Freq58 #= 0)), 
+	((Row58 #= 245 and Freq58 #= 1) or
+	(Row58 #= 246 and Freq58 #= 1) or
+	(Row58 #= 0 and Freq58 #= 0)), 
 
-	 (Row59 #= 245 and Freq59 #= 1) or
-	 (Row59 #= 0 and Freq59 #= 0)), 
+	((Row59 #= 245 and Freq59 #= 1) or
+	(Row59 #= 0 and Freq59 #= 0)), 
 
-	 ((Row60 #= 0 and Freq60 #= 0)), 
+	((Row60 #= 0 and Freq60 #= 0)), 
 
-	 ((Row61 #= 0 and Freq61 #= 0)), 
+	((Row61 #= 0 and Freq61 #= 0)), 
 
-	 ((Row62 #= 0 and Freq62 #= 0)), 
+	((Row62 #= 0 and Freq62 #= 0)), 
 
-	 ((Row63 #= 0 and Freq63 #= 0)), 
+	((Row63 #= 0 and Freq63 #= 0)), 
 
-	 ((Row64 #= 0 and Freq64 #= 0)), 
+	((Row64 #= 0 and Freq64 #= 0)), 
 
-	 (Row65 #= 245 and Freq65 #= 1) or
-	 (Row65 #= 0 and Freq65 #= 0)), 
+	((Row65 #= 245 and Freq65 #= 1) or
+	(Row65 #= 0 and Freq65 #= 0)), 
 
-	 ((Row66 #= 0 and Freq66 #= 0)), 
+	((Row66 #= 0 and Freq66 #= 0)), 
 
-	 ((Row67 #= 0 and Freq67 #= 0)), 
+	((Row67 #= 0 and Freq67 #= 0)), 
 
-	 ((Row68 #= 0 and Freq68 #= 0)), 
+	((Row68 #= 0 and Freq68 #= 0)), 
 
-	 (Row69 #= 245 and Freq69 #= 1) or
-	 (Row69 #= 0 and Freq69 #= 0)), 
+	((Row69 #= 245 and Freq69 #= 1) or
+	(Row69 #= 0 and Freq69 #= 0)), 
 
-	 ((Row70 #= 0 and Freq70 #= 0)), 
+	((Row70 #= 0 and Freq70 #= 0)), 
 
-	 (Row71 #= 245 and Freq71 #= 1) or
-	 (Row71 #= 0 and Freq71 #= 0)), 
+	((Row71 #= 245 and Freq71 #= 1) or
+	(Row71 #= 0 and Freq71 #= 0)), 
 
-	 ((Row72 #= 0 and Freq72 #= 0)), 
+	((Row72 #= 0 and Freq72 #= 0)), 
 
-	 (Row73 #= 245 and Freq73 #= 1) or
-	 (Row73 #= 0 and Freq73 #= 0)), 
+	((Row73 #= 245 and Freq73 #= 1) or
+	(Row73 #= 0 and Freq73 #= 0)), 
 
-	 ((Row74 #= 0 and Freq74 #= 0)), 
+	((Row74 #= 0 and Freq74 #= 0)), 
 
-	 ((Row75 #= 0 and Freq75 #= 0)), 
+	((Row75 #= 0 and Freq75 #= 0)), 
 
-	 ((Row76 #= 0 and Freq76 #= 0)), 
+	((Row76 #= 0 and Freq76 #= 0)), 
 
-	 ((Row77 #= 0 and Freq77 #= 0)), 
+	((Row77 #= 0 and Freq77 #= 0)), 
 
-	 ((Row78 #= 0 and Freq78 #= 0)), 
+	((Row78 #= 0 and Freq78 #= 0)), 
 
-	 ((Row79 #= 0 and Freq79 #= 0)), 
+	((Row79 #= 0 and Freq79 #= 0)), 
 
-	 ((Row80 #= 0 and Freq80 #= 0)), 
+	((Row80 #= 0 and Freq80 #= 0)), 
 
-	 ((Row81 #= 0 and Freq81 #= 0)), 
+	((Row81 #= 0 and Freq81 #= 0)), 
 
-	 ((Row82 #= 0 and Freq82 #= 0)), 
+	((Row82 #= 0 and Freq82 #= 0)), 
 
-	 ((Row83 #= 0 and Freq83 #= 0)), 
+	((Row83 #= 0 and Freq83 #= 0)), 
 
-	 ((Row84 #= 0 and Freq84 #= 0)), 
+	((Row84 #= 0 and Freq84 #= 0)), 
 
-	 ((Row85 #= 0 and Freq85 #= 0)), 
+	((Row85 #= 0 and Freq85 #= 0)), 
 
-	 ((Row86 #= 0 and Freq86 #= 0)), 
+	((Row86 #= 0 and Freq86 #= 0)), 
 
-	 ((Row87 #= 0 and Freq87 #= 0)), 
+	((Row87 #= 0 and Freq87 #= 0)), 
 
-	 (Row88 #= 245 and Freq88 #= 1) or
-	 (Row88 #= 0 and Freq88 #= 0)), 
+	((Row88 #= 245 and Freq88 #= 1) or
+	(Row88 #= 0 and Freq88 #= 0)), 
 
-	 ((Row89 #= 0 and Freq89 #= 0)), 
+	((Row89 #= 0 and Freq89 #= 0)), 
 
-	 ((Row90 #= 0 and Freq90 #= 0)), 
+	((Row90 #= 0 and Freq90 #= 0)), 
 
-	 ((Row91 #= 0 and Freq91 #= 0)), 
+	((Row91 #= 0 and Freq91 #= 0)), 
 
-	 ((Row92 #= 0 and Freq92 #= 0)), 
+	((Row92 #= 0 and Freq92 #= 0)), 
 
-	 ((Row93 #= 0 and Freq93 #= 0)), 
+	((Row93 #= 0 and Freq93 #= 0)), 
 
-	 (Row94 #= 245 and Freq94 #= 1) or
-	 (Row94 #= 0 and Freq94 #= 0)), 
+	((Row94 #= 245 and Freq94 #= 1) or
+	(Row94 #= 0 and Freq94 #= 0)), 
 
-	 ((Row95 #= 0 and Freq95 #= 0)), 
+	((Row95 #= 0 and Freq95 #= 0)), 
 
-	 ((Row96 #= 0 and Freq96 #= 0)), 
+	((Row96 #= 0 and Freq96 #= 0)), 
 
-	 ((Row97 #= 0 and Freq97 #= 0)), 
+	((Row97 #= 0 and Freq97 #= 0)), 
 
-	 ((Row98 #= 0 and Freq98 #= 0)), 
+	((Row98 #= 0 and Freq98 #= 0)), 
 
-	 ((Row99 #= 0 and Freq99 #= 0)), 
+	((Row99 #= 0 and Freq99 #= 0)), 
 
-	 ((Row100 #= 0 and Freq100 #= 0)), 
+	((Row100 #= 0 and Freq100 #= 0)), 
 
-	 ((Row101 #= 0 and Freq101 #= 0)), 
+	((Row101 #= 0 and Freq101 #= 0)), 
 
-	 ((Row102 #= 0 and Freq102 #= 0)), 
+	((Row102 #= 0 and Freq102 #= 0)), 
 
-	 ((Row103 #= 0 and Freq103 #= 0)), 
+	((Row103 #= 0 and Freq103 #= 0)), 
 
-	 ((Row104 #= 0 and Freq104 #= 0)), 
+	((Row104 #= 0 and Freq104 #= 0)), 
 
-	 ((Row105 #= 0 and Freq105 #= 0)), 
+	((Row105 #= 0 and Freq105 #= 0)), 
 
-	 ((Row106 #= 0 and Freq106 #= 0)), 
+	((Row106 #= 0 and Freq106 #= 0)), 
 
-	 ((Row107 #= 0 and Freq107 #= 0)), 
+	((Row107 #= 0 and Freq107 #= 0)), 
 
-	 ((Row108 #= 0 and Freq108 #= 0)), 
+	((Row108 #= 0 and Freq108 #= 0)), 
 
-	 ((Row109 #= 0 and Freq109 #= 0)), 
+	((Row109 #= 0 and Freq109 #= 0)), 
 
-	 ((Row110 #= 0 and Freq110 #= 0)), 
+	((Row110 #= 0 and Freq110 #= 0)), 
 
-	 ((Row111 #= 0 and Freq111 #= 0)), 
+	((Row111 #= 0 and Freq111 #= 0)), 
 
-	 ((Row112 #= 0 and Freq112 #= 0)), 
+	((Row112 #= 0 and Freq112 #= 0)), 
 
-	 ((Row113 #= 0 and Freq113 #= 0)), 
+	((Row113 #= 0 and Freq113 #= 0)), 
 
-	 ((Row114 #= 0 and Freq114 #= 0)), 
+	((Row114 #= 0 and Freq114 #= 0)), 
 
-	 ((Row115 #= 0 and Freq115 #= 0)), 
+	((Row115 #= 0 and Freq115 #= 0)), 
 
-	 ((Row116 #= 0 and Freq116 #= 0)), 
+	((Row116 #= 0 and Freq116 #= 0)), 
 
-	 ((Row117 #= 0 and Freq117 #= 0)), 
+	((Row117 #= 0 and Freq117 #= 0)), 
 
-	 ((Row118 #= 0 and Freq118 #= 0)), 
+	((Row118 #= 0 and Freq118 #= 0)), 
 
-	 ((Row119 #= 0 and Freq119 #= 0)), 
+	((Row119 #= 0 and Freq119 #= 0)), 
 
-	 ((Row120 #= 0 and Freq120 #= 0)), 
+	((Row120 #= 0 and Freq120 #= 0)), 
 
-	 ((Row121 #= 0 and Freq121 #= 0)), 
+	((Row121 #= 0 and Freq121 #= 0)), 
 
-	 ((Row122 #= 0 and Freq122 #= 0)), 
+	((Row122 #= 0 and Freq122 #= 0)), 
 
-	 ((Row123 #= 0 and Freq123 #= 0)), 
+	((Row123 #= 0 and Freq123 #= 0)), 
 
-	 ((Row124 #= 0 and Freq124 #= 0)), 
+	((Row124 #= 0 and Freq124 #= 0)), 
 
-	 ((Row125 #= 0 and Freq125 #= 0)), 
+	((Row125 #= 0 and Freq125 #= 0)), 
 
-	 ((Row126 #= 0 and Freq126 #= 0)), 
+	((Row126 #= 0 and Freq126 #= 0)), 
 
-	 ((Row127 #= 0 and Freq127 #= 0)), 
+	((Row127 #= 0 and Freq127 #= 0)), 
 
-	 ((Row128 #= 0 and Freq128 #= 0)), 
+	((Row128 #= 0 and Freq128 #= 0)), 
 
-	 ((Row129 #= 0 and Freq129 #= 0)), 
+	((Row129 #= 0 and Freq129 #= 0)), 
 
-	 ((Row130 #= 0 and Freq130 #= 0)), 
+	((Row130 #= 0 and Freq130 #= 0)), 
 
-	 ((Row131 #= 0 and Freq131 #= 0)), 
+	((Row131 #= 0 and Freq131 #= 0)), 
 
-	 ((Row132 #= 0 and Freq132 #= 0)), 
+	((Row132 #= 0 and Freq132 #= 0)), 
 
-	 ((Row133 #= 0 and Freq133 #= 0)), 
+	((Row133 #= 0 and Freq133 #= 0)), 
 
-	 ((Row134 #= 0 and Freq134 #= 0)), 
+	((Row134 #= 0 and Freq134 #= 0)), 
 
-	 ((Row135 #= 0 and Freq135 #= 0)), 
+	((Row135 #= 0 and Freq135 #= 0)), 
 
-	 ((Row136 #= 0 and Freq136 #= 0)), 
+	((Row136 #= 0 and Freq136 #= 0)), 
 
-	 ((Row137 #= 0 and Freq137 #= 0)), 
+	((Row137 #= 0 and Freq137 #= 0)), 
 
-	 ((Row138 #= 0 and Freq138 #= 0)), 
+	((Row138 #= 0 and Freq138 #= 0)), 
 
-	 ((Row139 #= 0 and Freq139 #= 0)), 
+	((Row139 #= 0 and Freq139 #= 0)), 
 
-	 ((Row140 #= 0 and Freq140 #= 0)), 
+	((Row140 #= 0 and Freq140 #= 0)), 
 
-	 ((Row141 #= 0 and Freq141 #= 0)), 
+	((Row141 #= 0 and Freq141 #= 0)), 
 
-	 ((Row142 #= 0 and Freq142 #= 0)), 
+	((Row142 #= 0 and Freq142 #= 0)), 
 
-	 ((Row143 #= 0 and Freq143 #= 0)), 
+	((Row143 #= 0 and Freq143 #= 0)), 
 
-	 ((Row144 #= 0 and Freq144 #= 0)), 
+	((Row144 #= 0 and Freq144 #= 0)), 
 
-	 ((Row145 #= 0 and Freq145 #= 0)), 
+	((Row145 #= 0 and Freq145 #= 0)), 
 
-	 ((Row146 #= 0 and Freq146 #= 0)), 
+	((Row146 #= 0 and Freq146 #= 0)), 
 
-	 ((Row147 #= 0 and Freq147 #= 0)), 
+	((Row147 #= 0 and Freq147 #= 0)), 
 
-	 ((Row148 #= 0 and Freq148 #= 0)), 
+	((Row148 #= 0 and Freq148 #= 0)), 
 
-	 ((Row149 #= 0 and Freq149 #= 0)), 
+	((Row149 #= 0 and Freq149 #= 0)), 
 
-	 ((Row150 #= 0 and Freq150 #= 0)), 
+	((Row150 #= 0 and Freq150 #= 0)), 
 
-	 ((Row151 #= 0 and Freq151 #= 0)), 
+	((Row151 #= 0 and Freq151 #= 0)), 
 
-	 ((Row152 #= 0 and Freq152 #= 0)), 
+	((Row152 #= 0 and Freq152 #= 0)), 
 
-	 ((Row153 #= 0 and Freq153 #= 0)), 
+	((Row153 #= 0 and Freq153 #= 0)), 
 
-	 ((Row154 #= 0 and Freq154 #= 0)), 
+	((Row154 #= 0 and Freq154 #= 0)), 
 
-	 ((Row155 #= 0 and Freq155 #= 0)), 
+	((Row155 #= 0 and Freq155 #= 0)), 
 
-	 ((Row156 #= 0 and Freq156 #= 0)), 
+	((Row156 #= 0 and Freq156 #= 0)), 
 
-	 ((Row157 #= 0 and Freq157 #= 0)), 
+	((Row157 #= 0 and Freq157 #= 0)), 
 
-	 ((Row158 #= 0 and Freq158 #= 0)), 
+	((Row158 #= 0 and Freq158 #= 0)), 
 
-	 ((Row159 #= 0 and Freq159 #= 0)), 
+	((Row159 #= 0 and Freq159 #= 0)), 
 
-	 ((Row160 #= 0 and Freq160 #= 0)), 
+	((Row160 #= 0 and Freq160 #= 0)), 
 
-	 ((Row161 #= 0 and Freq161 #= 0)), 
+	((Row161 #= 0 and Freq161 #= 0)), 
 
-	 ((Row162 #= 0 and Freq162 #= 0)), 
+	((Row162 #= 0 and Freq162 #= 0)), 
 
-	 ((Row163 #= 0 and Freq163 #= 0)), 
+	((Row163 #= 0 and Freq163 #= 0)), 
 
-	 ((Row164 #= 0 and Freq164 #= 0)), 
+	((Row164 #= 0 and Freq164 #= 0)), 
 
-	 (Row165 #= 82 and Freq165 #= 1) or
-	 (Row165 #= 0 and Freq165 #= 0)), 
+	((Row165 #= 82 and Freq165 #= 1) or
+	(Row165 #= 0 and Freq165 #= 0)), 
 
-	 ((Row166 #= 0 and Freq166 #= 0)), 
+	((Row166 #= 0 and Freq166 #= 0)), 
 
-	 ((Row167 #= 0 and Freq167 #= 0)), 
+	((Row167 #= 0 and Freq167 #= 0)), 
 
-	 ((Row168 #= 0 and Freq168 #= 0)), 
+	((Row168 #= 0 and Freq168 #= 0)), 
 
-	 ((Row169 #= 0 and Freq169 #= 0)), 
+	((Row169 #= 0 and Freq169 #= 0)), 
 
-	 ((Row170 #= 0 and Freq170 #= 0)), 
+	((Row170 #= 0 and Freq170 #= 0)), 
 
-	 ((Row171 #= 0 and Freq171 #= 0)), 
+	((Row171 #= 0 and Freq171 #= 0)), 
 
-	 ((Row172 #= 0 and Freq172 #= 0)), 
+	((Row172 #= 0 and Freq172 #= 0)), 
 
-	 ((Row173 #= 0 and Freq173 #= 0)), 
+	((Row173 #= 0 and Freq173 #= 0)), 
 
-	 ((Row174 #= 0 and Freq174 #= 0)), 
+	((Row174 #= 0 and Freq174 #= 0)), 
 
-	 ((Row175 #= 0 and Freq175 #= 0)), 
+	((Row175 #= 0 and Freq175 #= 0)), 
 
-	 (Row176 #= 245 and Freq176 #= 1) or
-	 (Row176 #= 0 and Freq176 #= 0)), 
+	((Row176 #= 245 and Freq176 #= 1) or
+	(Row176 #= 0 and Freq176 #= 0)), 
 
-	 ((Row177 #= 0 and Freq177 #= 0)), 
+	((Row177 #= 0 and Freq177 #= 0)), 
 
-	 ((Row178 #= 0 and Freq178 #= 0)), 
+	((Row178 #= 0 and Freq178 #= 0)), 
 
-	 ((Row179 #= 0 and Freq179 #= 0)), 
+	((Row179 #= 0 and Freq179 #= 0)), 
 
-	 ((Row180 #= 0 and Freq180 #= 0)), 
+	((Row180 #= 0 and Freq180 #= 0)), 
 
-	 ((Row181 #= 0 and Freq181 #= 0)), 
+	((Row181 #= 0 and Freq181 #= 0)), 
 
-	 ((Row182 #= 0 and Freq182 #= 0)), 
+	((Row182 #= 0 and Freq182 #= 0)), 
 
-	 ((Row183 #= 0 and Freq183 #= 0)), 
+	((Row183 #= 0 and Freq183 #= 0)), 
 
-	 ((Row184 #= 0 and Freq184 #= 0)), 
+	((Row184 #= 0 and Freq184 #= 0)), 
 
-	 ((Row185 #= 0 and Freq185 #= 0)), 
+	((Row185 #= 0 and Freq185 #= 0)), 
 
-	 ((Row186 #= 0 and Freq186 #= 0)), 
+	((Row186 #= 0 and Freq186 #= 0)), 
 
-	 ((Row187 #= 0 and Freq187 #= 0)), 
+	((Row187 #= 0 and Freq187 #= 0)), 
 
-	 ((Row188 #= 0 and Freq188 #= 0)), 
+	((Row188 #= 0 and Freq188 #= 0)), 
 
-	 ((Row189 #= 0 and Freq189 #= 0)), 
+	((Row189 #= 0 and Freq189 #= 0)), 
 
-	 ((Row190 #= 0 and Freq190 #= 0)), 
+	((Row190 #= 0 and Freq190 #= 0)), 
 
-	 ((Row191 #= 0 and Freq191 #= 0)), 
+	((Row191 #= 0 and Freq191 #= 0)), 
 
-	 ((Row192 #= 0 and Freq192 #= 0)), 
+	((Row192 #= 0 and Freq192 #= 0)), 
 
-	 ((Row193 #= 0 and Freq193 #= 0)), 
+	((Row193 #= 0 and Freq193 #= 0)), 
 
-	 ((Row194 #= 0 and Freq194 #= 0)), 
+	((Row194 #= 0 and Freq194 #= 0)), 
 
-	 ((Row195 #= 0 and Freq195 #= 0)), 
+	((Row195 #= 0 and Freq195 #= 0)), 
 
-	 (Row196 #= 99 and Freq196 #= 1) or
-	 (Row196 #= 0 and Freq196 #= 0)), 
+	((Row196 #= 99 and Freq196 #= 1) or
+	(Row196 #= 0 and Freq196 #= 0)), 
 
-	 ((Row197 #= 0 and Freq197 #= 0)), 
+	((Row197 #= 0 and Freq197 #= 0)), 
 
-	 ((Row198 #= 0 and Freq198 #= 0)), 
+	((Row198 #= 0 and Freq198 #= 0)), 
 
-	 ((Row199 #= 0 and Freq199 #= 0)), 
+	((Row199 #= 0 and Freq199 #= 0)), 
 
-	 ((Row200 #= 0 and Freq200 #= 0)), 
+	((Row200 #= 0 and Freq200 #= 0)), 
 
-	 ((Row201 #= 0 and Freq201 #= 0)), 
+	((Row201 #= 0 and Freq201 #= 0)), 
 
-	 ((Row202 #= 0 and Freq202 #= 0)), 
+	((Row202 #= 0 and Freq202 #= 0)), 
 
-	 ((Row203 #= 0 and Freq203 #= 0)), 
+	((Row203 #= 0 and Freq203 #= 0)), 
 
-	 (Row204 #= 245 and Freq204 #= 1) or
-	 (Row204 #= 0 and Freq204 #= 0)), 
+	((Row204 #= 245 and Freq204 #= 1) or
+	(Row204 #= 0 and Freq204 #= 0)), 
 
-	 ((Row205 #= 0 and Freq205 #= 0)), 
+	((Row205 #= 0 and Freq205 #= 0)), 
 
-	 ((Row206 #= 0 and Freq206 #= 0)), 
+	((Row206 #= 0 and Freq206 #= 0)), 
 
-	 ((Row207 #= 0 and Freq207 #= 0)), 
+	((Row207 #= 0 and Freq207 #= 0)), 
 
-	 ((Row208 #= 0 and Freq208 #= 0)), 
+	((Row208 #= 0 and Freq208 #= 0)), 
 
-	 ((Row209 #= 0 and Freq209 #= 0)), 
+	((Row209 #= 0 and Freq209 #= 0)), 
 
-	 ((Row210 #= 0 and Freq210 #= 0)), 
+	((Row210 #= 0 and Freq210 #= 0)), 
 
-	 (Row211 #= 245 and Freq211 #= 1) or
-	 (Row211 #= 0 and Freq211 #= 0)), 
+	((Row211 #= 245 and Freq211 #= 1) or
+	(Row211 #= 0 and Freq211 #= 0)), 
 
-	 ((Row212 #= 0 and Freq212 #= 0)), 
+	((Row212 #= 0 and Freq212 #= 0)), 
 
-	 ((Row213 #= 0 and Freq213 #= 0)), 
+	((Row213 #= 0 and Freq213 #= 0)), 
 
-	 ((Row214 #= 0 and Freq214 #= 0)), 
+	((Row214 #= 0 and Freq214 #= 0)), 
 
-	 (Row215 #= 246 and Freq215 #= 1) or
-	 (Row215 #= 0 and Freq215 #= 0)), 
+	((Row215 #= 246 and Freq215 #= 1) or
+	(Row215 #= 0 and Freq215 #= 0)), 
 
-	 ((Row216 #= 0 and Freq216 #= 0)), 
+	((Row216 #= 0 and Freq216 #= 0)), 
 
-	 ((Row217 #= 0 and Freq217 #= 0)), 
+	((Row217 #= 0 and Freq217 #= 0)), 
 
-	 ((Row218 #= 0 and Freq218 #= 0)), 
+	((Row218 #= 0 and Freq218 #= 0)), 
 
-	 ((Row219 #= 0 and Freq219 #= 0)), 
+	((Row219 #= 0 and Freq219 #= 0)), 
 
-	 ((Row220 #= 0 and Freq220 #= 0)), 
+	((Row220 #= 0 and Freq220 #= 0)), 
 
-	 ((Row221 #= 0 and Freq221 #= 0)), 
+	((Row221 #= 0 and Freq221 #= 0)), 
 
-	 ((Row222 #= 0 and Freq222 #= 0)), 
+	((Row222 #= 0 and Freq222 #= 0)), 
 
-	 ((Row223 #= 0 and Freq223 #= 0)), 
+	((Row223 #= 0 and Freq223 #= 0)), 
 
-	 ((Row224 #= 0 and Freq224 #= 0)), 
+	((Row224 #= 0 and Freq224 #= 0)), 
 
-	 (Row225 #= 82 and Freq225 #= 1) or
-	 (Row225 #= 245 and Freq225 #= 1) or
-	 (Row225 #= 246 and Freq225 #= 1) or
-	 (Row225 #= 0 and Freq225 #= 0)), 
+	((Row225 #= 82 and Freq225 #= 1) or
+	(Row225 #= 245 and Freq225 #= 1) or
+	(Row225 #= 246 and Freq225 #= 1) or
+	(Row225 #= 0 and Freq225 #= 0)), 
 
-	 ((Row226 #= 0 and Freq226 #= 0)), 
+	((Row226 #= 0 and Freq226 #= 0)), 
 
-	 ((Row227 #= 0 and Freq227 #= 0)), 
+	((Row227 #= 0 and Freq227 #= 0)), 
 
-	 ((Row228 #= 0 and Freq228 #= 0)), 
+	((Row228 #= 0 and Freq228 #= 0)), 
 
-	 ((Row229 #= 0 and Freq229 #= 0)), 
+	((Row229 #= 0 and Freq229 #= 0)), 
 
-	 ((Row230 #= 0 and Freq230 #= 0)), 
+	((Row230 #= 0 and Freq230 #= 0)), 
 
-	 ((Row231 #= 0 and Freq231 #= 0)), 
+	((Row231 #= 0 and Freq231 #= 0)), 
 
-	 ((Row232 #= 0 and Freq232 #= 0)), 
+	((Row232 #= 0 and Freq232 #= 0)), 
 
-	 ((Row233 #= 0 and Freq233 #= 0)), 
+	((Row233 #= 0 and Freq233 #= 0)), 
 
-	 ((Row234 #= 0 and Freq234 #= 0)), 
+	((Row234 #= 0 and Freq234 #= 0)), 
 
-	 ((Row235 #= 0 and Freq235 #= 0)), 
+	((Row235 #= 0 and Freq235 #= 0)), 
 
-	 ((Row236 #= 0 and Freq236 #= 0)), 
+	((Row236 #= 0 and Freq236 #= 0)), 
 
-	 ((Row237 #= 0 and Freq237 #= 0)), 
+	((Row237 #= 0 and Freq237 #= 0)), 
 
-	 ((Row238 #= 0 and Freq238 #= 0)), 
+	((Row238 #= 0 and Freq238 #= 0)), 
 
-	 ((Row239 #= 0 and Freq239 #= 0)), 
+	((Row239 #= 0 and Freq239 #= 0)), 
 
-	 ((Row240 #= 0 and Freq240 #= 0)), 
+	((Row240 #= 0 and Freq240 #= 0)), 
 
-	 ((Row241 #= 0 and Freq241 #= 0)), 
+	((Row241 #= 0 and Freq241 #= 0)), 
 
-	 ((Row242 #= 0 and Freq242 #= 0)), 
+	((Row242 #= 0 and Freq242 #= 0)), 
 
-	 ((Row243 #= 0 and Freq243 #= 0)), 
+	((Row243 #= 0 and Freq243 #= 0)), 
 
-	 (Row244 #= 245 and Freq244 #= 1) or
-	 (Row244 #= 0 and Freq244 #= 0)), 
+	((Row244 #= 245 and Freq244 #= 1) or
+	(Row244 #= 0 and Freq244 #= 0)), 
 
-	 ((Row245 #= 0 and Freq245 #= 0)), 
+	((Row245 #= 0 and Freq245 #= 0)), 
 
-	 ((Row246 #= 0 and Freq246 #= 0)), 
+	((Row246 #= 0 and Freq246 #= 0)), 
 
-	 ((Row247 #= 0 and Freq247 #= 0)), 
+	((Row247 #= 0 and Freq247 #= 0)), 
 
-	 ((Row248 #= 0 and Freq248 #= 0)), 
+	((Row248 #= 0 and Freq248 #= 0)), 
 
-	 ((Row249 #= 0 and Freq249 #= 0)), 
+	((Row249 #= 0 and Freq249 #= 0)), 
 
-	 ((Row250 #= 0 and Freq250 #= 0)), 
+	((Row250 #= 0 and Freq250 #= 0)), 
 
-	 ((Row251 #= 0 and Freq251 #= 0)), 
+	((Row251 #= 0 and Freq251 #= 0)), 
 
-	 ((Row252 #= 0 and Freq252 #= 0)), 
+	((Row252 #= 0 and Freq252 #= 0)), 
 
-	 ((Row253 #= 0 and Freq253 #= 0)), 
+	((Row253 #= 0 and Freq253 #= 0)), 
 
-	 ((Row254 #= 0 and Freq254 #= 0)), 
+	((Row254 #= 0 and Freq254 #= 0)), 
 
-	 ((Row255 #= 0 and Freq255 #= 0)), 
+	((Row255 #= 0 and Freq255 #= 0)), 
 
-	 ((Row256 #= 0 and Freq256 #= 0)), 
+	((Row256 #= 0 and Freq256 #= 0)), 
 
-	 ((Row257 #= 0 and Freq257 #= 0)), 
+	((Row257 #= 0 and Freq257 #= 0)), 
 
-	 ((Row258 #= 0 and Freq258 #= 0)), 
+	((Row258 #= 0 and Freq258 #= 0)), 
 
-	 ((Row259 #= 0 and Freq259 #= 0)), 
+	((Row259 #= 0 and Freq259 #= 0)), 
 
-	 ((Row260 #= 0 and Freq260 #= 0)), 
+	((Row260 #= 0 and Freq260 #= 0)), 
 
-	 ((Row261 #= 0 and Freq261 #= 0)), 
+	((Row261 #= 0 and Freq261 #= 0)), 
 
-	 ((Row262 #= 0 and Freq262 #= 0)), 
+	((Row262 #= 0 and Freq262 #= 0)), 
 
-	 ((Row263 #= 0 and Freq263 #= 0)), 
+	((Row263 #= 0 and Freq263 #= 0)), 
 
-	 ((Row264 #= 0 and Freq264 #= 0)), 
+	((Row264 #= 0 and Freq264 #= 0)), 
 
-	 ((Row265 #= 0 and Freq265 #= 0)), 
+	((Row265 #= 0 and Freq265 #= 0)), 
 
-	 ((Row266 #= 0 and Freq266 #= 0)), 
+	((Row266 #= 0 and Freq266 #= 0)), 
 
-	 ((Row267 #= 0 and Freq267 #= 0)), 
+	((Row267 #= 0 and Freq267 #= 0)), 
 
-	 ((Row268 #= 0 and Freq268 #= 0)), 
+	((Row268 #= 0 and Freq268 #= 0)), 
 
-	 ((Row269 #= 0 and Freq269 #= 0)), 
+	((Row269 #= 0 and Freq269 #= 0)), 
 
-	 ((Row270 #= 0 and Freq270 #= 0)), 
+	((Row270 #= 0 and Freq270 #= 0)), 
 
-	 ((Row271 #= 0 and Freq271 #= 0)), 
+	((Row271 #= 0 and Freq271 #= 0)), 
 
-	 ((Row272 #= 0 and Freq272 #= 0)), 
+	((Row272 #= 0 and Freq272 #= 0)), 
 
-	 ((Row273 #= 0 and Freq273 #= 0)), 
+	((Row273 #= 0 and Freq273 #= 0)), 
 
-	 ((Row274 #= 0 and Freq274 #= 0)), 
+	((Row274 #= 0 and Freq274 #= 0)), 
 
-	 ((Row275 #= 0 and Freq275 #= 0)), 
+	((Row275 #= 0 and Freq275 #= 0)), 
 
-	 ((Row276 #= 0 and Freq276 #= 0)), 
+	((Row276 #= 0 and Freq276 #= 0)), 
 
-	 ((Row277 #= 0 and Freq277 #= 0)), 
+	((Row277 #= 0 and Freq277 #= 0)), 
 
-	 ((Row278 #= 0 and Freq278 #= 0)), 
+	((Row278 #= 0 and Freq278 #= 0)), 
 
-	 ((Row279 #= 0 and Freq279 #= 0)), 
+	((Row279 #= 0 and Freq279 #= 0)), 
 
-	 ((Row280 #= 0 and Freq280 #= 0)), 
+	((Row280 #= 0 and Freq280 #= 0)), 
 
-	 ((Row281 #= 0 and Freq281 #= 0)), 
+	((Row281 #= 0 and Freq281 #= 0)), 
 
-	 ((Row282 #= 0 and Freq282 #= 0)), 
+	((Row282 #= 0 and Freq282 #= 0)), 
 
-	 ((Row283 #= 0 and Freq283 #= 0)), 
+	((Row283 #= 0 and Freq283 #= 0)), 
 
-	 ((Row284 #= 0 and Freq284 #= 0)), 
+	((Row284 #= 0 and Freq284 #= 0)), 
 
-	 ((Row285 #= 0 and Freq285 #= 0)), 
+	((Row285 #= 0 and Freq285 #= 0)), 
 
-	 ((Row286 #= 0 and Freq286 #= 0)), 
+	((Row286 #= 0 and Freq286 #= 0)), 
 
-	 ((Row287 #= 0 and Freq287 #= 0)), 
+	((Row287 #= 0 and Freq287 #= 0)), 
 
-	 ((Row288 #= 0 and Freq288 #= 0)), 
+	((Row288 #= 0 and Freq288 #= 0)), 
 
-	 ((Row289 #= 0 and Freq289 #= 0)), 
+	((Row289 #= 0 and Freq289 #= 0)), 
 
-	 ((Row290 #= 0 and Freq290 #= 0)), 
+	((Row290 #= 0 and Freq290 #= 0)), 
 
-	 ((Row291 #= 0 and Freq291 #= 0)), 
+	((Row291 #= 0 and Freq291 #= 0)), 
 
-	 ((Row292 #= 0 and Freq292 #= 0)), 
+	((Row292 #= 0 and Freq292 #= 0)), 
 
-	 ((Row293 #= 0 and Freq293 #= 0)), 
+	((Row293 #= 0 and Freq293 #= 0)), 
 
-	 ((Row294 #= 0 and Freq294 #= 0)), 
+	((Row294 #= 0 and Freq294 #= 0)), 
 
-	 ((Row295 #= 0 and Freq295 #= 0)), 
+	((Row295 #= 0 and Freq295 #= 0)), 
 
-	 ((Row296 #= 0 and Freq296 #= 0)), 
+	((Row296 #= 0 and Freq296 #= 0)), 
 
-	 ((Row297 #= 0 and Freq297 #= 0)), 
+	((Row297 #= 0 and Freq297 #= 0)), 
 
-	 ((Row298 #= 0 and Freq298 #= 0)), 
+	((Row298 #= 0 and Freq298 #= 0)), 
 
-	 ((Row299 #= 0 and Freq299 #= 0)), 
+	((Row299 #= 0 and Freq299 #= 0)), 
 
-	 ((Row300 #= 0 and Freq300 #= 0)), 
+	((Row300 #= 0 and Freq300 #= 0)), 
 
-	 ((Row301 #= 0 and Freq301 #= 0)), 
+	((Row301 #= 0 and Freq301 #= 0)), 
 
-	 ((Row302 #= 0 and Freq302 #= 0)), 
+	((Row302 #= 0 and Freq302 #= 0)), 
 
-	 ((Row303 #= 0 and Freq303 #= 0)), 
+	((Row303 #= 0 and Freq303 #= 0)), 
 
-	 ((Row304 #= 0 and Freq304 #= 0)), 
+	((Row304 #= 0 and Freq304 #= 0)), 
 
-	 ((Row305 #= 0 and Freq305 #= 0)), 
+	((Row305 #= 0 and Freq305 #= 0)), 
 
-	 ((Row306 #= 0 and Freq306 #= 0)), 
+	((Row306 #= 0 and Freq306 #= 0)), 
 
-	 ((Row307 #= 0 and Freq307 #= 0)), 
+	((Row307 #= 0 and Freq307 #= 0)), 
 
-	 ((Row308 #= 0 and Freq308 #= 0)), 
+	((Row308 #= 0 and Freq308 #= 0)), 
 
-	 ((Row309 #= 0 and Freq309 #= 0)), 
+	((Row309 #= 0 and Freq309 #= 0)), 
 
-	 ((Row310 #= 0 and Freq310 #= 0)), 
+	((Row310 #= 0 and Freq310 #= 0)), 
 
-	 ((Row311 #= 0 and Freq311 #= 0)), 
+	((Row311 #= 0 and Freq311 #= 0)), 
 
-	 ((Row312 #= 0 and Freq312 #= 0)), 
+	((Row312 #= 0 and Freq312 #= 0)), 
 
-	 ((Row313 #= 0 and Freq313 #= 0)), 
+	((Row313 #= 0 and Freq313 #= 0)), 
 
-	 ((Row314 #= 0 and Freq314 #= 0)), 
+	((Row314 #= 0 and Freq314 #= 0)), 
 
-	 ((Row315 #= 0 and Freq315 #= 0)), 
+	((Row315 #= 0 and Freq315 #= 0)), 
 
-	 ((Row316 #= 0 and Freq316 #= 0)), 
+	((Row316 #= 0 and Freq316 #= 0)), 
 
-	 ((Row317 #= 0 and Freq317 #= 0)), 
+	((Row317 #= 0 and Freq317 #= 0)), 
 
-	 ((Row318 #= 0 and Freq318 #= 0)), 
+	((Row318 #= 0 and Freq318 #= 0)), 
 
-	 ((Row319 #= 0 and Freq319 #= 0)), 
+	((Row319 #= 0 and Freq319 #= 0)), 
 
-	 ((Row320 #= 0 and Freq320 #= 0)), 
+	((Row320 #= 0 and Freq320 #= 0)), 
 
-	 ((Row321 #= 0 and Freq321 #= 0)), 
+	((Row321 #= 0 and Freq321 #= 0)), 
 
-	 ((Row322 #= 0 and Freq322 #= 0)), 
+	((Row322 #= 0 and Freq322 #= 0)), 
 
-	 ((Row323 #= 0 and Freq323 #= 0)), 
+	((Row323 #= 0 and Freq323 #= 0)), 
 
-	 ((Row324 #= 0 and Freq324 #= 0)), 
+	((Row324 #= 0 and Freq324 #= 0)), 
 
-	 ((Row325 #= 0 and Freq325 #= 0)), 
+	((Row325 #= 0 and Freq325 #= 0)), 
 
-	 ((Row326 #= 0 and Freq326 #= 0)), 
+	((Row326 #= 0 and Freq326 #= 0)), 
 
-	 ((Row327 #= 0 and Freq327 #= 0)), 
+	((Row327 #= 0 and Freq327 #= 0)), 
 
-	 ((Row328 #= 0 and Freq328 #= 0)), 
+	((Row328 #= 0 and Freq328 #= 0)), 
 
-	 ((Row329 #= 0 and Freq329 #= 0)), 
+	((Row329 #= 0 and Freq329 #= 0)), 
 
-	 ((Row330 #= 0 and Freq330 #= 0)), 
+	((Row330 #= 0 and Freq330 #= 0)), 
 
-	 ((Row331 #= 0 and Freq331 #= 0)), 
+	((Row331 #= 0 and Freq331 #= 0)), 
 
-	 ((Row332 #= 0 and Freq332 #= 0)), 
+	((Row332 #= 0 and Freq332 #= 0)), 
 
-	 ((Row333 #= 0 and Freq333 #= 0)), 
+	((Row333 #= 0 and Freq333 #= 0)), 
 
-	 ((Row334 #= 0 and Freq334 #= 0)), 
+	((Row334 #= 0 and Freq334 #= 0)), 
 
-	 ((Row335 #= 0 and Freq335 #= 0)), 
+	((Row335 #= 0 and Freq335 #= 0)), 
 
-	 ((Row336 #= 0 and Freq336 #= 0)), 
+	((Row336 #= 0 and Freq336 #= 0)), 
 
-	 ((Row337 #= 0 and Freq337 #= 0)), 
+	((Row337 #= 0 and Freq337 #= 0)), 
 
-	 (Row338 #= 160 and Freq338 #= 1) or
-	 (Row338 #= 0 and Freq338 #= 0)), 
+	((Row338 #= 160 and Freq338 #= 1) or
+	(Row338 #= 0 and Freq338 #= 0)), 
 
-	 ((Row339 #= 0 and Freq339 #= 0)), 
+	((Row339 #= 0 and Freq339 #= 0)), 
 
-	 ((Row340 #= 0 and Freq340 #= 0)), 
+	((Row340 #= 0 and Freq340 #= 0)), 
 
-	 ((Row341 #= 0 and Freq341 #= 0)), 
+	((Row341 #= 0 and Freq341 #= 0)), 
 
-	 (Row342 #= 101 and Freq342 #= 1) or
-	 (Row342 #= 0 and Freq342 #= 0)), 
+	((Row342 #= 101 and Freq342 #= 1) or
+	(Row342 #= 0 and Freq342 #= 0)), 
 
-	 ((Row343 #= 0 and Freq343 #= 0)), 
+	((Row343 #= 0 and Freq343 #= 0)), 
 
-	 ((Row344 #= 0 and Freq344 #= 0)), 
+	((Row344 #= 0 and Freq344 #= 0)), 
 
-	 (Row345 #= 130 and Freq345 #= 1) or
-	 (Row345 #= 0 and Freq345 #= 0)), 
+	((Row345 #= 130 and Freq345 #= 1) or
+	(Row345 #= 0 and Freq345 #= 0)), 
 
-	 ((Row346 #= 0 and Freq346 #= 0)), 
+	((Row346 #= 0 and Freq346 #= 0)), 
 
-	 ((Row347 #= 0 and Freq347 #= 0)), 
+	((Row347 #= 0 and Freq347 #= 0)), 
 
-	 (Row348 #= 88 and Freq348 #= 1) or
-	 (Row348 #= 96 and Freq348 #= 1) or
-	 (Row348 #= 0 and Freq348 #= 0)), 
+	((Row348 #= 88 and Freq348 #= 1) or
+	(Row348 #= 96 and Freq348 #= 1) or
+	(Row348 #= 0 and Freq348 #= 0)), 
 
-	 (Row349 #= 94 and Freq349 #= 1) or
-	 (Row349 #= 99 and Freq349 #= 1) or
-	 (Row349 #= 124 and Freq349 #= 1) or
-	 (Row349 #= 0 and Freq349 #= 0)), 
+	((Row349 #= 94 and Freq349 #= 1) or
+	(Row349 #= 99 and Freq349 #= 1) or
+	(Row349 #= 124 and Freq349 #= 1) or
+	(Row349 #= 0 and Freq349 #= 0)), 
 
-	 (Row350 #= 104 and Freq350 #= 1) or
-	 (Row350 #= 0 and Freq350 #= 0)), 
+	((Row350 #= 104 and Freq350 #= 1) or
+	(Row350 #= 0 and Freq350 #= 0)), 
 
-	 (Row351 #= 130 and Freq351 #= 1) or
-	 (Row351 #= 0 and Freq351 #= 0)), 
+	((Row351 #= 130 and Freq351 #= 1) or
+	(Row351 #= 0 and Freq351 #= 0)), 
 
-	 (Row352 #= 124 and Freq352 #= 1) or
-	 (Row352 #= 126 and Freq352 #= 1) or
-	 (Row352 #= 0 and Freq352 #= 0)), 
+	((Row352 #= 124 and Freq352 #= 1) or
+	(Row352 #= 126 and Freq352 #= 1) or
+	(Row352 #= 0 and Freq352 #= 0)), 
 
-	 (Row353 #= 94 and Freq353 #= 1) or
-	 (Row353 #= 100 and Freq353 #= 1) or
-	 (Row353 #= 0 and Freq353 #= 0)), 
+	((Row353 #= 94 and Freq353 #= 1) or
+	(Row353 #= 100 and Freq353 #= 1) or
+	(Row353 #= 0 and Freq353 #= 0)), 
 
-	 (Row354 #= 99 and Freq354 #= 1) or
-	 (Row354 #= 100 and Freq354 #= 1) or
-	 (Row354 #= 104 and Freq354 #= 1) or
-	 (Row354 #= 130 and Freq354 #= 1) or
-	 (Row354 #= 0 and Freq354 #= 0)), 
+	((Row354 #= 99 and Freq354 #= 1) or
+	(Row354 #= 100 and Freq354 #= 1) or
+	(Row354 #= 104 and Freq354 #= 1) or
+	(Row354 #= 130 and Freq354 #= 1) or
+	(Row354 #= 0 and Freq354 #= 0)), 
 
-	 (Row355 #= 104 and Freq355 #= 1) or
-	 (Row355 #= 105 and Freq355 #= 1) or
-	 (Row355 #= 127 and Freq355 #= 1) or
-	 (Row355 #= 0 and Freq355 #= 0)), 
+	((Row355 #= 104 and Freq355 #= 1) or
+	(Row355 #= 105 and Freq355 #= 1) or
+	(Row355 #= 127 and Freq355 #= 1) or
+	(Row355 #= 0 and Freq355 #= 0)), 
 
-	 (Row356 #= 83 and Freq356 #= 1) or
-	 (Row356 #= 87 and Freq356 #= 1) or
-	 (Row356 #= 91 and Freq356 #= 1) or
-	 (Row356 #= 93 and Freq356 #= 1) or
-	 (Row356 #= 94 and Freq356 #= 1) or
-	 (Row356 #= 97 and Freq356 #= 1) or
-	 (Row356 #= 98 and Freq356 #= 1) or
-	 (Row356 #= 99 and Freq356 #= 1) or
-	 (Row356 #= 105 and Freq356 #= 1) or
-	 (Row356 #= 116 and Freq356 #= 1) or
-	 (Row356 #= 120 and Freq356 #= 1) or
-	 (Row356 #= 122 and Freq356 #= 1) or
-	 (Row356 #= 123 and Freq356 #= 1) or
-	 (Row356 #= 124 and Freq356 #= 1) or
-	 (Row356 #= 125 and Freq356 #= 1) or
-	 (Row356 #= 126 and Freq356 #= 1) or
-	 (Row356 #= 127 and Freq356 #= 1) or
-	 (Row356 #= 130 and Freq356 #= 1) or
-	 (Row356 #= 0 and Freq356 #= 0)), 
+	((Row356 #= 83 and Freq356 #= 1) or
+	(Row356 #= 87 and Freq356 #= 1) or
+	(Row356 #= 91 and Freq356 #= 1) or
+	(Row356 #= 93 and Freq356 #= 1) or
+	(Row356 #= 94 and Freq356 #= 1) or
+	(Row356 #= 97 and Freq356 #= 1) or
+	(Row356 #= 98 and Freq356 #= 1) or
+	(Row356 #= 99 and Freq356 #= 1) or
+	(Row356 #= 105 and Freq356 #= 1) or
+	(Row356 #= 116 and Freq356 #= 1) or
+	(Row356 #= 120 and Freq356 #= 1) or
+	(Row356 #= 122 and Freq356 #= 1) or
+	(Row356 #= 123 and Freq356 #= 1) or
+	(Row356 #= 124 and Freq356 #= 1) or
+	(Row356 #= 125 and Freq356 #= 1) or
+	(Row356 #= 126 and Freq356 #= 1) or
+	(Row356 #= 127 and Freq356 #= 1) or
+	(Row356 #= 130 and Freq356 #= 1) or
+	(Row356 #= 0 and Freq356 #= 0)), 
 
-	 (Row357 #= 91 and Freq357 #= 1) or
-	 (Row357 #= 98 and Freq357 #= 1) or
-	 (Row357 #= 116 and Freq357 #= 1) or
-	 (Row357 #= 120 and Freq357 #= 1) or
-	 (Row357 #= 121 and Freq357 #= 1) or
-	 (Row357 #= 125 and Freq357 #= 1) or
-	 (Row357 #= 0 and Freq357 #= 0)), 
+	((Row357 #= 91 and Freq357 #= 1) or
+	(Row357 #= 98 and Freq357 #= 1) or
+	(Row357 #= 116 and Freq357 #= 1) or
+	(Row357 #= 120 and Freq357 #= 1) or
+	(Row357 #= 121 and Freq357 #= 1) or
+	(Row357 #= 125 and Freq357 #= 1) or
+	(Row357 #= 0 and Freq357 #= 0)), 
 
-	 (Row358 #= 91 and Freq358 #= 1) or
-	 (Row358 #= 92 and Freq358 #= 1) or
-	 (Row358 #= 94 and Freq358 #= 1) or
-	 (Row358 #= 95 and Freq358 #= 1) or
-	 (Row358 #= 96 and Freq358 #= 1) or
-	 (Row358 #= 97 and Freq358 #= 1) or
-	 (Row358 #= 98 and Freq358 #= 1) or
-	 (Row358 #= 99 and Freq358 #= 1) or
-	 (Row358 #= 100 and Freq358 #= 1) or
-	 (Row358 #= 101 and Freq358 #= 1) or
-	 (Row358 #= 102 and Freq358 #= 1) or
-	 (Row358 #= 103 and Freq358 #= 1) or
-	 (Row358 #= 104 and Freq358 #= 1) or
-	 (Row358 #= 105 and Freq358 #= 1) or
-	 (Row358 #= 106 and Freq358 #= 1) or
-	 (Row358 #= 115 and Freq358 #= 1) or
-	 (Row358 #= 116 and Freq358 #= 1) or
-	 (Row358 #= 117 and Freq358 #= 1) or
-	 (Row358 #= 118 and Freq358 #= 1) or
-	 (Row358 #= 119 and Freq358 #= 1) or
-	 (Row358 #= 120 and Freq358 #= 1) or
-	 (Row358 #= 121 and Freq358 #= 1) or
-	 (Row358 #= 122 and Freq358 #= 1) or
-	 (Row358 #= 123 and Freq358 #= 1) or
-	 (Row358 #= 124 and Freq358 #= 1) or
-	 (Row358 #= 125 and Freq358 #= 1) or
-	 (Row358 #= 126 and Freq358 #= 1) or
-	 (Row358 #= 129 and Freq358 #= 1) or
-	 (Row358 #= 132 and Freq358 #= 1) or
-	 (Row358 #= 0 and Freq358 #= 0)), 
+	((Row358 #= 91 and Freq358 #= 1) or
+	(Row358 #= 92 and Freq358 #= 1) or
+	(Row358 #= 94 and Freq358 #= 1) or
+	(Row358 #= 95 and Freq358 #= 1) or
+	(Row358 #= 96 and Freq358 #= 1) or
+	(Row358 #= 97 and Freq358 #= 1) or
+	(Row358 #= 98 and Freq358 #= 1) or
+	(Row358 #= 99 and Freq358 #= 1) or
+	(Row358 #= 100 and Freq358 #= 1) or
+	(Row358 #= 101 and Freq358 #= 1) or
+	(Row358 #= 102 and Freq358 #= 1) or
+	(Row358 #= 103 and Freq358 #= 1) or
+	(Row358 #= 104 and Freq358 #= 1) or
+	(Row358 #= 105 and Freq358 #= 1) or
+	(Row358 #= 106 and Freq358 #= 1) or
+	(Row358 #= 115 and Freq358 #= 1) or
+	(Row358 #= 116 and Freq358 #= 1) or
+	(Row358 #= 117 and Freq358 #= 1) or
+	(Row358 #= 118 and Freq358 #= 1) or
+	(Row358 #= 119 and Freq358 #= 1) or
+	(Row358 #= 120 and Freq358 #= 1) or
+	(Row358 #= 121 and Freq358 #= 1) or
+	(Row358 #= 122 and Freq358 #= 1) or
+	(Row358 #= 123 and Freq358 #= 1) or
+	(Row358 #= 124 and Freq358 #= 1) or
+	(Row358 #= 125 and Freq358 #= 1) or
+	(Row358 #= 126 and Freq358 #= 1) or
+	(Row358 #= 129 and Freq358 #= 1) or
+	(Row358 #= 132 and Freq358 #= 1) or
+	(Row358 #= 0 and Freq358 #= 0)), 
 
-	 (Row359 #= 96 and Freq359 #= 1) or
-	 (Row359 #= 97 and Freq359 #= 1) or
-	 (Row359 #= 99 and Freq359 #= 1) or
-	 (Row359 #= 104 and Freq359 #= 1) or
-	 (Row359 #= 105 and Freq359 #= 1) or
-	 (Row359 #= 106 and Freq359 #= 1) or
-	 (Row359 #= 115 and Freq359 #= 1) or
-	 (Row359 #= 116 and Freq359 #= 1) or
-	 (Row359 #= 117 and Freq359 #= 1) or
-	 (Row359 #= 118 and Freq359 #= 1) or
-	 (Row359 #= 119 and Freq359 #= 1) or
-	 (Row359 #= 120 and Freq359 #= 1) or
-	 (Row359 #= 121 and Freq359 #= 1) or
-	 (Row359 #= 122 and Freq359 #= 1) or
-	 (Row359 #= 124 and Freq359 #= 1) or
-	 (Row359 #= 126 and Freq359 #= 1) or
-	 (Row359 #= 128 and Freq359 #= 1) or
-	 (Row359 #= 129 and Freq359 #= 1) or
-	 (Row359 #= 0 and Freq359 #= 0)), 
+	((Row359 #= 96 and Freq359 #= 1) or
+	(Row359 #= 97 and Freq359 #= 1) or
+	(Row359 #= 99 and Freq359 #= 1) or
+	(Row359 #= 104 and Freq359 #= 1) or
+	(Row359 #= 105 and Freq359 #= 1) or
+	(Row359 #= 106 and Freq359 #= 1) or
+	(Row359 #= 115 and Freq359 #= 1) or
+	(Row359 #= 116 and Freq359 #= 1) or
+	(Row359 #= 117 and Freq359 #= 1) or
+	(Row359 #= 118 and Freq359 #= 1) or
+	(Row359 #= 119 and Freq359 #= 1) or
+	(Row359 #= 120 and Freq359 #= 1) or
+	(Row359 #= 121 and Freq359 #= 1) or
+	(Row359 #= 122 and Freq359 #= 1) or
+	(Row359 #= 124 and Freq359 #= 1) or
+	(Row359 #= 126 and Freq359 #= 1) or
+	(Row359 #= 128 and Freq359 #= 1) or
+	(Row359 #= 129 and Freq359 #= 1) or
+	(Row359 #= 0 and Freq359 #= 0)), 
 
-	 (Row360 #= 96 and Freq360 #= 1) or
-	 (Row360 #= 98 and Freq360 #= 1) or
-	 (Row360 #= 100 and Freq360 #= 1) or
-	 (Row360 #= 101 and Freq360 #= 1) or
-	 (Row360 #= 103 and Freq360 #= 1) or
-	 (Row360 #= 104 and Freq360 #= 1) or
-	 (Row360 #= 105 and Freq360 #= 1) or
-	 (Row360 #= 106 and Freq360 #= 1) or
-	 (Row360 #= 115 and Freq360 #= 1) or
-	 (Row360 #= 116 and Freq360 #= 1) or
-	 (Row360 #= 117 and Freq360 #= 1) or
-	 (Row360 #= 118 and Freq360 #= 1) or
-	 (Row360 #= 120 and Freq360 #= 1) or
-	 (Row360 #= 121 and Freq360 #= 1) or
-	 (Row360 #= 122 and Freq360 #= 1) or
-	 (Row360 #= 123 and Freq360 #= 1) or
-	 (Row360 #= 124 and Freq360 #= 1) or
-	 (Row360 #= 125 and Freq360 #= 1) or
-	 (Row360 #= 126 and Freq360 #= 1) or
-	 (Row360 #= 127 and Freq360 #= 1) or
-	 (Row360 #= 128 and Freq360 #= 1) or
-	 (Row360 #= 129 and Freq360 #= 1) or
-	 (Row360 #= 130 and Freq360 #= 1) or
-	 (Row360 #= 0 and Freq360 #= 0)), 
+	((Row360 #= 96 and Freq360 #= 1) or
+	(Row360 #= 98 and Freq360 #= 1) or
+	(Row360 #= 100 and Freq360 #= 1) or
+	(Row360 #= 101 and Freq360 #= 1) or
+	(Row360 #= 103 and Freq360 #= 1) or
+	(Row360 #= 104 and Freq360 #= 1) or
+	(Row360 #= 105 and Freq360 #= 1) or
+	(Row360 #= 106 and Freq360 #= 1) or
+	(Row360 #= 115 and Freq360 #= 1) or
+	(Row360 #= 116 and Freq360 #= 1) or
+	(Row360 #= 117 and Freq360 #= 1) or
+	(Row360 #= 118 and Freq360 #= 1) or
+	(Row360 #= 120 and Freq360 #= 1) or
+	(Row360 #= 121 and Freq360 #= 1) or
+	(Row360 #= 122 and Freq360 #= 1) or
+	(Row360 #= 123 and Freq360 #= 1) or
+	(Row360 #= 124 and Freq360 #= 1) or
+	(Row360 #= 125 and Freq360 #= 1) or
+	(Row360 #= 126 and Freq360 #= 1) or
+	(Row360 #= 127 and Freq360 #= 1) or
+	(Row360 #= 128 and Freq360 #= 1) or
+	(Row360 #= 129 and Freq360 #= 1) or
+	(Row360 #= 130 and Freq360 #= 1) or
+	(Row360 #= 0 and Freq360 #= 0)), 
 
-	 (Row361 #= 91 and Freq361 #= 1) or
-	 (Row361 #= 96 and Freq361 #= 1) or
-	 (Row361 #= 97 and Freq361 #= 1) or
-	 (Row361 #= 98 and Freq361 #= 1) or
-	 (Row361 #= 99 and Freq361 #= 1) or
-	 (Row361 #= 100 and Freq361 #= 1) or
-	 (Row361 #= 101 and Freq361 #= 1) or
-	 (Row361 #= 102 and Freq361 #= 1) or
-	 (Row361 #= 103 and Freq361 #= 1) or
-	 (Row361 #= 104 and Freq361 #= 1) or
-	 (Row361 #= 105 and Freq361 #= 1) or
-	 (Row361 #= 115 and Freq361 #= 1) or
-	 (Row361 #= 116 and Freq361 #= 1) or
-	 (Row361 #= 117 and Freq361 #= 1) or
-	 (Row361 #= 118 and Freq361 #= 1) or
-	 (Row361 #= 119 and Freq361 #= 1) or
-	 (Row361 #= 121 and Freq361 #= 1) or
-	 (Row361 #= 122 and Freq361 #= 1) or
-	 (Row361 #= 124 and Freq361 #= 1) or
-	 (Row361 #= 125 and Freq361 #= 1) or
-	 (Row361 #= 128 and Freq361 #= 1) or
-	 (Row361 #= 0 and Freq361 #= 0)), 
+	((Row361 #= 91 and Freq361 #= 1) or
+	(Row361 #= 96 and Freq361 #= 1) or
+	(Row361 #= 97 and Freq361 #= 1) or
+	(Row361 #= 98 and Freq361 #= 1) or
+	(Row361 #= 99 and Freq361 #= 1) or
+	(Row361 #= 100 and Freq361 #= 1) or
+	(Row361 #= 101 and Freq361 #= 1) or
+	(Row361 #= 102 and Freq361 #= 1) or
+	(Row361 #= 103 and Freq361 #= 1) or
+	(Row361 #= 104 and Freq361 #= 1) or
+	(Row361 #= 105 and Freq361 #= 1) or
+	(Row361 #= 115 and Freq361 #= 1) or
+	(Row361 #= 116 and Freq361 #= 1) or
+	(Row361 #= 117 and Freq361 #= 1) or
+	(Row361 #= 118 and Freq361 #= 1) or
+	(Row361 #= 119 and Freq361 #= 1) or
+	(Row361 #= 121 and Freq361 #= 1) or
+	(Row361 #= 122 and Freq361 #= 1) or
+	(Row361 #= 124 and Freq361 #= 1) or
+	(Row361 #= 125 and Freq361 #= 1) or
+	(Row361 #= 128 and Freq361 #= 1) or
+	(Row361 #= 0 and Freq361 #= 0)), 
 
-	 (Row362 #= 93 and Freq362 #= 1) or
-	 (Row362 #= 95 and Freq362 #= 1) or
-	 (Row362 #= 96 and Freq362 #= 1) or
-	 (Row362 #= 97 and Freq362 #= 1) or
-	 (Row362 #= 98 and Freq362 #= 1) or
-	 (Row362 #= 99 and Freq362 #= 1) or
-	 (Row362 #= 100 and Freq362 #= 1) or
-	 (Row362 #= 101 and Freq362 #= 1) or
-	 (Row362 #= 102 and Freq362 #= 1) or
-	 (Row362 #= 103 and Freq362 #= 1) or
-	 (Row362 #= 104 and Freq362 #= 1) or
-	 (Row362 #= 105 and Freq362 #= 1) or
-	 (Row362 #= 106 and Freq362 #= 1) or
-	 (Row362 #= 115 and Freq362 #= 1) or
-	 (Row362 #= 116 and Freq362 #= 1) or
-	 (Row362 #= 117 and Freq362 #= 1) or
-	 (Row362 #= 118 and Freq362 #= 1) or
-	 (Row362 #= 119 and Freq362 #= 1) or
-	 (Row362 #= 120 and Freq362 #= 1) or
-	 (Row362 #= 121 and Freq362 #= 1) or
-	 (Row362 #= 122 and Freq362 #= 1) or
-	 (Row362 #= 125 and Freq362 #= 1) or
-	 (Row362 #= 126 and Freq362 #= 1) or
-	 (Row362 #= 127 and Freq362 #= 1) or
-	 (Row362 #= 128 and Freq362 #= 1) or
-	 (Row362 #= 129 and Freq362 #= 1) or
-	 (Row362 #= 130 and Freq362 #= 1) or
-	 (Row362 #= 0 and Freq362 #= 0)), 
+	((Row362 #= 93 and Freq362 #= 1) or
+	(Row362 #= 95 and Freq362 #= 1) or
+	(Row362 #= 96 and Freq362 #= 1) or
+	(Row362 #= 97 and Freq362 #= 1) or
+	(Row362 #= 98 and Freq362 #= 1) or
+	(Row362 #= 99 and Freq362 #= 1) or
+	(Row362 #= 100 and Freq362 #= 1) or
+	(Row362 #= 101 and Freq362 #= 1) or
+	(Row362 #= 102 and Freq362 #= 1) or
+	(Row362 #= 103 and Freq362 #= 1) or
+	(Row362 #= 104 and Freq362 #= 1) or
+	(Row362 #= 105 and Freq362 #= 1) or
+	(Row362 #= 106 and Freq362 #= 1) or
+	(Row362 #= 115 and Freq362 #= 1) or
+	(Row362 #= 116 and Freq362 #= 1) or
+	(Row362 #= 117 and Freq362 #= 1) or
+	(Row362 #= 118 and Freq362 #= 1) or
+	(Row362 #= 119 and Freq362 #= 1) or
+	(Row362 #= 120 and Freq362 #= 1) or
+	(Row362 #= 121 and Freq362 #= 1) or
+	(Row362 #= 122 and Freq362 #= 1) or
+	(Row362 #= 125 and Freq362 #= 1) or
+	(Row362 #= 126 and Freq362 #= 1) or
+	(Row362 #= 127 and Freq362 #= 1) or
+	(Row362 #= 128 and Freq362 #= 1) or
+	(Row362 #= 129 and Freq362 #= 1) or
+	(Row362 #= 130 and Freq362 #= 1) or
+	(Row362 #= 0 and Freq362 #= 0)), 
 
-	 (Row363 #= 92 and Freq363 #= 1) or
-	 (Row363 #= 94 and Freq363 #= 1) or
-	 (Row363 #= 95 and Freq363 #= 1) or
-	 (Row363 #= 96 and Freq363 #= 1) or
-	 (Row363 #= 97 and Freq363 #= 1) or
-	 (Row363 #= 98 and Freq363 #= 1) or
-	 (Row363 #= 99 and Freq363 #= 1) or
-	 (Row363 #= 100 and Freq363 #= 1) or
-	 (Row363 #= 101 and Freq363 #= 1) or
-	 (Row363 #= 102 and Freq363 #= 1) or
-	 (Row363 #= 103 and Freq363 #= 1) or
-	 (Row363 #= 104 and Freq363 #= 1) or
-	 (Row363 #= 105 and Freq363 #= 1) or
-	 (Row363 #= 106 and Freq363 #= 1) or
-	 (Row363 #= 115 and Freq363 #= 1) or
-	 (Row363 #= 116 and Freq363 #= 1) or
-	 (Row363 #= 117 and Freq363 #= 1) or
-	 (Row363 #= 118 and Freq363 #= 1) or
-	 (Row363 #= 119 and Freq363 #= 1) or
-	 (Row363 #= 120 and Freq363 #= 1) or
-	 (Row363 #= 121 and Freq363 #= 1) or
-	 (Row363 #= 122 and Freq363 #= 1) or
-	 (Row363 #= 123 and Freq363 #= 1) or
-	 (Row363 #= 124 and Freq363 #= 1) or
-	 (Row363 #= 125 and Freq363 #= 1) or
-	 (Row363 #= 126 and Freq363 #= 1) or
-	 (Row363 #= 127 and Freq363 #= 1) or
-	 (Row363 #= 128 and Freq363 #= 1) or
-	 (Row363 #= 129 and Freq363 #= 1) or
-	 (Row363 #= 0 and Freq363 #= 0)), 
+	((Row363 #= 92 and Freq363 #= 1) or
+	(Row363 #= 94 and Freq363 #= 1) or
+	(Row363 #= 95 and Freq363 #= 1) or
+	(Row363 #= 96 and Freq363 #= 1) or
+	(Row363 #= 97 and Freq363 #= 1) or
+	(Row363 #= 98 and Freq363 #= 1) or
+	(Row363 #= 99 and Freq363 #= 1) or
+	(Row363 #= 100 and Freq363 #= 1) or
+	(Row363 #= 101 and Freq363 #= 1) or
+	(Row363 #= 102 and Freq363 #= 1) or
+	(Row363 #= 103 and Freq363 #= 1) or
+	(Row363 #= 104 and Freq363 #= 1) or
+	(Row363 #= 105 and Freq363 #= 1) or
+	(Row363 #= 106 and Freq363 #= 1) or
+	(Row363 #= 115 and Freq363 #= 1) or
+	(Row363 #= 116 and Freq363 #= 1) or
+	(Row363 #= 117 and Freq363 #= 1) or
+	(Row363 #= 118 and Freq363 #= 1) or
+	(Row363 #= 119 and Freq363 #= 1) or
+	(Row363 #= 120 and Freq363 #= 1) or
+	(Row363 #= 121 and Freq363 #= 1) or
+	(Row363 #= 122 and Freq363 #= 1) or
+	(Row363 #= 123 and Freq363 #= 1) or
+	(Row363 #= 124 and Freq363 #= 1) or
+	(Row363 #= 125 and Freq363 #= 1) or
+	(Row363 #= 126 and Freq363 #= 1) or
+	(Row363 #= 127 and Freq363 #= 1) or
+	(Row363 #= 128 and Freq363 #= 1) or
+	(Row363 #= 129 and Freq363 #= 1) or
+	(Row363 #= 0 and Freq363 #= 0)), 
 
-	 (Row364 #= 87 and Freq364 #= 1) or
-	 (Row364 #= 92 and Freq364 #= 1) or
-	 (Row364 #= 93 and Freq364 #= 1) or
-	 (Row364 #= 94 and Freq364 #= 1) or
-	 (Row364 #= 96 and Freq364 #= 1) or
-	 (Row364 #= 97 and Freq364 #= 1) or
-	 (Row364 #= 98 and Freq364 #= 1) or
-	 (Row364 #= 99 and Freq364 #= 1) or
-	 (Row364 #= 100 and Freq364 #= 1) or
-	 (Row364 #= 101 and Freq364 #= 1) or
-	 (Row364 #= 102 and Freq364 #= 1) or
-	 (Row364 #= 103 and Freq364 #= 1) or
-	 (Row364 #= 104 and Freq364 #= 1) or
-	 (Row364 #= 105 and Freq364 #= 1) or
-	 (Row364 #= 106 and Freq364 #= 1) or
-	 (Row364 #= 115 and Freq364 #= 1) or
-	 (Row364 #= 116 and Freq364 #= 1) or
-	 (Row364 #= 117 and Freq364 #= 1) or
-	 (Row364 #= 118 and Freq364 #= 1) or
-	 (Row364 #= 119 and Freq364 #= 1) or
-	 (Row364 #= 120 and Freq364 #= 1) or
-	 (Row364 #= 121 and Freq364 #= 1) or
-	 (Row364 #= 122 and Freq364 #= 1) or
-	 (Row364 #= 123 and Freq364 #= 1) or
-	 (Row364 #= 124 and Freq364 #= 1) or
-	 (Row364 #= 125 and Freq364 #= 1) or
-	 (Row364 #= 126 and Freq364 #= 1) or
-	 (Row364 #= 127 and Freq364 #= 1) or
-	 (Row364 #= 128 and Freq364 #= 1) or
-	 (Row364 #= 129 and Freq364 #= 1) or
-	 (Row364 #= 130 and Freq364 #= 1) or
-	 (Row364 #= 132 and Freq364 #= 1) or
-	 (Row364 #= 137 and Freq364 #= 1) or
-	 (Row364 #= 0 and Freq364 #= 0)), 
+	((Row364 #= 87 and Freq364 #= 1) or
+	(Row364 #= 92 and Freq364 #= 1) or
+	(Row364 #= 93 and Freq364 #= 1) or
+	(Row364 #= 94 and Freq364 #= 1) or
+	(Row364 #= 96 and Freq364 #= 1) or
+	(Row364 #= 97 and Freq364 #= 1) or
+	(Row364 #= 98 and Freq364 #= 1) or
+	(Row364 #= 99 and Freq364 #= 1) or
+	(Row364 #= 100 and Freq364 #= 1) or
+	(Row364 #= 101 and Freq364 #= 1) or
+	(Row364 #= 102 and Freq364 #= 1) or
+	(Row364 #= 103 and Freq364 #= 1) or
+	(Row364 #= 104 and Freq364 #= 1) or
+	(Row364 #= 105 and Freq364 #= 1) or
+	(Row364 #= 106 and Freq364 #= 1) or
+	(Row364 #= 115 and Freq364 #= 1) or
+	(Row364 #= 116 and Freq364 #= 1) or
+	(Row364 #= 117 and Freq364 #= 1) or
+	(Row364 #= 118 and Freq364 #= 1) or
+	(Row364 #= 119 and Freq364 #= 1) or
+	(Row364 #= 120 and Freq364 #= 1) or
+	(Row364 #= 121 and Freq364 #= 1) or
+	(Row364 #= 122 and Freq364 #= 1) or
+	(Row364 #= 123 and Freq364 #= 1) or
+	(Row364 #= 124 and Freq364 #= 1) or
+	(Row364 #= 125 and Freq364 #= 1) or
+	(Row364 #= 126 and Freq364 #= 1) or
+	(Row364 #= 127 and Freq364 #= 1) or
+	(Row364 #= 128 and Freq364 #= 1) or
+	(Row364 #= 129 and Freq364 #= 1) or
+	(Row364 #= 130 and Freq364 #= 1) or
+	(Row364 #= 132 and Freq364 #= 1) or
+	(Row364 #= 137 and Freq364 #= 1) or
+	(Row364 #= 0 and Freq364 #= 0)), 
 
-	 (Row365 #= 88 and Freq365 #= 1) or
-	 (Row365 #= 89 and Freq365 #= 1) or
-	 (Row365 #= 91 and Freq365 #= 1) or
-	 (Row365 #= 93 and Freq365 #= 1) or
-	 (Row365 #= 94 and Freq365 #= 1) or
-	 (Row365 #= 95 and Freq365 #= 1) or
-	 (Row365 #= 96 and Freq365 #= 1) or
-	 (Row365 #= 97 and Freq365 #= 1) or
-	 (Row365 #= 98 and Freq365 #= 1) or
-	 (Row365 #= 99 and Freq365 #= 1) or
-	 (Row365 #= 100 and Freq365 #= 1) or
-	 (Row365 #= 101 and Freq365 #= 1) or
-	 (Row365 #= 102 and Freq365 #= 1) or
-	 (Row365 #= 103 and Freq365 #= 1) or
-	 (Row365 #= 104 and Freq365 #= 1) or
-	 (Row365 #= 105 and Freq365 #= 1) or
-	 (Row365 #= 106 and Freq365 #= 1) or
-	 (Row365 #= 115 and Freq365 #= 2) or
-	 (Row365 #= 116 and Freq365 #= 1) or
-	 (Row365 #= 117 and Freq365 #= 1) or
-	 (Row365 #= 118 and Freq365 #= 1) or
-	 (Row365 #= 119 and Freq365 #= 1) or
-	 (Row365 #= 120 and Freq365 #= 1) or
-	 (Row365 #= 121 and Freq365 #= 1) or
-	 (Row365 #= 122 and Freq365 #= 1) or
-	 (Row365 #= 123 and Freq365 #= 1) or
-	 (Row365 #= 124 and Freq365 #= 1) or
-	 (Row365 #= 125 and Freq365 #= 1) or
-	 (Row365 #= 126 and Freq365 #= 1) or
-	 (Row365 #= 127 and Freq365 #= 1) or
-	 (Row365 #= 128 and Freq365 #= 1) or
-	 (Row365 #= 129 and Freq365 #= 1) or
-	 (Row365 #= 130 and Freq365 #= 1) or
-	 (Row365 #= 131 and Freq365 #= 1) or
-	 (Row365 #= 133 and Freq365 #= 1) or
-	 (Row365 #= 136 and Freq365 #= 1) or
-	 (Row365 #= 137 and Freq365 #= 1) or
-	 (Row365 #= 138 and Freq365 #= 1) or
-	 (Row365 #= 0 and Freq365 #= 0)), 
+	((Row365 #= 88 and Freq365 #= 1) or
+	(Row365 #= 89 and Freq365 #= 1) or
+	(Row365 #= 91 and Freq365 #= 1) or
+	(Row365 #= 93 and Freq365 #= 1) or
+	(Row365 #= 94 and Freq365 #= 1) or
+	(Row365 #= 95 and Freq365 #= 1) or
+	(Row365 #= 96 and Freq365 #= 1) or
+	(Row365 #= 97 and Freq365 #= 1) or
+	(Row365 #= 98 and Freq365 #= 1) or
+	(Row365 #= 99 and Freq365 #= 1) or
+	(Row365 #= 100 and Freq365 #= 1) or
+	(Row365 #= 101 and Freq365 #= 1) or
+	(Row365 #= 102 and Freq365 #= 1) or
+	(Row365 #= 103 and Freq365 #= 1) or
+	(Row365 #= 104 and Freq365 #= 1) or
+	(Row365 #= 105 and Freq365 #= 1) or
+	(Row365 #= 106 and Freq365 #= 1) or
+	(Row365 #= 115 and Freq365 #= 2) or
+	(Row365 #= 116 and Freq365 #= 1) or
+	(Row365 #= 117 and Freq365 #= 1) or
+	(Row365 #= 118 and Freq365 #= 1) or
+	(Row365 #= 119 and Freq365 #= 1) or
+	(Row365 #= 120 and Freq365 #= 1) or
+	(Row365 #= 121 and Freq365 #= 1) or
+	(Row365 #= 122 and Freq365 #= 1) or
+	(Row365 #= 123 and Freq365 #= 1) or
+	(Row365 #= 124 and Freq365 #= 1) or
+	(Row365 #= 125 and Freq365 #= 1) or
+	(Row365 #= 126 and Freq365 #= 1) or
+	(Row365 #= 127 and Freq365 #= 1) or
+	(Row365 #= 128 and Freq365 #= 1) or
+	(Row365 #= 129 and Freq365 #= 1) or
+	(Row365 #= 130 and Freq365 #= 1) or
+	(Row365 #= 131 and Freq365 #= 1) or
+	(Row365 #= 133 and Freq365 #= 1) or
+	(Row365 #= 136 and Freq365 #= 1) or
+	(Row365 #= 137 and Freq365 #= 1) or
+	(Row365 #= 138 and Freq365 #= 1) or
+	(Row365 #= 0 and Freq365 #= 0)), 
 
-	 (Row366 #= 88 and Freq366 #= 1) or
-	 (Row366 #= 89 and Freq366 #= 1) or
-	 (Row366 #= 92 and Freq366 #= 1) or
-	 (Row366 #= 93 and Freq366 #= 1) or
-	 (Row366 #= 94 and Freq366 #= 1) or
-	 (Row366 #= 95 and Freq366 #= 1) or
-	 (Row366 #= 96 and Freq366 #= 1) or
-	 (Row366 #= 97 and Freq366 #= 1) or
-	 (Row366 #= 98 and Freq366 #= 1) or
-	 (Row366 #= 99 and Freq366 #= 1) or
-	 (Row366 #= 100 and Freq366 #= 1) or
-	 (Row366 #= 101 and Freq366 #= 1) or
-	 (Row366 #= 102 and Freq366 #= 1) or
-	 (Row366 #= 103 and Freq366 #= 1) or
-	 (Row366 #= 104 and Freq366 #= 2) or
-	 (Row366 #= 105 and Freq366 #= 1) or
-	 (Row366 #= 106 and Freq366 #= 1) or
-	 (Row366 #= 115 and Freq366 #= 1) or
-	 (Row366 #= 116 and Freq366 #= 2) or
-	 (Row366 #= 117 and Freq366 #= 2) or
-	 (Row366 #= 118 and Freq366 #= 2) or
-	 (Row366 #= 119 and Freq366 #= 1) or
-	 (Row366 #= 120 and Freq366 #= 1) or
-	 (Row366 #= 121 and Freq366 #= 1) or
-	 (Row366 #= 122 and Freq366 #= 1) or
-	 (Row366 #= 123 and Freq366 #= 1) or
-	 (Row366 #= 124 and Freq366 #= 1) or
-	 (Row366 #= 125 and Freq366 #= 1) or
-	 (Row366 #= 126 and Freq366 #= 1) or
-	 (Row366 #= 127 and Freq366 #= 1) or
-	 (Row366 #= 128 and Freq366 #= 1) or
-	 (Row366 #= 129 and Freq366 #= 1) or
-	 (Row366 #= 131 and Freq366 #= 1) or
-	 (Row366 #= 138 and Freq366 #= 1) or
-	 (Row366 #= 0 and Freq366 #= 0)), 
+	((Row366 #= 88 and Freq366 #= 1) or
+	(Row366 #= 89 and Freq366 #= 1) or
+	(Row366 #= 92 and Freq366 #= 1) or
+	(Row366 #= 93 and Freq366 #= 1) or
+	(Row366 #= 94 and Freq366 #= 1) or
+	(Row366 #= 95 and Freq366 #= 1) or
+	(Row366 #= 96 and Freq366 #= 1) or
+	(Row366 #= 97 and Freq366 #= 1) or
+	(Row366 #= 98 and Freq366 #= 1) or
+	(Row366 #= 99 and Freq366 #= 1) or
+	(Row366 #= 100 and Freq366 #= 1) or
+	(Row366 #= 101 and Freq366 #= 1) or
+	(Row366 #= 102 and Freq366 #= 1) or
+	(Row366 #= 103 and Freq366 #= 1) or
+	(Row366 #= 104 and Freq366 #= 2) or
+	(Row366 #= 105 and Freq366 #= 1) or
+	(Row366 #= 106 and Freq366 #= 1) or
+	(Row366 #= 115 and Freq366 #= 1) or
+	(Row366 #= 116 and Freq366 #= 2) or
+	(Row366 #= 117 and Freq366 #= 2) or
+	(Row366 #= 118 and Freq366 #= 2) or
+	(Row366 #= 119 and Freq366 #= 1) or
+	(Row366 #= 120 and Freq366 #= 1) or
+	(Row366 #= 121 and Freq366 #= 1) or
+	(Row366 #= 122 and Freq366 #= 1) or
+	(Row366 #= 123 and Freq366 #= 1) or
+	(Row366 #= 124 and Freq366 #= 1) or
+	(Row366 #= 125 and Freq366 #= 1) or
+	(Row366 #= 126 and Freq366 #= 1) or
+	(Row366 #= 127 and Freq366 #= 1) or
+	(Row366 #= 128 and Freq366 #= 1) or
+	(Row366 #= 129 and Freq366 #= 1) or
+	(Row366 #= 131 and Freq366 #= 1) or
+	(Row366 #= 138 and Freq366 #= 1) or
+	(Row366 #= 0 and Freq366 #= 0)), 
 
-	 (Row367 #= 87 and Freq367 #= 1) or
-	 (Row367 #= 91 and Freq367 #= 1) or
-	 (Row367 #= 92 and Freq367 #= 1) or
-	 (Row367 #= 93 and Freq367 #= 1) or
-	 (Row367 #= 94 and Freq367 #= 1) or
-	 (Row367 #= 95 and Freq367 #= 1) or
-	 (Row367 #= 96 and Freq367 #= 1) or
-	 (Row367 #= 97 and Freq367 #= 1) or
-	 (Row367 #= 98 and Freq367 #= 1) or
-	 (Row367 #= 99 and Freq367 #= 1) or
-	 (Row367 #= 100 and Freq367 #= 1) or
-	 (Row367 #= 101 and Freq367 #= 1) or
-	 (Row367 #= 102 and Freq367 #= 1) or
-	 (Row367 #= 103 and Freq367 #= 1) or
-	 (Row367 #= 104 and Freq367 #= 2) or
-	 (Row367 #= 105 and Freq367 #= 2) or
-	 (Row367 #= 106 and Freq367 #= 1) or
-	 (Row367 #= 115 and Freq367 #= 1) or
-	 (Row367 #= 116 and Freq367 #= 2) or
-	 (Row367 #= 117 and Freq367 #= 1) or
-	 (Row367 #= 118 and Freq367 #= 1) or
-	 (Row367 #= 119 and Freq367 #= 1) or
-	 (Row367 #= 120 and Freq367 #= 2) or
-	 (Row367 #= 121 and Freq367 #= 1) or
-	 (Row367 #= 122 and Freq367 #= 1) or
-	 (Row367 #= 123 and Freq367 #= 1) or
-	 (Row367 #= 124 and Freq367 #= 1) or
-	 (Row367 #= 125 and Freq367 #= 1) or
-	 (Row367 #= 126 and Freq367 #= 1) or
-	 (Row367 #= 127 and Freq367 #= 1) or
-	 (Row367 #= 128 and Freq367 #= 1) or
-	 (Row367 #= 129 and Freq367 #= 1) or
-	 (Row367 #= 130 and Freq367 #= 1) or
-	 (Row367 #= 131 and Freq367 #= 1) or
-	 (Row367 #= 133 and Freq367 #= 1) or
-	 (Row367 #= 134 and Freq367 #= 1) or
-	 (Row367 #= 138 and Freq367 #= 1) or
-	 (Row367 #= 140 and Freq367 #= 1) or
-	 (Row367 #= 0 and Freq367 #= 0)), 
+	((Row367 #= 87 and Freq367 #= 1) or
+	(Row367 #= 91 and Freq367 #= 1) or
+	(Row367 #= 92 and Freq367 #= 1) or
+	(Row367 #= 93 and Freq367 #= 1) or
+	(Row367 #= 94 and Freq367 #= 1) or
+	(Row367 #= 95 and Freq367 #= 1) or
+	(Row367 #= 96 and Freq367 #= 1) or
+	(Row367 #= 97 and Freq367 #= 1) or
+	(Row367 #= 98 and Freq367 #= 1) or
+	(Row367 #= 99 and Freq367 #= 1) or
+	(Row367 #= 100 and Freq367 #= 1) or
+	(Row367 #= 101 and Freq367 #= 1) or
+	(Row367 #= 102 and Freq367 #= 1) or
+	(Row367 #= 103 and Freq367 #= 1) or
+	(Row367 #= 104 and Freq367 #= 2) or
+	(Row367 #= 105 and Freq367 #= 2) or
+	(Row367 #= 106 and Freq367 #= 1) or
+	(Row367 #= 115 and Freq367 #= 1) or
+	(Row367 #= 116 and Freq367 #= 2) or
+	(Row367 #= 117 and Freq367 #= 1) or
+	(Row367 #= 118 and Freq367 #= 1) or
+	(Row367 #= 119 and Freq367 #= 1) or
+	(Row367 #= 120 and Freq367 #= 2) or
+	(Row367 #= 121 and Freq367 #= 1) or
+	(Row367 #= 122 and Freq367 #= 1) or
+	(Row367 #= 123 and Freq367 #= 1) or
+	(Row367 #= 124 and Freq367 #= 1) or
+	(Row367 #= 125 and Freq367 #= 1) or
+	(Row367 #= 126 and Freq367 #= 1) or
+	(Row367 #= 127 and Freq367 #= 1) or
+	(Row367 #= 128 and Freq367 #= 1) or
+	(Row367 #= 129 and Freq367 #= 1) or
+	(Row367 #= 130 and Freq367 #= 1) or
+	(Row367 #= 131 and Freq367 #= 1) or
+	(Row367 #= 133 and Freq367 #= 1) or
+	(Row367 #= 134 and Freq367 #= 1) or
+	(Row367 #= 138 and Freq367 #= 1) or
+	(Row367 #= 140 and Freq367 #= 1) or
+	(Row367 #= 0 and Freq367 #= 0)), 
 
-	 (Row368 #= 87 and Freq368 #= 1) or
-	 (Row368 #= 91 and Freq368 #= 1) or
-	 (Row368 #= 92 and Freq368 #= 1) or
-	 (Row368 #= 93 and Freq368 #= 1) or
-	 (Row368 #= 95 and Freq368 #= 1) or
-	 (Row368 #= 96 and Freq368 #= 1) or
-	 (Row368 #= 97 and Freq368 #= 1) or
-	 (Row368 #= 98 and Freq368 #= 1) or
-	 (Row368 #= 99 and Freq368 #= 1) or
-	 (Row368 #= 100 and Freq368 #= 1) or
-	 (Row368 #= 101 and Freq368 #= 2) or
-	 (Row368 #= 102 and Freq368 #= 1) or
-	 (Row368 #= 103 and Freq368 #= 2) or
-	 (Row368 #= 104 and Freq368 #= 2) or
-	 (Row368 #= 105 and Freq368 #= 2) or
-	 (Row368 #= 106 and Freq368 #= 1) or
-	 (Row368 #= 115 and Freq368 #= 2) or
-	 (Row368 #= 116 and Freq368 #= 2) or
-	 (Row368 #= 117 and Freq368 #= 2) or
-	 (Row368 #= 118 and Freq368 #= 1) or
-	 (Row368 #= 119 and Freq368 #= 1) or
-	 (Row368 #= 120 and Freq368 #= 1) or
-	 (Row368 #= 121 and Freq368 #= 1) or
-	 (Row368 #= 122 and Freq368 #= 1) or
-	 (Row368 #= 123 and Freq368 #= 1) or
-	 (Row368 #= 124 and Freq368 #= 1) or
-	 (Row368 #= 125 and Freq368 #= 1) or
-	 (Row368 #= 126 and Freq368 #= 1) or
-	 (Row368 #= 127 and Freq368 #= 1) or
-	 (Row368 #= 128 and Freq368 #= 1) or
-	 (Row368 #= 129 and Freq368 #= 1) or
-	 (Row368 #= 130 and Freq368 #= 1) or
-	 (Row368 #= 131 and Freq368 #= 1) or
-	 (Row368 #= 132 and Freq368 #= 1) or
-	 (Row368 #= 133 and Freq368 #= 1) or
-	 (Row368 #= 134 and Freq368 #= 1) or
-	 (Row368 #= 0 and Freq368 #= 0)), 
+	((Row368 #= 87 and Freq368 #= 1) or
+	(Row368 #= 91 and Freq368 #= 1) or
+	(Row368 #= 92 and Freq368 #= 1) or
+	(Row368 #= 93 and Freq368 #= 1) or
+	(Row368 #= 95 and Freq368 #= 1) or
+	(Row368 #= 96 and Freq368 #= 1) or
+	(Row368 #= 97 and Freq368 #= 1) or
+	(Row368 #= 98 and Freq368 #= 1) or
+	(Row368 #= 99 and Freq368 #= 1) or
+	(Row368 #= 100 and Freq368 #= 1) or
+	(Row368 #= 101 and Freq368 #= 2) or
+	(Row368 #= 102 and Freq368 #= 1) or
+	(Row368 #= 103 and Freq368 #= 2) or
+	(Row368 #= 104 and Freq368 #= 2) or
+	(Row368 #= 105 and Freq368 #= 2) or
+	(Row368 #= 106 and Freq368 #= 1) or
+	(Row368 #= 115 and Freq368 #= 2) or
+	(Row368 #= 116 and Freq368 #= 2) or
+	(Row368 #= 117 and Freq368 #= 2) or
+	(Row368 #= 118 and Freq368 #= 1) or
+	(Row368 #= 119 and Freq368 #= 1) or
+	(Row368 #= 120 and Freq368 #= 1) or
+	(Row368 #= 121 and Freq368 #= 1) or
+	(Row368 #= 122 and Freq368 #= 1) or
+	(Row368 #= 123 and Freq368 #= 1) or
+	(Row368 #= 124 and Freq368 #= 1) or
+	(Row368 #= 125 and Freq368 #= 1) or
+	(Row368 #= 126 and Freq368 #= 1) or
+	(Row368 #= 127 and Freq368 #= 1) or
+	(Row368 #= 128 and Freq368 #= 1) or
+	(Row368 #= 129 and Freq368 #= 1) or
+	(Row368 #= 130 and Freq368 #= 1) or
+	(Row368 #= 131 and Freq368 #= 1) or
+	(Row368 #= 132 and Freq368 #= 1) or
+	(Row368 #= 133 and Freq368 #= 1) or
+	(Row368 #= 134 and Freq368 #= 1) or
+	(Row368 #= 0 and Freq368 #= 0)), 
 
-	 (Row369 #= 86 and Freq369 #= 1) or
-	 (Row369 #= 88 and Freq369 #= 1) or
-	 (Row369 #= 89 and Freq369 #= 1) or
-	 (Row369 #= 90 and Freq369 #= 1) or
-	 (Row369 #= 92 and Freq369 #= 1) or
-	 (Row369 #= 93 and Freq369 #= 1) or
-	 (Row369 #= 94 and Freq369 #= 1) or
-	 (Row369 #= 95 and Freq369 #= 1) or
-	 (Row369 #= 96 and Freq369 #= 1) or
-	 (Row369 #= 97 and Freq369 #= 1) or
-	 (Row369 #= 98 and Freq369 #= 1) or
-	 (Row369 #= 99 and Freq369 #= 1) or
-	 (Row369 #= 100 and Freq369 #= 1) or
-	 (Row369 #= 101 and Freq369 #= 1) or
-	 (Row369 #= 102 and Freq369 #= 1) or
-	 (Row369 #= 103 and Freq369 #= 2) or
-	 (Row369 #= 104 and Freq369 #= 2) or
-	 (Row369 #= 105 and Freq369 #= 2) or
-	 (Row369 #= 106 and Freq369 #= 2) or
-	 (Row369 #= 115 and Freq369 #= 2) or
-	 (Row369 #= 116 and Freq369 #= 3) or
-	 (Row369 #= 117 and Freq369 #= 2) or
-	 (Row369 #= 118 and Freq369 #= 2) or
-	 (Row369 #= 119 and Freq369 #= 2) or
-	 (Row369 #= 120 and Freq369 #= 2) or
-	 (Row369 #= 121 and Freq369 #= 2) or
-	 (Row369 #= 122 and Freq369 #= 2) or
-	 (Row369 #= 123 and Freq369 #= 1) or
-	 (Row369 #= 124 and Freq369 #= 1) or
-	 (Row369 #= 125 and Freq369 #= 1) or
-	 (Row369 #= 126 and Freq369 #= 1) or
-	 (Row369 #= 127 and Freq369 #= 1) or
-	 (Row369 #= 128 and Freq369 #= 1) or
-	 (Row369 #= 129 and Freq369 #= 1) or
-	 (Row369 #= 130 and Freq369 #= 1) or
-	 (Row369 #= 131 and Freq369 #= 1) or
-	 (Row369 #= 135 and Freq369 #= 1) or
-	 (Row369 #= 136 and Freq369 #= 1) or
-	 (Row369 #= 138 and Freq369 #= 1) or
-	 (Row369 #= 0 and Freq369 #= 0)), 
+	((Row369 #= 86 and Freq369 #= 1) or
+	(Row369 #= 88 and Freq369 #= 1) or
+	(Row369 #= 89 and Freq369 #= 1) or
+	(Row369 #= 90 and Freq369 #= 1) or
+	(Row369 #= 92 and Freq369 #= 1) or
+	(Row369 #= 93 and Freq369 #= 1) or
+	(Row369 #= 94 and Freq369 #= 1) or
+	(Row369 #= 95 and Freq369 #= 1) or
+	(Row369 #= 96 and Freq369 #= 1) or
+	(Row369 #= 97 and Freq369 #= 1) or
+	(Row369 #= 98 and Freq369 #= 1) or
+	(Row369 #= 99 and Freq369 #= 1) or
+	(Row369 #= 100 and Freq369 #= 1) or
+	(Row369 #= 101 and Freq369 #= 1) or
+	(Row369 #= 102 and Freq369 #= 1) or
+	(Row369 #= 103 and Freq369 #= 2) or
+	(Row369 #= 104 and Freq369 #= 2) or
+	(Row369 #= 105 and Freq369 #= 2) or
+	(Row369 #= 106 and Freq369 #= 2) or
+	(Row369 #= 115 and Freq369 #= 2) or
+	(Row369 #= 116 and Freq369 #= 3) or
+	(Row369 #= 117 and Freq369 #= 2) or
+	(Row369 #= 118 and Freq369 #= 2) or
+	(Row369 #= 119 and Freq369 #= 2) or
+	(Row369 #= 120 and Freq369 #= 2) or
+	(Row369 #= 121 and Freq369 #= 2) or
+	(Row369 #= 122 and Freq369 #= 2) or
+	(Row369 #= 123 and Freq369 #= 1) or
+	(Row369 #= 124 and Freq369 #= 1) or
+	(Row369 #= 125 and Freq369 #= 1) or
+	(Row369 #= 126 and Freq369 #= 1) or
+	(Row369 #= 127 and Freq369 #= 1) or
+	(Row369 #= 128 and Freq369 #= 1) or
+	(Row369 #= 129 and Freq369 #= 1) or
+	(Row369 #= 130 and Freq369 #= 1) or
+	(Row369 #= 131 and Freq369 #= 1) or
+	(Row369 #= 135 and Freq369 #= 1) or
+	(Row369 #= 136 and Freq369 #= 1) or
+	(Row369 #= 138 and Freq369 #= 1) or
+	(Row369 #= 0 and Freq369 #= 0)), 
 
-	 (Row370 #= 87 and Freq370 #= 1) or
-	 (Row370 #= 88 and Freq370 #= 1) or
-	 (Row370 #= 89 and Freq370 #= 1) or
-	 (Row370 #= 90 and Freq370 #= 1) or
-	 (Row370 #= 91 and Freq370 #= 1) or
-	 (Row370 #= 92 and Freq370 #= 1) or
-	 (Row370 #= 93 and Freq370 #= 1) or
-	 (Row370 #= 94 and Freq370 #= 1) or
-	 (Row370 #= 95 and Freq370 #= 1) or
-	 (Row370 #= 96 and Freq370 #= 1) or
-	 (Row370 #= 97 and Freq370 #= 1) or
-	 (Row370 #= 98 and Freq370 #= 1) or
-	 (Row370 #= 99 and Freq370 #= 1) or
-	 (Row370 #= 100 and Freq370 #= 1) or
-	 (Row370 #= 101 and Freq370 #= 1) or
-	 (Row370 #= 102 and Freq370 #= 1) or
-	 (Row370 #= 103 and Freq370 #= 2) or
-	 (Row370 #= 104 and Freq370 #= 2) or
-	 (Row370 #= 105 and Freq370 #= 3) or
-	 (Row370 #= 106 and Freq370 #= 2) or
-	 (Row370 #= 115 and Freq370 #= 3) or
-	 (Row370 #= 116 and Freq370 #= 3) or
-	 (Row370 #= 117 and Freq370 #= 3) or
-	 (Row370 #= 118 and Freq370 #= 2) or
-	 (Row370 #= 119 and Freq370 #= 2) or
-	 (Row370 #= 120 and Freq370 #= 2) or
-	 (Row370 #= 121 and Freq370 #= 2) or
-	 (Row370 #= 122 and Freq370 #= 2) or
-	 (Row370 #= 123 and Freq370 #= 1) or
-	 (Row370 #= 124 and Freq370 #= 1) or
-	 (Row370 #= 125 and Freq370 #= 2) or
-	 (Row370 #= 126 and Freq370 #= 1) or
-	 (Row370 #= 127 and Freq370 #= 1) or
-	 (Row370 #= 128 and Freq370 #= 1) or
-	 (Row370 #= 129 and Freq370 #= 1) or
-	 (Row370 #= 130 and Freq370 #= 1) or
-	 (Row370 #= 131 and Freq370 #= 1) or
-	 (Row370 #= 132 and Freq370 #= 1) or
-	 (Row370 #= 135 and Freq370 #= 1) or
-	 (Row370 #= 0 and Freq370 #= 0)), 
+	((Row370 #= 87 and Freq370 #= 1) or
+	(Row370 #= 88 and Freq370 #= 1) or
+	(Row370 #= 89 and Freq370 #= 1) or
+	(Row370 #= 90 and Freq370 #= 1) or
+	(Row370 #= 91 and Freq370 #= 1) or
+	(Row370 #= 92 and Freq370 #= 1) or
+	(Row370 #= 93 and Freq370 #= 1) or
+	(Row370 #= 94 and Freq370 #= 1) or
+	(Row370 #= 95 and Freq370 #= 1) or
+	(Row370 #= 96 and Freq370 #= 1) or
+	(Row370 #= 97 and Freq370 #= 1) or
+	(Row370 #= 98 and Freq370 #= 1) or
+	(Row370 #= 99 and Freq370 #= 1) or
+	(Row370 #= 100 and Freq370 #= 1) or
+	(Row370 #= 101 and Freq370 #= 1) or
+	(Row370 #= 102 and Freq370 #= 1) or
+	(Row370 #= 103 and Freq370 #= 2) or
+	(Row370 #= 104 and Freq370 #= 2) or
+	(Row370 #= 105 and Freq370 #= 3) or
+	(Row370 #= 106 and Freq370 #= 2) or
+	(Row370 #= 115 and Freq370 #= 3) or
+	(Row370 #= 116 and Freq370 #= 3) or
+	(Row370 #= 117 and Freq370 #= 3) or
+	(Row370 #= 118 and Freq370 #= 2) or
+	(Row370 #= 119 and Freq370 #= 2) or
+	(Row370 #= 120 and Freq370 #= 2) or
+	(Row370 #= 121 and Freq370 #= 2) or
+	(Row370 #= 122 and Freq370 #= 2) or
+	(Row370 #= 123 and Freq370 #= 1) or
+	(Row370 #= 124 and Freq370 #= 1) or
+	(Row370 #= 125 and Freq370 #= 2) or
+	(Row370 #= 126 and Freq370 #= 1) or
+	(Row370 #= 127 and Freq370 #= 1) or
+	(Row370 #= 128 and Freq370 #= 1) or
+	(Row370 #= 129 and Freq370 #= 1) or
+	(Row370 #= 130 and Freq370 #= 1) or
+	(Row370 #= 131 and Freq370 #= 1) or
+	(Row370 #= 132 and Freq370 #= 1) or
+	(Row370 #= 135 and Freq370 #= 1) or
+	(Row370 #= 0 and Freq370 #= 0)), 
 
-	 (Row371 #= 12 and Freq371 #= 1) or
-	 (Row371 #= 87 and Freq371 #= 1) or
-	 (Row371 #= 90 and Freq371 #= 1) or
-	 (Row371 #= 91 and Freq371 #= 1) or
-	 (Row371 #= 92 and Freq371 #= 1) or
-	 (Row371 #= 93 and Freq371 #= 1) or
-	 (Row371 #= 94 and Freq371 #= 1) or
-	 (Row371 #= 95 and Freq371 #= 1) or
-	 (Row371 #= 96 and Freq371 #= 1) or
-	 (Row371 #= 97 and Freq371 #= 1) or
-	 (Row371 #= 98 and Freq371 #= 1) or
-	 (Row371 #= 99 and Freq371 #= 1) or
-	 (Row371 #= 100 and Freq371 #= 2) or
-	 (Row371 #= 101 and Freq371 #= 2) or
-	 (Row371 #= 102 and Freq371 #= 2) or
-	 (Row371 #= 103 and Freq371 #= 2) or
-	 (Row371 #= 104 and Freq371 #= 3) or
-	 (Row371 #= 105 and Freq371 #= 3) or
-	 (Row371 #= 106 and Freq371 #= 2) or
-	 (Row371 #= 115 and Freq371 #= 2) or
-	 (Row371 #= 116 and Freq371 #= 3) or
-	 (Row371 #= 117 and Freq371 #= 3) or
-	 (Row371 #= 118 and Freq371 #= 2) or
-	 (Row371 #= 119 and Freq371 #= 2) or
-	 (Row371 #= 120 and Freq371 #= 2) or
-	 (Row371 #= 121 and Freq371 #= 2) or
-	 (Row371 #= 122 and Freq371 #= 2) or
-	 (Row371 #= 123 and Freq371 #= 2) or
-	 (Row371 #= 124 and Freq371 #= 1) or
-	 (Row371 #= 125 and Freq371 #= 2) or
-	 (Row371 #= 126 and Freq371 #= 1) or
-	 (Row371 #= 127 and Freq371 #= 1) or
-	 (Row371 #= 128 and Freq371 #= 1) or
-	 (Row371 #= 129 and Freq371 #= 1) or
-	 (Row371 #= 130 and Freq371 #= 1) or
-	 (Row371 #= 131 and Freq371 #= 1) or
-	 (Row371 #= 133 and Freq371 #= 1) or
-	 (Row371 #= 0 and Freq371 #= 0)), 
+	((Row371 #= 12 and Freq371 #= 1) or
+	(Row371 #= 87 and Freq371 #= 1) or
+	(Row371 #= 90 and Freq371 #= 1) or
+	(Row371 #= 91 and Freq371 #= 1) or
+	(Row371 #= 92 and Freq371 #= 1) or
+	(Row371 #= 93 and Freq371 #= 1) or
+	(Row371 #= 94 and Freq371 #= 1) or
+	(Row371 #= 95 and Freq371 #= 1) or
+	(Row371 #= 96 and Freq371 #= 1) or
+	(Row371 #= 97 and Freq371 #= 1) or
+	(Row371 #= 98 and Freq371 #= 1) or
+	(Row371 #= 99 and Freq371 #= 1) or
+	(Row371 #= 100 and Freq371 #= 2) or
+	(Row371 #= 101 and Freq371 #= 2) or
+	(Row371 #= 102 and Freq371 #= 2) or
+	(Row371 #= 103 and Freq371 #= 2) or
+	(Row371 #= 104 and Freq371 #= 3) or
+	(Row371 #= 105 and Freq371 #= 3) or
+	(Row371 #= 106 and Freq371 #= 2) or
+	(Row371 #= 115 and Freq371 #= 2) or
+	(Row371 #= 116 and Freq371 #= 3) or
+	(Row371 #= 117 and Freq371 #= 3) or
+	(Row371 #= 118 and Freq371 #= 2) or
+	(Row371 #= 119 and Freq371 #= 2) or
+	(Row371 #= 120 and Freq371 #= 2) or
+	(Row371 #= 121 and Freq371 #= 2) or
+	(Row371 #= 122 and Freq371 #= 2) or
+	(Row371 #= 123 and Freq371 #= 2) or
+	(Row371 #= 124 and Freq371 #= 1) or
+	(Row371 #= 125 and Freq371 #= 2) or
+	(Row371 #= 126 and Freq371 #= 1) or
+	(Row371 #= 127 and Freq371 #= 1) or
+	(Row371 #= 128 and Freq371 #= 1) or
+	(Row371 #= 129 and Freq371 #= 1) or
+	(Row371 #= 130 and Freq371 #= 1) or
+	(Row371 #= 131 and Freq371 #= 1) or
+	(Row371 #= 133 and Freq371 #= 1) or
+	(Row371 #= 0 and Freq371 #= 0)), 
 
-	 (Row372 #= 12 and Freq372 #= 1) or
-	 (Row372 #= 91 and Freq372 #= 1) or
-	 (Row372 #= 92 and Freq372 #= 1) or
-	 (Row372 #= 93 and Freq372 #= 1) or
-	 (Row372 #= 94 and Freq372 #= 1) or
-	 (Row372 #= 95 and Freq372 #= 1) or
-	 (Row372 #= 96 and Freq372 #= 1) or
-	 (Row372 #= 97 and Freq372 #= 1) or
-	 (Row372 #= 98 and Freq372 #= 2) or
-	 (Row372 #= 99 and Freq372 #= 1) or
-	 (Row372 #= 100 and Freq372 #= 2) or
-	 (Row372 #= 101 and Freq372 #= 2) or
-	 (Row372 #= 102 and Freq372 #= 2) or
-	 (Row372 #= 103 and Freq372 #= 2) or
-	 (Row372 #= 104 and Freq372 #= 3) or
-	 (Row372 #= 105 and Freq372 #= 3) or
-	 (Row372 #= 106 and Freq372 #= 3) or
-	 (Row372 #= 115 and Freq372 #= 4) or
-	 (Row372 #= 116 and Freq372 #= 4) or
-	 (Row372 #= 117 and Freq372 #= 3) or
-	 (Row372 #= 118 and Freq372 #= 3) or
-	 (Row372 #= 119 and Freq372 #= 2) or
-	 (Row372 #= 120 and Freq372 #= 3) or
-	 (Row372 #= 121 and Freq372 #= 2) or
-	 (Row372 #= 122 and Freq372 #= 2) or
-	 (Row372 #= 123 and Freq372 #= 2) or
-	 (Row372 #= 124 and Freq372 #= 2) or
-	 (Row372 #= 125 and Freq372 #= 1) or
-	 (Row372 #= 126 and Freq372 #= 2) or
-	 (Row372 #= 127 and Freq372 #= 1) or
-	 (Row372 #= 128 and Freq372 #= 1) or
-	 (Row372 #= 129 and Freq372 #= 1) or
-	 (Row372 #= 130 and Freq372 #= 1) or
-	 (Row372 #= 131 and Freq372 #= 1) or
-	 (Row372 #= 132 and Freq372 #= 1) or
-	 (Row372 #= 133 and Freq372 #= 1) or
-	 (Row372 #= 134 and Freq372 #= 1) or
-	 (Row372 #= 135 and Freq372 #= 1) or
-	 (Row372 #= 136 and Freq372 #= 1) or
-	 (Row372 #= 0 and Freq372 #= 0)), 
+	((Row372 #= 12 and Freq372 #= 1) or
+	(Row372 #= 91 and Freq372 #= 1) or
+	(Row372 #= 92 and Freq372 #= 1) or
+	(Row372 #= 93 and Freq372 #= 1) or
+	(Row372 #= 94 and Freq372 #= 1) or
+	(Row372 #= 95 and Freq372 #= 1) or
+	(Row372 #= 96 and Freq372 #= 1) or
+	(Row372 #= 97 and Freq372 #= 1) or
+	(Row372 #= 98 and Freq372 #= 2) or
+	(Row372 #= 99 and Freq372 #= 1) or
+	(Row372 #= 100 and Freq372 #= 2) or
+	(Row372 #= 101 and Freq372 #= 2) or
+	(Row372 #= 102 and Freq372 #= 2) or
+	(Row372 #= 103 and Freq372 #= 2) or
+	(Row372 #= 104 and Freq372 #= 3) or
+	(Row372 #= 105 and Freq372 #= 3) or
+	(Row372 #= 106 and Freq372 #= 3) or
+	(Row372 #= 115 and Freq372 #= 4) or
+	(Row372 #= 116 and Freq372 #= 4) or
+	(Row372 #= 117 and Freq372 #= 3) or
+	(Row372 #= 118 and Freq372 #= 3) or
+	(Row372 #= 119 and Freq372 #= 2) or
+	(Row372 #= 120 and Freq372 #= 3) or
+	(Row372 #= 121 and Freq372 #= 2) or
+	(Row372 #= 122 and Freq372 #= 2) or
+	(Row372 #= 123 and Freq372 #= 2) or
+	(Row372 #= 124 and Freq372 #= 2) or
+	(Row372 #= 125 and Freq372 #= 1) or
+	(Row372 #= 126 and Freq372 #= 2) or
+	(Row372 #= 127 and Freq372 #= 1) or
+	(Row372 #= 128 and Freq372 #= 1) or
+	(Row372 #= 129 and Freq372 #= 1) or
+	(Row372 #= 130 and Freq372 #= 1) or
+	(Row372 #= 131 and Freq372 #= 1) or
+	(Row372 #= 132 and Freq372 #= 1) or
+	(Row372 #= 133 and Freq372 #= 1) or
+	(Row372 #= 134 and Freq372 #= 1) or
+	(Row372 #= 135 and Freq372 #= 1) or
+	(Row372 #= 136 and Freq372 #= 1) or
+	(Row372 #= 0 and Freq372 #= 0)), 
 
-	 (Row373 #= 12 and Freq373 #= 2) or
-	 (Row373 #= 90 and Freq373 #= 1) or
-	 (Row373 #= 92 and Freq373 #= 1) or
-	 (Row373 #= 93 and Freq373 #= 1) or
-	 (Row373 #= 94 and Freq373 #= 1) or
-	 (Row373 #= 95 and Freq373 #= 1) or
-	 (Row373 #= 96 and Freq373 #= 2) or
-	 (Row373 #= 97 and Freq373 #= 1) or
-	 (Row373 #= 98 and Freq373 #= 1) or
-	 (Row373 #= 99 and Freq373 #= 2) or
-	 (Row373 #= 100 and Freq373 #= 2) or
-	 (Row373 #= 101 and Freq373 #= 2) or
-	 (Row373 #= 102 and Freq373 #= 2) or
-	 (Row373 #= 103 and Freq373 #= 3) or
-	 (Row373 #= 104 and Freq373 #= 4) or
-	 (Row373 #= 105 and Freq373 #= 4) or
-	 (Row373 #= 106 and Freq373 #= 4) or
-	 (Row373 #= 115 and Freq373 #= 5) or
-	 (Row373 #= 116 and Freq373 #= 6) or
-	 (Row373 #= 117 and Freq373 #= 5) or
-	 (Row373 #= 118 and Freq373 #= 3) or
-	 (Row373 #= 119 and Freq373 #= 3) or
-	 (Row373 #= 120 and Freq373 #= 3) or
-	 (Row373 #= 121 and Freq373 #= 2) or
-	 (Row373 #= 122 and Freq373 #= 3) or
-	 (Row373 #= 123 and Freq373 #= 2) or
-	 (Row373 #= 124 and Freq373 #= 1) or
-	 (Row373 #= 125 and Freq373 #= 2) or
-	 (Row373 #= 126 and Freq373 #= 1) or
-	 (Row373 #= 127 and Freq373 #= 1) or
-	 (Row373 #= 128 and Freq373 #= 1) or
-	 (Row373 #= 129 and Freq373 #= 1) or
-	 (Row373 #= 130 and Freq373 #= 1) or
-	 (Row373 #= 131 and Freq373 #= 1) or
-	 (Row373 #= 132 and Freq373 #= 1) or
-	 (Row373 #= 133 and Freq373 #= 1) or
-	 (Row373 #= 134 and Freq373 #= 1) or
-	 (Row373 #= 136 and Freq373 #= 1) or
-	 (Row373 #= 137 and Freq373 #= 1) or
-	 (Row373 #= 0 and Freq373 #= 0)), 
+	((Row373 #= 12 and Freq373 #= 2) or
+	(Row373 #= 90 and Freq373 #= 1) or
+	(Row373 #= 92 and Freq373 #= 1) or
+	(Row373 #= 93 and Freq373 #= 1) or
+	(Row373 #= 94 and Freq373 #= 1) or
+	(Row373 #= 95 and Freq373 #= 1) or
+	(Row373 #= 96 and Freq373 #= 2) or
+	(Row373 #= 97 and Freq373 #= 1) or
+	(Row373 #= 98 and Freq373 #= 1) or
+	(Row373 #= 99 and Freq373 #= 2) or
+	(Row373 #= 100 and Freq373 #= 2) or
+	(Row373 #= 101 and Freq373 #= 2) or
+	(Row373 #= 102 and Freq373 #= 2) or
+	(Row373 #= 103 and Freq373 #= 3) or
+	(Row373 #= 104 and Freq373 #= 4) or
+	(Row373 #= 105 and Freq373 #= 4) or
+	(Row373 #= 106 and Freq373 #= 4) or
+	(Row373 #= 115 and Freq373 #= 5) or
+	(Row373 #= 116 and Freq373 #= 6) or
+	(Row373 #= 117 and Freq373 #= 5) or
+	(Row373 #= 118 and Freq373 #= 3) or
+	(Row373 #= 119 and Freq373 #= 3) or
+	(Row373 #= 120 and Freq373 #= 3) or
+	(Row373 #= 121 and Freq373 #= 2) or
+	(Row373 #= 122 and Freq373 #= 3) or
+	(Row373 #= 123 and Freq373 #= 2) or
+	(Row373 #= 124 and Freq373 #= 1) or
+	(Row373 #= 125 and Freq373 #= 2) or
+	(Row373 #= 126 and Freq373 #= 1) or
+	(Row373 #= 127 and Freq373 #= 1) or
+	(Row373 #= 128 and Freq373 #= 1) or
+	(Row373 #= 129 and Freq373 #= 1) or
+	(Row373 #= 130 and Freq373 #= 1) or
+	(Row373 #= 131 and Freq373 #= 1) or
+	(Row373 #= 132 and Freq373 #= 1) or
+	(Row373 #= 133 and Freq373 #= 1) or
+	(Row373 #= 134 and Freq373 #= 1) or
+	(Row373 #= 136 and Freq373 #= 1) or
+	(Row373 #= 137 and Freq373 #= 1) or
+	(Row373 #= 0 and Freq373 #= 0)), 
 
-	 (Row374 #= 12 and Freq374 #= 3) or
-	 (Row374 #= 90 and Freq374 #= 1) or
-	 (Row374 #= 91 and Freq374 #= 1) or
-	 (Row374 #= 92 and Freq374 #= 1) or
-	 (Row374 #= 93 and Freq374 #= 1) or
-	 (Row374 #= 94 and Freq374 #= 1) or
-	 (Row374 #= 95 and Freq374 #= 1) or
-	 (Row374 #= 96 and Freq374 #= 1) or
-	 (Row374 #= 97 and Freq374 #= 1) or
-	 (Row374 #= 98 and Freq374 #= 2) or
-	 (Row374 #= 99 and Freq374 #= 2) or
-	 (Row374 #= 100 and Freq374 #= 2) or
-	 (Row374 #= 101 and Freq374 #= 2) or
-	 (Row374 #= 102 and Freq374 #= 2) or
-	 (Row374 #= 103 and Freq374 #= 3) or
-	 (Row374 #= 104 and Freq374 #= 3) or
-	 (Row374 #= 105 and Freq374 #= 4) or
-	 (Row374 #= 106 and Freq374 #= 5) or
-	 (Row374 #= 115 and Freq374 #= 6) or
-	 (Row374 #= 116 and Freq374 #= 6) or
-	 (Row374 #= 117 and Freq374 #= 5) or
-	 (Row374 #= 118 and Freq374 #= 4) or
-	 (Row374 #= 119 and Freq374 #= 4) or
-	 (Row374 #= 120 and Freq374 #= 3) or
-	 (Row374 #= 121 and Freq374 #= 3) or
-	 (Row374 #= 122 and Freq374 #= 3) or
-	 (Row374 #= 123 and Freq374 #= 2) or
-	 (Row374 #= 124 and Freq374 #= 2) or
-	 (Row374 #= 125 and Freq374 #= 2) or
-	 (Row374 #= 126 and Freq374 #= 1) or
-	 (Row374 #= 127 and Freq374 #= 1) or
-	 (Row374 #= 128 and Freq374 #= 1) or
-	 (Row374 #= 129 and Freq374 #= 1) or
-	 (Row374 #= 130 and Freq374 #= 1) or
-	 (Row374 #= 131 and Freq374 #= 1) or
-	 (Row374 #= 132 and Freq374 #= 1) or
-	 (Row374 #= 133 and Freq374 #= 1) or
-	 (Row374 #= 134 and Freq374 #= 1) or
-	 (Row374 #= 136 and Freq374 #= 1) or
-	 (Row374 #= 0 and Freq374 #= 0)), 
-
-	 ((Row375 #= 0 and Freq375 #= 0)), 
-
-	 ((Row376 #= 0 and Freq376 #= 0)), 
-
-	 ((Row377 #= 0 and Freq377 #= 0)), 
-
-	 ((Row378 #= 0 and Freq378 #= 0)), 
-
-	 ((Row379 #= 0 and Freq379 #= 0)), 
-
-	 (Row380 #= 12 and Freq380 #= 7) or
-	 (Row380 #= 93 and Freq380 #= 1) or
-	 (Row380 #= 94 and Freq380 #= 1) or
-	 (Row380 #= 95 and Freq380 #= 1) or
-	 (Row380 #= 96 and Freq380 #= 1) or
-	 (Row380 #= 97 and Freq380 #= 1) or
-	 (Row380 #= 98 and Freq380 #= 1) or
-	 (Row380 #= 99 and Freq380 #= 2) or
-	 (Row380 #= 100 and Freq380 #= 2) or
-	 (Row380 #= 101 and Freq380 #= 2) or
-	 (Row380 #= 102 and Freq380 #= 2) or
-	 (Row380 #= 103 and Freq380 #= 3) or
-	 (Row380 #= 104 and Freq380 #= 4) or
-	 (Row380 #= 105 and Freq380 #= 5) or
-	 (Row380 #= 106 and Freq380 #= 5) or
-	 (Row380 #= 115 and Freq380 #= 7) or
-	 (Row380 #= 116 and Freq380 #= 6) or
-	 (Row380 #= 117 and Freq380 #= 5) or
-	 (Row380 #= 118 and Freq380 #= 4) or
-	 (Row380 #= 119 and Freq380 #= 3) or
-	 (Row380 #= 120 and Freq380 #= 3) or
-	 (Row380 #= 121 and Freq380 #= 3) or
-	 (Row380 #= 122 and Freq380 #= 2) or
-	 (Row380 #= 123 and Freq380 #= 2) or
-	 (Row380 #= 124 and Freq380 #= 1) or
-	 (Row380 #= 125 and Freq380 #= 1) or
-	 (Row380 #= 126 and Freq380 #= 1) or
-	 (Row380 #= 127 and Freq380 #= 1) or
-	 (Row380 #= 128 and Freq380 #= 1) or
-	 (Row380 #= 129 and Freq380 #= 1) or
-	 (Row380 #= 130 and Freq380 #= 1) or
-	 (Row380 #= 131 and Freq380 #= 1) or
-	 (Row380 #= 132 and Freq380 #= 1) or
-	 (Row380 #= 133 and Freq380 #= 1) or
-	 (Row380 #= 136 and Freq380 #= 1) or
-	 (Row380 #= 0 and Freq380 #= 0)), 
-
-	 (Row381 #= 12 and Freq381 #= 4) or
-	 (Row381 #= 84 and Freq381 #= 1) or
-	 (Row381 #= 88 and Freq381 #= 1) or
-	 (Row381 #= 89 and Freq381 #= 1) or
-	 (Row381 #= 90 and Freq381 #= 1) or
-	 (Row381 #= 91 and Freq381 #= 1) or
-	 (Row381 #= 92 and Freq381 #= 1) or
-	 (Row381 #= 93 and Freq381 #= 1) or
-	 (Row381 #= 94 and Freq381 #= 1) or
-	 (Row381 #= 95 and Freq381 #= 1) or
-	 (Row381 #= 96 and Freq381 #= 2) or
-	 (Row381 #= 97 and Freq381 #= 1) or
-	 (Row381 #= 98 and Freq381 #= 2) or
-	 (Row381 #= 99 and Freq381 #= 2) or
-	 (Row381 #= 100 and Freq381 #= 2) or
-	 (Row381 #= 101 and Freq381 #= 2) or
-	 (Row381 #= 102 and Freq381 #= 3) or
-	 (Row381 #= 103 and Freq381 #= 3) or
-	 (Row381 #= 104 and Freq381 #= 4) or
-	 (Row381 #= 105 and Freq381 #= 4) or
-	 (Row381 #= 106 and Freq381 #= 5) or
-	 (Row381 #= 115 and Freq381 #= 6) or
-	 (Row381 #= 116 and Freq381 #= 7) or
-	 (Row381 #= 117 and Freq381 #= 5) or
-	 (Row381 #= 118 and Freq381 #= 4) or
-	 (Row381 #= 119 and Freq381 #= 3) or
-	 (Row381 #= 120 and Freq381 #= 4) or
-	 (Row381 #= 121 and Freq381 #= 3) or
-	 (Row381 #= 122 and Freq381 #= 3) or
-	 (Row381 #= 123 and Freq381 #= 2) or
-	 (Row381 #= 124 and Freq381 #= 2) or
-	 (Row381 #= 125 and Freq381 #= 2) or
-	 (Row381 #= 126 and Freq381 #= 2) or
-	 (Row381 #= 127 and Freq381 #= 1) or
-	 (Row381 #= 128 and Freq381 #= 1) or
-	 (Row381 #= 129 and Freq381 #= 1) or
-	 (Row381 #= 130 and Freq381 #= 1) or
-	 (Row381 #= 131 and Freq381 #= 1) or
-	 (Row381 #= 132 and Freq381 #= 1) or
-	 (Row381 #= 134 and Freq381 #= 1) or
-	 (Row381 #= 0 and Freq381 #= 0)), 
-
-	 (Row382 #= 12 and Freq382 #= 3) or
-	 (Row382 #= 87 and Freq382 #= 1) or
-	 (Row382 #= 92 and Freq382 #= 1) or
-	 (Row382 #= 93 and Freq382 #= 1) or
-	 (Row382 #= 94 and Freq382 #= 1) or
-	 (Row382 #= 95 and Freq382 #= 1) or
-	 (Row382 #= 96 and Freq382 #= 1) or
-	 (Row382 #= 97 and Freq382 #= 2) or
-	 (Row382 #= 98 and Freq382 #= 2) or
-	 (Row382 #= 99 and Freq382 #= 2) or
-	 (Row382 #= 100 and Freq382 #= 2) or
-	 (Row382 #= 101 and Freq382 #= 2) or
-	 (Row382 #= 102 and Freq382 #= 2) or
-	 (Row382 #= 103 and Freq382 #= 3) or
-	 (Row382 #= 104 and Freq382 #= 3) or
-	 (Row382 #= 105 and Freq382 #= 4) or
-	 (Row382 #= 106 and Freq382 #= 3) or
-	 (Row382 #= 115 and Freq382 #= 6) or
-	 (Row382 #= 116 and Freq382 #= 5) or
-	 (Row382 #= 117 and Freq382 #= 5) or
-	 (Row382 #= 118 and Freq382 #= 4) or
-	 (Row382 #= 119 and Freq382 #= 3) or
-	 (Row382 #= 120 and Freq382 #= 3) or
-	 (Row382 #= 121 and Freq382 #= 2) or
-	 (Row382 #= 122 and Freq382 #= 2) or
-	 (Row382 #= 123 and Freq382 #= 2) or
-	 (Row382 #= 124 and Freq382 #= 2) or
-	 (Row382 #= 125 and Freq382 #= 2) or
-	 (Row382 #= 126 and Freq382 #= 1) or
-	 (Row382 #= 127 and Freq382 #= 1) or
-	 (Row382 #= 128 and Freq382 #= 1) or
-	 (Row382 #= 129 and Freq382 #= 1) or
-	 (Row382 #= 130 and Freq382 #= 1) or
-	 (Row382 #= 131 and Freq382 #= 1) or
-	 (Row382 #= 134 and Freq382 #= 1) or
-	 (Row382 #= 137 and Freq382 #= 1) or
-	 (Row382 #= 138 and Freq382 #= 1) or
-	 (Row382 #= 0 and Freq382 #= 0)), 
-
-	 (Row383 #= 12 and Freq383 #= 2) or
-	 (Row383 #= 90 and Freq383 #= 1) or
-	 (Row383 #= 91 and Freq383 #= 1) or
-	 (Row383 #= 92 and Freq383 #= 1) or
-	 (Row383 #= 93 and Freq383 #= 1) or
-	 (Row383 #= 94 and Freq383 #= 1) or
-	 (Row383 #= 95 and Freq383 #= 1) or
-	 (Row383 #= 96 and Freq383 #= 1) or
-	 (Row383 #= 97 and Freq383 #= 1) or
-	 (Row383 #= 98 and Freq383 #= 1) or
-	 (Row383 #= 99 and Freq383 #= 2) or
-	 (Row383 #= 100 and Freq383 #= 2) or
-	 (Row383 #= 101 and Freq383 #= 2) or
-	 (Row383 #= 102 and Freq383 #= 2) or
-	 (Row383 #= 103 and Freq383 #= 2) or
-	 (Row383 #= 104 and Freq383 #= 3) or
-	 (Row383 #= 105 and Freq383 #= 3) or
-	 (Row383 #= 106 and Freq383 #= 4) or
-	 (Row383 #= 115 and Freq383 #= 4) or
-	 (Row383 #= 116 and Freq383 #= 4) or
-	 (Row383 #= 117 and Freq383 #= 3) or
-	 (Row383 #= 118 and Freq383 #= 3) or
-	 (Row383 #= 119 and Freq383 #= 3) or
-	 (Row383 #= 120 and Freq383 #= 2) or
-	 (Row383 #= 121 and Freq383 #= 3) or
-	 (Row383 #= 122 and Freq383 #= 2) or
-	 (Row383 #= 123 and Freq383 #= 2) or
-	 (Row383 #= 124 and Freq383 #= 2) or
-	 (Row383 #= 125 and Freq383 #= 2) or
-	 (Row383 #= 126 and Freq383 #= 1) or
-	 (Row383 #= 127 and Freq383 #= 1) or
-	 (Row383 #= 128 and Freq383 #= 1) or
-	 (Row383 #= 129 and Freq383 #= 1) or
-	 (Row383 #= 130 and Freq383 #= 1) or
-	 (Row383 #= 131 and Freq383 #= 1) or
-	 (Row383 #= 132 and Freq383 #= 1) or
-	 (Row383 #= 0 and Freq383 #= 0)), 
-
-	 (Row384 #= 12 and Freq384 #= 1) or
-	 (Row384 #= 93 and Freq384 #= 1) or
-	 (Row384 #= 94 and Freq384 #= 1) or
-	 (Row384 #= 95 and Freq384 #= 1) or
-	 (Row384 #= 96 and Freq384 #= 1) or
-	 (Row384 #= 97 and Freq384 #= 1) or
-	 (Row384 #= 98 and Freq384 #= 1) or
-	 (Row384 #= 99 and Freq384 #= 2) or
-	 (Row384 #= 100 and Freq384 #= 2) or
-	 (Row384 #= 101 and Freq384 #= 2) or
-	 (Row384 #= 102 and Freq384 #= 1) or
-	 (Row384 #= 103 and Freq384 #= 2) or
-	 (Row384 #= 104 and Freq384 #= 2) or
-	 (Row384 #= 105 and Freq384 #= 2) or
-	 (Row384 #= 106 and Freq384 #= 3) or
-	 (Row384 #= 115 and Freq384 #= 4) or
-	 (Row384 #= 116 and Freq384 #= 3) or
-	 (Row384 #= 117 and Freq384 #= 3) or
-	 (Row384 #= 118 and Freq384 #= 2) or
-	 (Row384 #= 119 and Freq384 #= 2) or
-	 (Row384 #= 120 and Freq384 #= 3) or
-	 (Row384 #= 121 and Freq384 #= 2) or
-	 (Row384 #= 122 and Freq384 #= 2) or
-	 (Row384 #= 123 and Freq384 #= 1) or
-	 (Row384 #= 124 and Freq384 #= 1) or
-	 (Row384 #= 125 and Freq384 #= 1) or
-	 (Row384 #= 126 and Freq384 #= 1) or
-	 (Row384 #= 127 and Freq384 #= 1) or
-	 (Row384 #= 128 and Freq384 #= 1) or
-	 (Row384 #= 129 and Freq384 #= 1) or
-	 (Row384 #= 0 and Freq384 #= 0)), 
-
-	 (Row385 #= 12 and Freq385 #= 1) or
-	 (Row385 #= 84 and Freq385 #= 1) or
-	 (Row385 #= 92 and Freq385 #= 1) or
-	 (Row385 #= 93 and Freq385 #= 1) or
-	 (Row385 #= 94 and Freq385 #= 1) or
-	 (Row385 #= 95 and Freq385 #= 1) or
-	 (Row385 #= 96 and Freq385 #= 1) or
-	 (Row385 #= 97 and Freq385 #= 1) or
-	 (Row385 #= 98 and Freq385 #= 1) or
-	 (Row385 #= 99 and Freq385 #= 2) or
-	 (Row385 #= 100 and Freq385 #= 2) or
-	 (Row385 #= 101 and Freq385 #= 2) or
-	 (Row385 #= 102 and Freq385 #= 1) or
-	 (Row385 #= 103 and Freq385 #= 2) or
-	 (Row385 #= 104 and Freq385 #= 2) or
-	 (Row385 #= 105 and Freq385 #= 3) or
-	 (Row385 #= 106 and Freq385 #= 3) or
-	 (Row385 #= 115 and Freq385 #= 3) or
-	 (Row385 #= 116 and Freq385 #= 3) or
-	 (Row385 #= 117 and Freq385 #= 2) or
-	 (Row385 #= 118 and Freq385 #= 2) or
-	 (Row385 #= 119 and Freq385 #= 2) or
-	 (Row385 #= 120 and Freq385 #= 2) or
-	 (Row385 #= 121 and Freq385 #= 2) or
-	 (Row385 #= 122 and Freq385 #= 2) or
-	 (Row385 #= 123 and Freq385 #= 1) or
-	 (Row385 #= 124 and Freq385 #= 1) or
-	 (Row385 #= 125 and Freq385 #= 1) or
-	 (Row385 #= 126 and Freq385 #= 1) or
-	 (Row385 #= 127 and Freq385 #= 1) or
-	 (Row385 #= 128 and Freq385 #= 1) or
-	 (Row385 #= 129 and Freq385 #= 1) or
-	 (Row385 #= 130 and Freq385 #= 1) or
-	 (Row385 #= 131 and Freq385 #= 1) or
-	 (Row385 #= 132 and Freq385 #= 1) or
-	 (Row385 #= 0 and Freq385 #= 0)), 
-
-	 (Row386 #= 12 and Freq386 #= 1) or
-	 (Row386 #= 90 and Freq386 #= 1) or
-	 (Row386 #= 91 and Freq386 #= 1) or
-	 (Row386 #= 93 and Freq386 #= 1) or
-	 (Row386 #= 94 and Freq386 #= 1) or
-	 (Row386 #= 95 and Freq386 #= 1) or
-	 (Row386 #= 96 and Freq386 #= 1) or
-	 (Row386 #= 97 and Freq386 #= 1) or
-	 (Row386 #= 98 and Freq386 #= 1) or
-	 (Row386 #= 99 and Freq386 #= 1) or
-	 (Row386 #= 100 and Freq386 #= 1) or
-	 (Row386 #= 101 and Freq386 #= 2) or
-	 (Row386 #= 102 and Freq386 #= 1) or
-	 (Row386 #= 103 and Freq386 #= 1) or
-	 (Row386 #= 104 and Freq386 #= 2) or
-	 (Row386 #= 105 and Freq386 #= 2) or
-	 (Row386 #= 106 and Freq386 #= 2) or
-	 (Row386 #= 115 and Freq386 #= 2) or
-	 (Row386 #= 116 and Freq386 #= 3) or
-	 (Row386 #= 117 and Freq386 #= 3) or
-	 (Row386 #= 118 and Freq386 #= 2) or
-	 (Row386 #= 119 and Freq386 #= 1) or
-	 (Row386 #= 120 and Freq386 #= 1) or
-	 (Row386 #= 121 and Freq386 #= 2) or
-	 (Row386 #= 122 and Freq386 #= 2) or
-	 (Row386 #= 123 and Freq386 #= 1) or
-	 (Row386 #= 124 and Freq386 #= 1) or
-	 (Row386 #= 125 and Freq386 #= 1) or
-	 (Row386 #= 126 and Freq386 #= 1) or
-	 (Row386 #= 127 and Freq386 #= 1) or
-	 (Row386 #= 129 and Freq386 #= 1) or
-	 (Row386 #= 130 and Freq386 #= 1) or
-	 (Row386 #= 131 and Freq386 #= 1) or
-	 (Row386 #= 135 and Freq386 #= 1) or
-	 (Row386 #= 0 and Freq386 #= 0)), 
-
-	 (Row387 #= 12 and Freq387 #= 1) or
-	 (Row387 #= 91 and Freq387 #= 1) or
-	 (Row387 #= 93 and Freq387 #= 1) or
-	 (Row387 #= 94 and Freq387 #= 1) or
-	 (Row387 #= 95 and Freq387 #= 1) or
-	 (Row387 #= 96 and Freq387 #= 1) or
-	 (Row387 #= 97 and Freq387 #= 1) or
-	 (Row387 #= 98 and Freq387 #= 1) or
-	 (Row387 #= 99 and Freq387 #= 1) or
-	 (Row387 #= 100 and Freq387 #= 1) or
-	 (Row387 #= 101 and Freq387 #= 1) or
-	 (Row387 #= 102 and Freq387 #= 1) or
-	 (Row387 #= 103 and Freq387 #= 2) or
-	 (Row387 #= 104 and Freq387 #= 2) or
-	 (Row387 #= 105 and Freq387 #= 2) or
-	 (Row387 #= 106 and Freq387 #= 2) or
-	 (Row387 #= 115 and Freq387 #= 2) or
-	 (Row387 #= 116 and Freq387 #= 2) or
-	 (Row387 #= 117 and Freq387 #= 2) or
-	 (Row387 #= 118 and Freq387 #= 2) or
-	 (Row387 #= 119 and Freq387 #= 1) or
-	 (Row387 #= 120 and Freq387 #= 1) or
-	 (Row387 #= 121 and Freq387 #= 1) or
-	 (Row387 #= 122 and Freq387 #= 1) or
-	 (Row387 #= 123 and Freq387 #= 1) or
-	 (Row387 #= 124 and Freq387 #= 1) or
-	 (Row387 #= 125 and Freq387 #= 1) or
-	 (Row387 #= 126 and Freq387 #= 1) or
-	 (Row387 #= 127 and Freq387 #= 1) or
-	 (Row387 #= 128 and Freq387 #= 1) or
-	 (Row387 #= 129 and Freq387 #= 1) or
-	 (Row387 #= 130 and Freq387 #= 1) or
-	 (Row387 #= 131 and Freq387 #= 1) or
-	 (Row387 #= 0 and Freq387 #= 0)), 
-
-	 (Row388 #= 12 and Freq388 #= 1) or
-	 (Row388 #= 83 and Freq388 #= 1) or
-	 (Row388 #= 92 and Freq388 #= 1) or
-	 (Row388 #= 95 and Freq388 #= 1) or
-	 (Row388 #= 97 and Freq388 #= 1) or
-	 (Row388 #= 98 and Freq388 #= 1) or
-	 (Row388 #= 99 and Freq388 #= 1) or
-	 (Row388 #= 100 and Freq388 #= 1) or
-	 (Row388 #= 101 and Freq388 #= 1) or
-	 (Row388 #= 102 and Freq388 #= 1) or
-	 (Row388 #= 103 and Freq388 #= 1) or
-	 (Row388 #= 104 and Freq388 #= 1) or
-	 (Row388 #= 105 and Freq388 #= 2) or
-	 (Row388 #= 106 and Freq388 #= 1) or
-	 (Row388 #= 115 and Freq388 #= 2) or
-	 (Row388 #= 116 and Freq388 #= 3) or
-	 (Row388 #= 117 and Freq388 #= 2) or
-	 (Row388 #= 118 and Freq388 #= 1) or
-	 (Row388 #= 119 and Freq388 #= 2) or
-	 (Row388 #= 120 and Freq388 #= 1) or
-	 (Row388 #= 121 and Freq388 #= 1) or
-	 (Row388 #= 122 and Freq388 #= 1) or
-	 (Row388 #= 123 and Freq388 #= 1) or
-	 (Row388 #= 124 and Freq388 #= 1) or
-	 (Row388 #= 125 and Freq388 #= 1) or
-	 (Row388 #= 126 and Freq388 #= 1) or
-	 (Row388 #= 127 and Freq388 #= 1) or
-	 (Row388 #= 128 and Freq388 #= 1) or
-	 (Row388 #= 130 and Freq388 #= 1) or
-	 (Row388 #= 136 and Freq388 #= 1) or
-	 (Row388 #= 0 and Freq388 #= 0)), 
-
-	 (Row389 #= 12 and Freq389 #= 1) or
-	 (Row389 #= 92 and Freq389 #= 1) or
-	 (Row389 #= 94 and Freq389 #= 1) or
-	 (Row389 #= 95 and Freq389 #= 1) or
-	 (Row389 #= 96 and Freq389 #= 1) or
-	 (Row389 #= 97 and Freq389 #= 1) or
-	 (Row389 #= 98 and Freq389 #= 1) or
-	 (Row389 #= 99 and Freq389 #= 1) or
-	 (Row389 #= 100 and Freq389 #= 1) or
-	 (Row389 #= 101 and Freq389 #= 1) or
-	 (Row389 #= 102 and Freq389 #= 1) or
-	 (Row389 #= 103 and Freq389 #= 1) or
-	 (Row389 #= 104 and Freq389 #= 1) or
-	 (Row389 #= 105 and Freq389 #= 1) or
-	 (Row389 #= 106 and Freq389 #= 1) or
-	 (Row389 #= 115 and Freq389 #= 1) or
-	 (Row389 #= 116 and Freq389 #= 2) or
-	 (Row389 #= 117 and Freq389 #= 1) or
-	 (Row389 #= 118 and Freq389 #= 1) or
-	 (Row389 #= 119 and Freq389 #= 1) or
-	 (Row389 #= 120 and Freq389 #= 1) or
-	 (Row389 #= 121 and Freq389 #= 1) or
-	 (Row389 #= 122 and Freq389 #= 1) or
-	 (Row389 #= 123 and Freq389 #= 1) or
-	 (Row389 #= 124 and Freq389 #= 1) or
-	 (Row389 #= 125 and Freq389 #= 1) or
-	 (Row389 #= 126 and Freq389 #= 1) or
-	 (Row389 #= 127 and Freq389 #= 1) or
-	 (Row389 #= 128 and Freq389 #= 1) or
-	 (Row389 #= 129 and Freq389 #= 1) or
-	 (Row389 #= 130 and Freq389 #= 1) or
-	 (Row389 #= 0 and Freq389 #= 0)), 
-
-	 (Row390 #= 94 and Freq390 #= 1) or
-	 (Row390 #= 95 and Freq390 #= 1) or
-	 (Row390 #= 96 and Freq390 #= 1) or
-	 (Row390 #= 97 and Freq390 #= 1) or
-	 (Row390 #= 98 and Freq390 #= 1) or
-	 (Row390 #= 99 and Freq390 #= 1) or
-	 (Row390 #= 100 and Freq390 #= 1) or
-	 (Row390 #= 101 and Freq390 #= 1) or
-	 (Row390 #= 102 and Freq390 #= 1) or
-	 (Row390 #= 103 and Freq390 #= 1) or
-	 (Row390 #= 104 and Freq390 #= 1) or
-	 (Row390 #= 105 and Freq390 #= 1) or
-	 (Row390 #= 106 and Freq390 #= 1) or
-	 (Row390 #= 115 and Freq390 #= 1) or
-	 (Row390 #= 116 and Freq390 #= 1) or
-	 (Row390 #= 117 and Freq390 #= 1) or
-	 (Row390 #= 118 and Freq390 #= 1) or
-	 (Row390 #= 119 and Freq390 #= 1) or
-	 (Row390 #= 120 and Freq390 #= 1) or
-	 (Row390 #= 121 and Freq390 #= 1) or
-	 (Row390 #= 122 and Freq390 #= 1) or
-	 (Row390 #= 123 and Freq390 #= 1) or
-	 (Row390 #= 125 and Freq390 #= 1) or
-	 (Row390 #= 127 and Freq390 #= 1) or
-	 (Row390 #= 129 and Freq390 #= 1) or
-	 (Row390 #= 131 and Freq390 #= 1) or
-	 (Row390 #= 0 and Freq390 #= 0)), 
-
-	 (Row391 #= 90 and Freq391 #= 1) or
-	 (Row391 #= 91 and Freq391 #= 1) or
-	 (Row391 #= 92 and Freq391 #= 1) or
-	 (Row391 #= 93 and Freq391 #= 1) or
-	 (Row391 #= 94 and Freq391 #= 1) or
-	 (Row391 #= 95 and Freq391 #= 1) or
-	 (Row391 #= 96 and Freq391 #= 1) or
-	 (Row391 #= 97 and Freq391 #= 1) or
-	 (Row391 #= 98 and Freq391 #= 1) or
-	 (Row391 #= 99 and Freq391 #= 1) or
-	 (Row391 #= 100 and Freq391 #= 1) or
-	 (Row391 #= 101 and Freq391 #= 1) or
-	 (Row391 #= 103 and Freq391 #= 1) or
-	 (Row391 #= 104 and Freq391 #= 1) or
-	 (Row391 #= 105 and Freq391 #= 1) or
-	 (Row391 #= 106 and Freq391 #= 1) or
-	 (Row391 #= 115 and Freq391 #= 1) or
-	 (Row391 #= 116 and Freq391 #= 1) or
-	 (Row391 #= 117 and Freq391 #= 1) or
-	 (Row391 #= 118 and Freq391 #= 1) or
-	 (Row391 #= 119 and Freq391 #= 1) or
-	 (Row391 #= 120 and Freq391 #= 1) or
-	 (Row391 #= 121 and Freq391 #= 1) or
-	 (Row391 #= 122 and Freq391 #= 1) or
-	 (Row391 #= 124 and Freq391 #= 1) or
-	 (Row391 #= 125 and Freq391 #= 1) or
-	 (Row391 #= 126 and Freq391 #= 1) or
-	 (Row391 #= 127 and Freq391 #= 1) or
-	 (Row391 #= 128 and Freq391 #= 1) or
-	 (Row391 #= 129 and Freq391 #= 1) or
-	 (Row391 #= 0 and Freq391 #= 0)), 
-
-	 (Row392 #= 93 and Freq392 #= 1) or
-	 (Row392 #= 94 and Freq392 #= 1) or
-	 (Row392 #= 98 and Freq392 #= 1) or
-	 (Row392 #= 99 and Freq392 #= 1) or
-	 (Row392 #= 100 and Freq392 #= 1) or
-	 (Row392 #= 101 and Freq392 #= 1) or
-	 (Row392 #= 102 and Freq392 #= 1) or
-	 (Row392 #= 103 and Freq392 #= 1) or
-	 (Row392 #= 104 and Freq392 #= 1) or
-	 (Row392 #= 105 and Freq392 #= 1) or
-	 (Row392 #= 106 and Freq392 #= 1) or
-	 (Row392 #= 115 and Freq392 #= 1) or
-	 (Row392 #= 116 and Freq392 #= 1) or
-	 (Row392 #= 117 and Freq392 #= 1) or
-	 (Row392 #= 119 and Freq392 #= 1) or
-	 (Row392 #= 120 and Freq392 #= 1) or
-	 (Row392 #= 121 and Freq392 #= 1) or
-	 (Row392 #= 122 and Freq392 #= 1) or
-	 (Row392 #= 123 and Freq392 #= 1) or
-	 (Row392 #= 125 and Freq392 #= 1) or
-	 (Row392 #= 127 and Freq392 #= 1) or
-	 (Row392 #= 129 and Freq392 #= 1) or
-	 (Row392 #= 130 and Freq392 #= 1) or
-	 (Row392 #= 0 and Freq392 #= 0)), 
-
-	 (Row393 #= 93 and Freq393 #= 1) or
-	 (Row393 #= 94 and Freq393 #= 1) or
-	 (Row393 #= 95 and Freq393 #= 1) or
-	 (Row393 #= 97 and Freq393 #= 1) or
-	 (Row393 #= 98 and Freq393 #= 1) or
-	 (Row393 #= 99 and Freq393 #= 1) or
-	 (Row393 #= 100 and Freq393 #= 1) or
-	 (Row393 #= 101 and Freq393 #= 1) or
-	 (Row393 #= 103 and Freq393 #= 1) or
-	 (Row393 #= 104 and Freq393 #= 1) or
-	 (Row393 #= 105 and Freq393 #= 1) or
-	 (Row393 #= 116 and Freq393 #= 1) or
-	 (Row393 #= 117 and Freq393 #= 1) or
-	 (Row393 #= 119 and Freq393 #= 1) or
-	 (Row393 #= 120 and Freq393 #= 1) or
-	 (Row393 #= 121 and Freq393 #= 1) or
-	 (Row393 #= 122 and Freq393 #= 1) or
-	 (Row393 #= 124 and Freq393 #= 1) or
-	 (Row393 #= 126 and Freq393 #= 1) or
-	 (Row393 #= 129 and Freq393 #= 1) or
-	 (Row393 #= 130 and Freq393 #= 1) or
-	 (Row393 #= 131 and Freq393 #= 1) or
-	 (Row393 #= 0 and Freq393 #= 0)), 
-
-	 (Row394 #= 92 and Freq394 #= 1) or
-	 (Row394 #= 97 and Freq394 #= 1) or
-	 (Row394 #= 99 and Freq394 #= 1) or
-	 (Row394 #= 100 and Freq394 #= 1) or
-	 (Row394 #= 101 and Freq394 #= 1) or
-	 (Row394 #= 105 and Freq394 #= 1) or
-	 (Row394 #= 106 and Freq394 #= 1) or
-	 (Row394 #= 115 and Freq394 #= 1) or
-	 (Row394 #= 116 and Freq394 #= 1) or
-	 (Row394 #= 117 and Freq394 #= 1) or
-	 (Row394 #= 118 and Freq394 #= 1) or
-	 (Row394 #= 119 and Freq394 #= 1) or
-	 (Row394 #= 120 and Freq394 #= 1) or
-	 (Row394 #= 121 and Freq394 #= 1) or
-	 (Row394 #= 122 and Freq394 #= 1) or
-	 (Row394 #= 125 and Freq394 #= 1) or
-	 (Row394 #= 128 and Freq394 #= 1) or
-	 (Row394 #= 131 and Freq394 #= 1) or
-	 (Row394 #= 0 and Freq394 #= 0)), 
-
-	 (Row395 #= 94 and Freq395 #= 1) or
-	 (Row395 #= 97 and Freq395 #= 1) or
-	 (Row395 #= 99 and Freq395 #= 1) or
-	 (Row395 #= 103 and Freq395 #= 1) or
-	 (Row395 #= 105 and Freq395 #= 1) or
-	 (Row395 #= 115 and Freq395 #= 1) or
-	 (Row395 #= 116 and Freq395 #= 1) or
-	 (Row395 #= 117 and Freq395 #= 1) or
-	 (Row395 #= 118 and Freq395 #= 1) or
-	 (Row395 #= 119 and Freq395 #= 1) or
-	 (Row395 #= 120 and Freq395 #= 1) or
-	 (Row395 #= 121 and Freq395 #= 1) or
-	 (Row395 #= 122 and Freq395 #= 1) or
-	 (Row395 #= 125 and Freq395 #= 1) or
-	 (Row395 #= 127 and Freq395 #= 1) or
-	 (Row395 #= 0 and Freq395 #= 0)), 
-
-	 (Row396 #= 84 and Freq396 #= 1) or
-	 (Row396 #= 96 and Freq396 #= 1) or
-	 (Row396 #= 97 and Freq396 #= 1) or
-	 (Row396 #= 98 and Freq396 #= 1) or
-	 (Row396 #= 99 and Freq396 #= 1) or
-	 (Row396 #= 100 and Freq396 #= 1) or
-	 (Row396 #= 101 and Freq396 #= 1) or
-	 (Row396 #= 103 and Freq396 #= 1) or
-	 (Row396 #= 104 and Freq396 #= 1) or
-	 (Row396 #= 105 and Freq396 #= 1) or
-	 (Row396 #= 115 and Freq396 #= 1) or
-	 (Row396 #= 116 and Freq396 #= 1) or
-	 (Row396 #= 117 and Freq396 #= 1) or
-	 (Row396 #= 121 and Freq396 #= 1) or
-	 (Row396 #= 125 and Freq396 #= 1) or
-	 (Row396 #= 126 and Freq396 #= 1) or
-	 (Row396 #= 127 and Freq396 #= 1) or
-	 (Row396 #= 129 and Freq396 #= 1) or
-	 (Row396 #= 131 and Freq396 #= 1) or
-	 (Row396 #= 0 and Freq396 #= 0)), 
-
-	 (Row397 #= 97 and Freq397 #= 1) or
-	 (Row397 #= 98 and Freq397 #= 1) or
-	 (Row397 #= 104 and Freq397 #= 1) or
-	 (Row397 #= 125 and Freq397 #= 1) or
-	 (Row397 #= 0 and Freq397 #= 0)), 
-
-	 (Row398 #= 104 and Freq398 #= 1) or
-	 (Row398 #= 0 and Freq398 #= 0)), 
-
-	 (Row399 #= 98 and Freq399 #= 1) or
-	 (Row399 #= 99 and Freq399 #= 1) or
-	 (Row399 #= 100 and Freq399 #= 1) or
-	 (Row399 #= 101 and Freq399 #= 1) or
-	 (Row399 #= 104 and Freq399 #= 1) or
-	 (Row399 #= 106 and Freq399 #= 1) or
-	 (Row399 #= 124 and Freq399 #= 1) or
-	 (Row399 #= 125 and Freq399 #= 1) or
-	 (Row399 #= 0 and Freq399 #= 0)), 
-
-	 (Row400 #= 97 and Freq400 #= 1) or
-	 (Row400 #= 99 and Freq400 #= 1) or
-	 (Row400 #= 125 and Freq400 #= 1) or
-	 (Row400 #= 0 and Freq400 #= 0)), 
-
-	 (Row401 #= 87 and Freq401 #= 1) or
-	 (Row401 #= 98 and Freq401 #= 1) or
-	 (Row401 #= 99 and Freq401 #= 1) or
-	 (Row401 #= 116 and Freq401 #= 1) or
-	 (Row401 #= 130 and Freq401 #= 1) or
-	 (Row401 #= 131 and Freq401 #= 1) or
-	 (Row401 #= 0 and Freq401 #= 0)), 
-
-	 ((Row402 #= 0 and Freq402 #= 0)), 
-
-	 (Row403 #= 120 and Freq403 #= 1) or
-	 (Row403 #= 0 and Freq403 #= 0)), 
-
-	 ((Row404 #= 0 and Freq404 #= 0)), 
-
-	 ((Row405 #= 0 and Freq405 #= 0)), 
-
-	 ((Row406 #= 0 and Freq406 #= 0)), 
-
-	 ((Row407 #= 0 and Freq407 #= 0)), 
-
-	 ((Row408 #= 0 and Freq408 #= 0)), 
-
-	 ((Row409 #= 0 and Freq409 #= 0)), 
-
-	 ((Row410 #= 0 and Freq410 #= 0)), 
-
-	 ((Row411 #= 0 and Freq411 #= 0)), 
-
-	 ((Row412 #= 0 and Freq412 #= 0)), 
-
-	 ((Row413 #= 0 and Freq413 #= 0)), 
-
-	 ((Row414 #= 0 and Freq414 #= 0)), 
-
-	 ((Row415 #= 0 and Freq415 #= 0)), 
-
-	 ((Row416 #= 0 and Freq416 #= 0)), 
-
-	 ((Row417 #= 0 and Freq417 #= 0)), 
-
-	 ((Row418 #= 0 and Freq418 #= 0)), 
-
-	 ((Row419 #= 0 and Freq419 #= 0)), 
-
-	 ((Row420 #= 0 and Freq420 #= 0)), 
-
-	 ((Row421 #= 0 and Freq421 #= 0)), 
-
-	 ((Row422 #= 0 and Freq422 #= 0)), 
-
-	 ((Row423 #= 0 and Freq423 #= 0)), 
-
-	 ((Row424 #= 0 and Freq424 #= 0)), 
-
-	 ((Row425 #= 0 and Freq425 #= 0)), 
-
-	 ((Row426 #= 0 and Freq426 #= 0)), 
-
-	 ((Row427 #= 0 and Freq427 #= 0)), 
-
-	 ((Row428 #= 0 and Freq428 #= 0)), 
-
-	 ((Row429 #= 0 and Freq429 #= 0)), 
-
-	 ((Row430 #= 0 and Freq430 #= 0)), 
-
-	 ((Row431 #= 0 and Freq431 #= 0)), 
-
-	 ((Row432 #= 0 and Freq432 #= 0)), 
-
-	 ((Row433 #= 0 and Freq433 #= 0)), 
-
-	 ((Row434 #= 0 and Freq434 #= 0)), 
-
-	 ((Row435 #= 0 and Freq435 #= 0)), 
-
-	 ((Row436 #= 0 and Freq436 #= 0)), 
-
-	 ((Row437 #= 0 and Freq437 #= 0)), 
-
-	 ((Row438 #= 0 and Freq438 #= 0)), 
-
-	 ((Row439 #= 0 and Freq439 #= 0)), 
-
-	 ((Row440 #= 0 and Freq440 #= 0)), 
-
-	 ((Row441 #= 0 and Freq441 #= 0)), 
-
-	 ((Row442 #= 0 and Freq442 #= 0)), 
-
-	 ((Row443 #= 0 and Freq443 #= 0)), 
-
-	 ((Row444 #= 0 and Freq444 #= 0)), 
-
-	 ((Row445 #= 0 and Freq445 #= 0)), 
-
-	 ((Row446 #= 0 and Freq446 #= 0)), 
-
-	 ((Row447 #= 0 and Freq447 #= 0)), 
-
-	 ((Row448 #= 0 and Freq448 #= 0)), 
-
-	 ((Row449 #= 0 and Freq449 #= 0)), 
-
-	 ((Row450 #= 0 and Freq450 #= 0)), 
-
-	 ((Row451 #= 0 and Freq451 #= 0)), 
-
-	 ((Row452 #= 0 and Freq452 #= 0)), 
-
-	 ((Row453 #= 0 and Freq453 #= 0)), 
-
-	 ((Row454 #= 0 and Freq454 #= 0)), 
-
-	 ((Row455 #= 0 and Freq455 #= 0)), 
-
-	 ((Row456 #= 0 and Freq456 #= 0)), 
-
-	 ((Row457 #= 0 and Freq457 #= 0)), 
-
-	 ((Row458 #= 0 and Freq458 #= 0)), 
-
-	 ((Row459 #= 0 and Freq459 #= 0)), 
-
-	 ((Row460 #= 0 and Freq460 #= 0)), 
-
-	 ((Row461 #= 0 and Freq461 #= 0)), 
-
-	 ((Row462 #= 0 and Freq462 #= 0)), 
-
-	 ((Row463 #= 0 and Freq463 #= 0)), 
-
-	 ((Row464 #= 0 and Freq464 #= 0)), 
-
-	 ((Row465 #= 0 and Freq465 #= 0)), 
-
-	 ((Row466 #= 0 and Freq466 #= 0)), 
-
-	 ((Row467 #= 0 and Freq467 #= 0)), 
-
-	 ((Row468 #= 0 and Freq468 #= 0)), 
-
-	 ((Row469 #= 0 and Freq469 #= 0)), 
-
-	 ((Row470 #= 0 and Freq470 #= 0)), 
-
-	 ((Row471 #= 0 and Freq471 #= 0)), 
-
-	 ((Row472 #= 0 and Freq472 #= 0)), 
-
-	 ((Row473 #= 0 and Freq473 #= 0)), 
-
-	 ((Row474 #= 0 and Freq474 #= 0)), 
-
-	 ((Row475 #= 0 and Freq475 #= 0)), 
-
-	 ((Row476 #= 0 and Freq476 #= 0)), 
-
-	 ((Row477 #= 0 and Freq477 #= 0)), 
-
-	 ((Row478 #= 0 and Freq478 #= 0)), 
-
-	 (Row479 #= 245 and Freq479 #= 1) or
-	 (Row479 #= 0 and Freq479 #= 0)), 
-
-	 ((Row480 #= 0 and Freq480 #= 0)), 
-
-	 ((Row481 #= 0 and Freq481 #= 0)), 
-
-	 ((Row482 #= 0 and Freq482 #= 0)), 
-
-	 ((Row483 #= 0 and Freq483 #= 0)), 
-
-	 ((Row484 #= 0 and Freq484 #= 0)), 
-
-	 ((Row485 #= 0 and Freq485 #= 0)), 
-
-	 ((Row486 #= 0 and Freq486 #= 0)), 
-
-	 ((Row487 #= 0 and Freq487 #= 0)), 
-
-	 ((Row488 #= 0 and Freq488 #= 0)), 
-
-	 ((Row489 #= 0 and Freq489 #= 0)), 
-
-	 ((Row490 #= 0 and Freq490 #= 0)), 
-
-	 ((Row491 #= 0 and Freq491 #= 0)), 
-
-	 ((Row492 #= 0 and Freq492 #= 0)), 
-
-	 ((Row493 #= 0 and Freq493 #= 0)), 
-
-	 ((Row494 #= 0 and Freq494 #= 0)), 
-
-	 ((Row495 #= 0 and Freq495 #= 0)), 
-
-	 ((Row496 #= 0 and Freq496 #= 0)), 
-
-	 ((Row497 #= 0 and Freq497 #= 0)), 
-
-	 ((Row498 #= 0 and Freq498 #= 0)), 
-
-	 ((Row499 #= 0 and Freq499 #= 0)), 
-
-	 ((Row500 #= 0 and Freq500 #= 0)), 
-
-	 ((Row501 #= 0 and Freq501 #= 0)), 
-
-	 ((Row502 #= 0 and Freq502 #= 0)), 
-
-	 ((Row503 #= 0 and Freq503 #= 0)), 
-
-	 ((Row504 #= 0 and Freq504 #= 0)), 
-
-	 ((Row505 #= 0 and Freq505 #= 0)), 
-
-	 ((Row506 #= 0 and Freq506 #= 0)), 
-
-	 ((Row507 #= 0 and Freq507 #= 0)), 
-
-	 ((Row508 #= 0 and Freq508 #= 0)), 
-
-	 ((Row509 #= 0 and Freq509 #= 0)), 
-
-	 ((Row510 #= 0 and Freq510 #= 0)), 
-
-	 ((Row511 #= 0 and Freq511 #= 0)), 
-
-	 ((Row512 #= 0 and Freq512 #= 0)), 
-
-	 ((Row513 #= 0 and Freq513 #= 0)), 
-
-	 ((Row514 #= 0 and Freq514 #= 0)), 
-
-	 ((Row515 #= 0 and Freq515 #= 0)), 
-
-	 ((Row516 #= 0 and Freq516 #= 0)), 
-
-	 ((Row517 #= 0 and Freq517 #= 0)), 
-
-	 ((Row518 #= 0 and Freq518 #= 0)), 
-
-	 ((Row519 #= 0 and Freq519 #= 0)), 
-
-	 ((Row520 #= 0 and Freq520 #= 0)), 
-
-	 ((Row521 #= 0 and Freq521 #= 0)), 
-
-	 ((Row522 #= 0 and Freq522 #= 0)), 
-
-	 ((Row523 #= 0 and Freq523 #= 0)), 
-
-	 ((Row524 #= 0 and Freq524 #= 0)), 
-
-	 ((Row525 #= 0 and Freq525 #= 0)), 
-
-	 ((Row526 #= 0 and Freq526 #= 0)), 
-
-	 ((Row527 #= 0 and Freq527 #= 0)), 
-
-	 ((Row528 #= 0 and Freq528 #= 0)), 
-
-	 ((Row529 #= 0 and Freq529 #= 0)), 
-
-	 ((Row530 #= 0 and Freq530 #= 0)), 
-
-	 ((Row531 #= 0 and Freq531 #= 0)), 
-
-	 ((Row532 #= 0 and Freq532 #= 0)), 
-
-	 ((Row533 #= 0 and Freq533 #= 0)), 
-
-	 ((Row534 #= 0 and Freq534 #= 0)), 
-
-	 ((Row535 #= 0 and Freq535 #= 0)), 
-
-	 ((Row536 #= 0 and Freq536 #= 0)), 
-
-	 (Row537 #= 245 and Freq537 #= 1) or
-	 (Row537 #= 246 and Freq537 #= 1) or
-	 (Row537 #= 0 and Freq537 #= 0)), 
-
-	 ((Row538 #= 0 and Freq538 #= 0)), 
-
-	 (Row539 #= 245 and Freq539 #= 1) or
-	 (Row539 #= 0 and Freq539 #= 0)), 
-
-	 ((Row540 #= 0 and Freq540 #= 0)), 
-
-	 (Row541 #= 246 and Freq541 #= 1) or
-	 (Row541 #= 0 and Freq541 #= 0)), 
-
-	 (Row542 #= 245 and Freq542 #= 1) or
-	 (Row542 #= 246 and Freq542 #= 1) or
-	 (Row542 #= 0 and Freq542 #= 0)), 
-
-	 (Row543 #= 245 and Freq543 #= 1) or
-	 (Row543 #= 246 and Freq543 #= 1) or
-	 (Row543 #= 0 and Freq543 #= 0)), 
-
-	 ((Row544 #= 0 and Freq544 #= 0)), 
-
-	 ((Row545 #= 0 and Freq545 #= 0)), 
-
-	 (Row546 #= 245 and Freq546 #= 1) or
-	 (Row546 #= 246 and Freq546 #= 1) or
-	 (Row546 #= 0 and Freq546 #= 0)), 
-
-	 (Row547 #= 245 and Freq547 #= 1) or
-	 (Row547 #= 0 and Freq547 #= 0)), 
-
-	 (Row548 #= 245 and Freq548 #= 1) or
-	 (Row548 #= 0 and Freq548 #= 0)), 
-
-	 (Row549 #= 245 and Freq549 #= 1) or
-	 (Row549 #= 0 and Freq549 #= 0)), 
-
-	 (Row550 #= 246 and Freq550 #= 1) or
-	 (Row550 #= 0 and Freq550 #= 0)), 
-
-	 ((Row551 #= 0 and Freq551 #= 0)), 
-
-	 ((Row552 #= 0 and Freq552 #= 0)), 
-
-	 (Row553 #= 245 and Freq553 #= 1) or
-	 (Row553 #= 246 and Freq553 #= 1) or
-	 (Row553 #= 0 and Freq553 #= 0)), 
-
-	 (Row554 #= 245 and Freq554 #= 1) or
-	 (Row554 #= 246 and Freq554 #= 2) or
-	 (Row554 #= 0 and Freq554 #= 0)), 
-
-	 (Row555 #= 245 and Freq555 #= 2) or
-	 (Row555 #= 246 and Freq555 #= 3) or
-	 (Row555 #= 0 and Freq555 #= 0)), 
-
-	 (Row556 #= 245 and Freq556 #= 4) or
-	 (Row556 #= 246 and Freq556 #= 4) or
-	 (Row556 #= 0 and Freq556 #= 0)), 
-
-	 (Row557 #= 244 and Freq557 #= 1) or
-	 (Row557 #= 245 and Freq557 #= 4) or
-	 (Row557 #= 246 and Freq557 #= 6) or
-	 (Row557 #= 0 and Freq557 #= 0)), 
-
-	 ((Row558 #= 0 and Freq558 #= 0)), 
+	((Row374 #= 12 and Freq374 #= 3) or
+	(Row374 #= 90 and Freq374 #= 1) or
+	(Row374 #= 91 and Freq374 #= 1) or
+	(Row374 #= 92 and Freq374 #= 1) or
+	(Row374 #= 93 and Freq374 #= 1) or
+	(Row374 #= 94 and Freq374 #= 1) or
+	(Row374 #= 95 and Freq374 #= 1) or
+	(Row374 #= 96 and Freq374 #= 1) or
+	(Row374 #= 97 and Freq374 #= 1) or
+	(Row374 #= 98 and Freq374 #= 2) or
+	(Row374 #= 99 and Freq374 #= 2) or
+	(Row374 #= 100 and Freq374 #= 2) or
+	(Row374 #= 101 and Freq374 #= 2) or
+	(Row374 #= 102 and Freq374 #= 2) or
+	(Row374 #= 103 and Freq374 #= 3) or
+	(Row374 #= 104 and Freq374 #= 3) or
+	(Row374 #= 105 and Freq374 #= 4) or
+	(Row374 #= 106 and Freq374 #= 5) or
+	(Row374 #= 115 and Freq374 #= 6) or
+	(Row374 #= 116 and Freq374 #= 6) or
+	(Row374 #= 117 and Freq374 #= 5) or
+	(Row374 #= 118 and Freq374 #= 4) or
+	(Row374 #= 119 and Freq374 #= 4) or
+	(Row374 #= 120 and Freq374 #= 3) or
+	(Row374 #= 121 and Freq374 #= 3) or
+	(Row374 #= 122 and Freq374 #= 3) or
+	(Row374 #= 123 and Freq374 #= 2) or
+	(Row374 #= 124 and Freq374 #= 2) or
+	(Row374 #= 125 and Freq374 #= 2) or
+	(Row374 #= 126 and Freq374 #= 1) or
+	(Row374 #= 127 and Freq374 #= 1) or
+	(Row374 #= 128 and Freq374 #= 1) or
+	(Row374 #= 129 and Freq374 #= 1) or
+	(Row374 #= 130 and Freq374 #= 1) or
+	(Row374 #= 131 and Freq374 #= 1) or
+	(Row374 #= 132 and Freq374 #= 1) or
+	(Row374 #= 133 and Freq374 #= 1) or
+	(Row374 #= 134 and Freq374 #= 1) or
+	(Row374 #= 136 and Freq374 #= 1) or
+	(Row374 #= 0 and Freq374 #= 0)), 
+
+	((Row375 #= 0 and Freq375 #= 0)), 
+
+	((Row376 #= 0 and Freq376 #= 0)), 
+
+	((Row377 #= 0 and Freq377 #= 0)), 
+
+	((Row378 #= 0 and Freq378 #= 0)), 
+
+	((Row379 #= 0 and Freq379 #= 0)), 
+
+	((Row380 #= 12 and Freq380 #= 7) or
+	(Row380 #= 93 and Freq380 #= 1) or
+	(Row380 #= 94 and Freq380 #= 1) or
+	(Row380 #= 95 and Freq380 #= 1) or
+	(Row380 #= 96 and Freq380 #= 1) or
+	(Row380 #= 97 and Freq380 #= 1) or
+	(Row380 #= 98 and Freq380 #= 1) or
+	(Row380 #= 99 and Freq380 #= 2) or
+	(Row380 #= 100 and Freq380 #= 2) or
+	(Row380 #= 101 and Freq380 #= 2) or
+	(Row380 #= 102 and Freq380 #= 2) or
+	(Row380 #= 103 and Freq380 #= 3) or
+	(Row380 #= 104 and Freq380 #= 4) or
+	(Row380 #= 105 and Freq380 #= 5) or
+	(Row380 #= 106 and Freq380 #= 5) or
+	(Row380 #= 115 and Freq380 #= 7) or
+	(Row380 #= 116 and Freq380 #= 6) or
+	(Row380 #= 117 and Freq380 #= 5) or
+	(Row380 #= 118 and Freq380 #= 4) or
+	(Row380 #= 119 and Freq380 #= 3) or
+	(Row380 #= 120 and Freq380 #= 3) or
+	(Row380 #= 121 and Freq380 #= 3) or
+	(Row380 #= 122 and Freq380 #= 2) or
+	(Row380 #= 123 and Freq380 #= 2) or
+	(Row380 #= 124 and Freq380 #= 1) or
+	(Row380 #= 125 and Freq380 #= 1) or
+	(Row380 #= 126 and Freq380 #= 1) or
+	(Row380 #= 127 and Freq380 #= 1) or
+	(Row380 #= 128 and Freq380 #= 1) or
+	(Row380 #= 129 and Freq380 #= 1) or
+	(Row380 #= 130 and Freq380 #= 1) or
+	(Row380 #= 131 and Freq380 #= 1) or
+	(Row380 #= 132 and Freq380 #= 1) or
+	(Row380 #= 133 and Freq380 #= 1) or
+	(Row380 #= 136 and Freq380 #= 1) or
+	(Row380 #= 0 and Freq380 #= 0)), 
+
+	((Row381 #= 12 and Freq381 #= 4) or
+	(Row381 #= 84 and Freq381 #= 1) or
+	(Row381 #= 88 and Freq381 #= 1) or
+	(Row381 #= 89 and Freq381 #= 1) or
+	(Row381 #= 90 and Freq381 #= 1) or
+	(Row381 #= 91 and Freq381 #= 1) or
+	(Row381 #= 92 and Freq381 #= 1) or
+	(Row381 #= 93 and Freq381 #= 1) or
+	(Row381 #= 94 and Freq381 #= 1) or
+	(Row381 #= 95 and Freq381 #= 1) or
+	(Row381 #= 96 and Freq381 #= 2) or
+	(Row381 #= 97 and Freq381 #= 1) or
+	(Row381 #= 98 and Freq381 #= 2) or
+	(Row381 #= 99 and Freq381 #= 2) or
+	(Row381 #= 100 and Freq381 #= 2) or
+	(Row381 #= 101 and Freq381 #= 2) or
+	(Row381 #= 102 and Freq381 #= 3) or
+	(Row381 #= 103 and Freq381 #= 3) or
+	(Row381 #= 104 and Freq381 #= 4) or
+	(Row381 #= 105 and Freq381 #= 4) or
+	(Row381 #= 106 and Freq381 #= 5) or
+	(Row381 #= 115 and Freq381 #= 6) or
+	(Row381 #= 116 and Freq381 #= 7) or
+	(Row381 #= 117 and Freq381 #= 5) or
+	(Row381 #= 118 and Freq381 #= 4) or
+	(Row381 #= 119 and Freq381 #= 3) or
+	(Row381 #= 120 and Freq381 #= 4) or
+	(Row381 #= 121 and Freq381 #= 3) or
+	(Row381 #= 122 and Freq381 #= 3) or
+	(Row381 #= 123 and Freq381 #= 2) or
+	(Row381 #= 124 and Freq381 #= 2) or
+	(Row381 #= 125 and Freq381 #= 2) or
+	(Row381 #= 126 and Freq381 #= 2) or
+	(Row381 #= 127 and Freq381 #= 1) or
+	(Row381 #= 128 and Freq381 #= 1) or
+	(Row381 #= 129 and Freq381 #= 1) or
+	(Row381 #= 130 and Freq381 #= 1) or
+	(Row381 #= 131 and Freq381 #= 1) or
+	(Row381 #= 132 and Freq381 #= 1) or
+	(Row381 #= 134 and Freq381 #= 1) or
+	(Row381 #= 0 and Freq381 #= 0)), 
+
+	((Row382 #= 12 and Freq382 #= 3) or
+	(Row382 #= 87 and Freq382 #= 1) or
+	(Row382 #= 92 and Freq382 #= 1) or
+	(Row382 #= 93 and Freq382 #= 1) or
+	(Row382 #= 94 and Freq382 #= 1) or
+	(Row382 #= 95 and Freq382 #= 1) or
+	(Row382 #= 96 and Freq382 #= 1) or
+	(Row382 #= 97 and Freq382 #= 2) or
+	(Row382 #= 98 and Freq382 #= 2) or
+	(Row382 #= 99 and Freq382 #= 2) or
+	(Row382 #= 100 and Freq382 #= 2) or
+	(Row382 #= 101 and Freq382 #= 2) or
+	(Row382 #= 102 and Freq382 #= 2) or
+	(Row382 #= 103 and Freq382 #= 3) or
+	(Row382 #= 104 and Freq382 #= 3) or
+	(Row382 #= 105 and Freq382 #= 4) or
+	(Row382 #= 106 and Freq382 #= 3) or
+	(Row382 #= 115 and Freq382 #= 6) or
+	(Row382 #= 116 and Freq382 #= 5) or
+	(Row382 #= 117 and Freq382 #= 5) or
+	(Row382 #= 118 and Freq382 #= 4) or
+	(Row382 #= 119 and Freq382 #= 3) or
+	(Row382 #= 120 and Freq382 #= 3) or
+	(Row382 #= 121 and Freq382 #= 2) or
+	(Row382 #= 122 and Freq382 #= 2) or
+	(Row382 #= 123 and Freq382 #= 2) or
+	(Row382 #= 124 and Freq382 #= 2) or
+	(Row382 #= 125 and Freq382 #= 2) or
+	(Row382 #= 126 and Freq382 #= 1) or
+	(Row382 #= 127 and Freq382 #= 1) or
+	(Row382 #= 128 and Freq382 #= 1) or
+	(Row382 #= 129 and Freq382 #= 1) or
+	(Row382 #= 130 and Freq382 #= 1) or
+	(Row382 #= 131 and Freq382 #= 1) or
+	(Row382 #= 134 and Freq382 #= 1) or
+	(Row382 #= 137 and Freq382 #= 1) or
+	(Row382 #= 138 and Freq382 #= 1) or
+	(Row382 #= 0 and Freq382 #= 0)), 
+
+	((Row383 #= 12 and Freq383 #= 2) or
+	(Row383 #= 90 and Freq383 #= 1) or
+	(Row383 #= 91 and Freq383 #= 1) or
+	(Row383 #= 92 and Freq383 #= 1) or
+	(Row383 #= 93 and Freq383 #= 1) or
+	(Row383 #= 94 and Freq383 #= 1) or
+	(Row383 #= 95 and Freq383 #= 1) or
+	(Row383 #= 96 and Freq383 #= 1) or
+	(Row383 #= 97 and Freq383 #= 1) or
+	(Row383 #= 98 and Freq383 #= 1) or
+	(Row383 #= 99 and Freq383 #= 2) or
+	(Row383 #= 100 and Freq383 #= 2) or
+	(Row383 #= 101 and Freq383 #= 2) or
+	(Row383 #= 102 and Freq383 #= 2) or
+	(Row383 #= 103 and Freq383 #= 2) or
+	(Row383 #= 104 and Freq383 #= 3) or
+	(Row383 #= 105 and Freq383 #= 3) or
+	(Row383 #= 106 and Freq383 #= 4) or
+	(Row383 #= 115 and Freq383 #= 4) or
+	(Row383 #= 116 and Freq383 #= 4) or
+	(Row383 #= 117 and Freq383 #= 3) or
+	(Row383 #= 118 and Freq383 #= 3) or
+	(Row383 #= 119 and Freq383 #= 3) or
+	(Row383 #= 120 and Freq383 #= 2) or
+	(Row383 #= 121 and Freq383 #= 3) or
+	(Row383 #= 122 and Freq383 #= 2) or
+	(Row383 #= 123 and Freq383 #= 2) or
+	(Row383 #= 124 and Freq383 #= 2) or
+	(Row383 #= 125 and Freq383 #= 2) or
+	(Row383 #= 126 and Freq383 #= 1) or
+	(Row383 #= 127 and Freq383 #= 1) or
+	(Row383 #= 128 and Freq383 #= 1) or
+	(Row383 #= 129 and Freq383 #= 1) or
+	(Row383 #= 130 and Freq383 #= 1) or
+	(Row383 #= 131 and Freq383 #= 1) or
+	(Row383 #= 132 and Freq383 #= 1) or
+	(Row383 #= 0 and Freq383 #= 0)), 
+
+	((Row384 #= 12 and Freq384 #= 1) or
+	(Row384 #= 93 and Freq384 #= 1) or
+	(Row384 #= 94 and Freq384 #= 1) or
+	(Row384 #= 95 and Freq384 #= 1) or
+	(Row384 #= 96 and Freq384 #= 1) or
+	(Row384 #= 97 and Freq384 #= 1) or
+	(Row384 #= 98 and Freq384 #= 1) or
+	(Row384 #= 99 and Freq384 #= 2) or
+	(Row384 #= 100 and Freq384 #= 2) or
+	(Row384 #= 101 and Freq384 #= 2) or
+	(Row384 #= 102 and Freq384 #= 1) or
+	(Row384 #= 103 and Freq384 #= 2) or
+	(Row384 #= 104 and Freq384 #= 2) or
+	(Row384 #= 105 and Freq384 #= 2) or
+	(Row384 #= 106 and Freq384 #= 3) or
+	(Row384 #= 115 and Freq384 #= 4) or
+	(Row384 #= 116 and Freq384 #= 3) or
+	(Row384 #= 117 and Freq384 #= 3) or
+	(Row384 #= 118 and Freq384 #= 2) or
+	(Row384 #= 119 and Freq384 #= 2) or
+	(Row384 #= 120 and Freq384 #= 3) or
+	(Row384 #= 121 and Freq384 #= 2) or
+	(Row384 #= 122 and Freq384 #= 2) or
+	(Row384 #= 123 and Freq384 #= 1) or
+	(Row384 #= 124 and Freq384 #= 1) or
+	(Row384 #= 125 and Freq384 #= 1) or
+	(Row384 #= 126 and Freq384 #= 1) or
+	(Row384 #= 127 and Freq384 #= 1) or
+	(Row384 #= 128 and Freq384 #= 1) or
+	(Row384 #= 129 and Freq384 #= 1) or
+	(Row384 #= 0 and Freq384 #= 0)), 
+
+	((Row385 #= 12 and Freq385 #= 1) or
+	(Row385 #= 84 and Freq385 #= 1) or
+	(Row385 #= 92 and Freq385 #= 1) or
+	(Row385 #= 93 and Freq385 #= 1) or
+	(Row385 #= 94 and Freq385 #= 1) or
+	(Row385 #= 95 and Freq385 #= 1) or
+	(Row385 #= 96 and Freq385 #= 1) or
+	(Row385 #= 97 and Freq385 #= 1) or
+	(Row385 #= 98 and Freq385 #= 1) or
+	(Row385 #= 99 and Freq385 #= 2) or
+	(Row385 #= 100 and Freq385 #= 2) or
+	(Row385 #= 101 and Freq385 #= 2) or
+	(Row385 #= 102 and Freq385 #= 1) or
+	(Row385 #= 103 and Freq385 #= 2) or
+	(Row385 #= 104 and Freq385 #= 2) or
+	(Row385 #= 105 and Freq385 #= 3) or
+	(Row385 #= 106 and Freq385 #= 3) or
+	(Row385 #= 115 and Freq385 #= 3) or
+	(Row385 #= 116 and Freq385 #= 3) or
+	(Row385 #= 117 and Freq385 #= 2) or
+	(Row385 #= 118 and Freq385 #= 2) or
+	(Row385 #= 119 and Freq385 #= 2) or
+	(Row385 #= 120 and Freq385 #= 2) or
+	(Row385 #= 121 and Freq385 #= 2) or
+	(Row385 #= 122 and Freq385 #= 2) or
+	(Row385 #= 123 and Freq385 #= 1) or
+	(Row385 #= 124 and Freq385 #= 1) or
+	(Row385 #= 125 and Freq385 #= 1) or
+	(Row385 #= 126 and Freq385 #= 1) or
+	(Row385 #= 127 and Freq385 #= 1) or
+	(Row385 #= 128 and Freq385 #= 1) or
+	(Row385 #= 129 and Freq385 #= 1) or
+	(Row385 #= 130 and Freq385 #= 1) or
+	(Row385 #= 131 and Freq385 #= 1) or
+	(Row385 #= 132 and Freq385 #= 1) or
+	(Row385 #= 0 and Freq385 #= 0)), 
+
+	((Row386 #= 12 and Freq386 #= 1) or
+	(Row386 #= 90 and Freq386 #= 1) or
+	(Row386 #= 91 and Freq386 #= 1) or
+	(Row386 #= 93 and Freq386 #= 1) or
+	(Row386 #= 94 and Freq386 #= 1) or
+	(Row386 #= 95 and Freq386 #= 1) or
+	(Row386 #= 96 and Freq386 #= 1) or
+	(Row386 #= 97 and Freq386 #= 1) or
+	(Row386 #= 98 and Freq386 #= 1) or
+	(Row386 #= 99 and Freq386 #= 1) or
+	(Row386 #= 100 and Freq386 #= 1) or
+	(Row386 #= 101 and Freq386 #= 2) or
+	(Row386 #= 102 and Freq386 #= 1) or
+	(Row386 #= 103 and Freq386 #= 1) or
+	(Row386 #= 104 and Freq386 #= 2) or
+	(Row386 #= 105 and Freq386 #= 2) or
+	(Row386 #= 106 and Freq386 #= 2) or
+	(Row386 #= 115 and Freq386 #= 2) or
+	(Row386 #= 116 and Freq386 #= 3) or
+	(Row386 #= 117 and Freq386 #= 3) or
+	(Row386 #= 118 and Freq386 #= 2) or
+	(Row386 #= 119 and Freq386 #= 1) or
+	(Row386 #= 120 and Freq386 #= 1) or
+	(Row386 #= 121 and Freq386 #= 2) or
+	(Row386 #= 122 and Freq386 #= 2) or
+	(Row386 #= 123 and Freq386 #= 1) or
+	(Row386 #= 124 and Freq386 #= 1) or
+	(Row386 #= 125 and Freq386 #= 1) or
+	(Row386 #= 126 and Freq386 #= 1) or
+	(Row386 #= 127 and Freq386 #= 1) or
+	(Row386 #= 129 and Freq386 #= 1) or
+	(Row386 #= 130 and Freq386 #= 1) or
+	(Row386 #= 131 and Freq386 #= 1) or
+	(Row386 #= 135 and Freq386 #= 1) or
+	(Row386 #= 0 and Freq386 #= 0)), 
+
+	((Row387 #= 12 and Freq387 #= 1) or
+	(Row387 #= 91 and Freq387 #= 1) or
+	(Row387 #= 93 and Freq387 #= 1) or
+	(Row387 #= 94 and Freq387 #= 1) or
+	(Row387 #= 95 and Freq387 #= 1) or
+	(Row387 #= 96 and Freq387 #= 1) or
+	(Row387 #= 97 and Freq387 #= 1) or
+	(Row387 #= 98 and Freq387 #= 1) or
+	(Row387 #= 99 and Freq387 #= 1) or
+	(Row387 #= 100 and Freq387 #= 1) or
+	(Row387 #= 101 and Freq387 #= 1) or
+	(Row387 #= 102 and Freq387 #= 1) or
+	(Row387 #= 103 and Freq387 #= 2) or
+	(Row387 #= 104 and Freq387 #= 2) or
+	(Row387 #= 105 and Freq387 #= 2) or
+	(Row387 #= 106 and Freq387 #= 2) or
+	(Row387 #= 115 and Freq387 #= 2) or
+	(Row387 #= 116 and Freq387 #= 2) or
+	(Row387 #= 117 and Freq387 #= 2) or
+	(Row387 #= 118 and Freq387 #= 2) or
+	(Row387 #= 119 and Freq387 #= 1) or
+	(Row387 #= 120 and Freq387 #= 1) or
+	(Row387 #= 121 and Freq387 #= 1) or
+	(Row387 #= 122 and Freq387 #= 1) or
+	(Row387 #= 123 and Freq387 #= 1) or
+	(Row387 #= 124 and Freq387 #= 1) or
+	(Row387 #= 125 and Freq387 #= 1) or
+	(Row387 #= 126 and Freq387 #= 1) or
+	(Row387 #= 127 and Freq387 #= 1) or
+	(Row387 #= 128 and Freq387 #= 1) or
+	(Row387 #= 129 and Freq387 #= 1) or
+	(Row387 #= 130 and Freq387 #= 1) or
+	(Row387 #= 131 and Freq387 #= 1) or
+	(Row387 #= 0 and Freq387 #= 0)), 
+
+	((Row388 #= 12 and Freq388 #= 1) or
+	(Row388 #= 83 and Freq388 #= 1) or
+	(Row388 #= 92 and Freq388 #= 1) or
+	(Row388 #= 95 and Freq388 #= 1) or
+	(Row388 #= 97 and Freq388 #= 1) or
+	(Row388 #= 98 and Freq388 #= 1) or
+	(Row388 #= 99 and Freq388 #= 1) or
+	(Row388 #= 100 and Freq388 #= 1) or
+	(Row388 #= 101 and Freq388 #= 1) or
+	(Row388 #= 102 and Freq388 #= 1) or
+	(Row388 #= 103 and Freq388 #= 1) or
+	(Row388 #= 104 and Freq388 #= 1) or
+	(Row388 #= 105 and Freq388 #= 2) or
+	(Row388 #= 106 and Freq388 #= 1) or
+	(Row388 #= 115 and Freq388 #= 2) or
+	(Row388 #= 116 and Freq388 #= 3) or
+	(Row388 #= 117 and Freq388 #= 2) or
+	(Row388 #= 118 and Freq388 #= 1) or
+	(Row388 #= 119 and Freq388 #= 2) or
+	(Row388 #= 120 and Freq388 #= 1) or
+	(Row388 #= 121 and Freq388 #= 1) or
+	(Row388 #= 122 and Freq388 #= 1) or
+	(Row388 #= 123 and Freq388 #= 1) or
+	(Row388 #= 124 and Freq388 #= 1) or
+	(Row388 #= 125 and Freq388 #= 1) or
+	(Row388 #= 126 and Freq388 #= 1) or
+	(Row388 #= 127 and Freq388 #= 1) or
+	(Row388 #= 128 and Freq388 #= 1) or
+	(Row388 #= 130 and Freq388 #= 1) or
+	(Row388 #= 136 and Freq388 #= 1) or
+	(Row388 #= 0 and Freq388 #= 0)), 
+
+	((Row389 #= 12 and Freq389 #= 1) or
+	(Row389 #= 92 and Freq389 #= 1) or
+	(Row389 #= 94 and Freq389 #= 1) or
+	(Row389 #= 95 and Freq389 #= 1) or
+	(Row389 #= 96 and Freq389 #= 1) or
+	(Row389 #= 97 and Freq389 #= 1) or
+	(Row389 #= 98 and Freq389 #= 1) or
+	(Row389 #= 99 and Freq389 #= 1) or
+	(Row389 #= 100 and Freq389 #= 1) or
+	(Row389 #= 101 and Freq389 #= 1) or
+	(Row389 #= 102 and Freq389 #= 1) or
+	(Row389 #= 103 and Freq389 #= 1) or
+	(Row389 #= 104 and Freq389 #= 1) or
+	(Row389 #= 105 and Freq389 #= 1) or
+	(Row389 #= 106 and Freq389 #= 1) or
+	(Row389 #= 115 and Freq389 #= 1) or
+	(Row389 #= 116 and Freq389 #= 2) or
+	(Row389 #= 117 and Freq389 #= 1) or
+	(Row389 #= 118 and Freq389 #= 1) or
+	(Row389 #= 119 and Freq389 #= 1) or
+	(Row389 #= 120 and Freq389 #= 1) or
+	(Row389 #= 121 and Freq389 #= 1) or
+	(Row389 #= 122 and Freq389 #= 1) or
+	(Row389 #= 123 and Freq389 #= 1) or
+	(Row389 #= 124 and Freq389 #= 1) or
+	(Row389 #= 125 and Freq389 #= 1) or
+	(Row389 #= 126 and Freq389 #= 1) or
+	(Row389 #= 127 and Freq389 #= 1) or
+	(Row389 #= 128 and Freq389 #= 1) or
+	(Row389 #= 129 and Freq389 #= 1) or
+	(Row389 #= 130 and Freq389 #= 1) or
+	(Row389 #= 0 and Freq389 #= 0)), 
+
+	((Row390 #= 94 and Freq390 #= 1) or
+	(Row390 #= 95 and Freq390 #= 1) or
+	(Row390 #= 96 and Freq390 #= 1) or
+	(Row390 #= 97 and Freq390 #= 1) or
+	(Row390 #= 98 and Freq390 #= 1) or
+	(Row390 #= 99 and Freq390 #= 1) or
+	(Row390 #= 100 and Freq390 #= 1) or
+	(Row390 #= 101 and Freq390 #= 1) or
+	(Row390 #= 102 and Freq390 #= 1) or
+	(Row390 #= 103 and Freq390 #= 1) or
+	(Row390 #= 104 and Freq390 #= 1) or
+	(Row390 #= 105 and Freq390 #= 1) or
+	(Row390 #= 106 and Freq390 #= 1) or
+	(Row390 #= 115 and Freq390 #= 1) or
+	(Row390 #= 116 and Freq390 #= 1) or
+	(Row390 #= 117 and Freq390 #= 1) or
+	(Row390 #= 118 and Freq390 #= 1) or
+	(Row390 #= 119 and Freq390 #= 1) or
+	(Row390 #= 120 and Freq390 #= 1) or
+	(Row390 #= 121 and Freq390 #= 1) or
+	(Row390 #= 122 and Freq390 #= 1) or
+	(Row390 #= 123 and Freq390 #= 1) or
+	(Row390 #= 125 and Freq390 #= 1) or
+	(Row390 #= 127 and Freq390 #= 1) or
+	(Row390 #= 129 and Freq390 #= 1) or
+	(Row390 #= 131 and Freq390 #= 1) or
+	(Row390 #= 0 and Freq390 #= 0)), 
+
+	((Row391 #= 90 and Freq391 #= 1) or
+	(Row391 #= 91 and Freq391 #= 1) or
+	(Row391 #= 92 and Freq391 #= 1) or
+	(Row391 #= 93 and Freq391 #= 1) or
+	(Row391 #= 94 and Freq391 #= 1) or
+	(Row391 #= 95 and Freq391 #= 1) or
+	(Row391 #= 96 and Freq391 #= 1) or
+	(Row391 #= 97 and Freq391 #= 1) or
+	(Row391 #= 98 and Freq391 #= 1) or
+	(Row391 #= 99 and Freq391 #= 1) or
+	(Row391 #= 100 and Freq391 #= 1) or
+	(Row391 #= 101 and Freq391 #= 1) or
+	(Row391 #= 103 and Freq391 #= 1) or
+	(Row391 #= 104 and Freq391 #= 1) or
+	(Row391 #= 105 and Freq391 #= 1) or
+	(Row391 #= 106 and Freq391 #= 1) or
+	(Row391 #= 115 and Freq391 #= 1) or
+	(Row391 #= 116 and Freq391 #= 1) or
+	(Row391 #= 117 and Freq391 #= 1) or
+	(Row391 #= 118 and Freq391 #= 1) or
+	(Row391 #= 119 and Freq391 #= 1) or
+	(Row391 #= 120 and Freq391 #= 1) or
+	(Row391 #= 121 and Freq391 #= 1) or
+	(Row391 #= 122 and Freq391 #= 1) or
+	(Row391 #= 124 and Freq391 #= 1) or
+	(Row391 #= 125 and Freq391 #= 1) or
+	(Row391 #= 126 and Freq391 #= 1) or
+	(Row391 #= 127 and Freq391 #= 1) or
+	(Row391 #= 128 and Freq391 #= 1) or
+	(Row391 #= 129 and Freq391 #= 1) or
+	(Row391 #= 0 and Freq391 #= 0)), 
+
+	((Row392 #= 93 and Freq392 #= 1) or
+	(Row392 #= 94 and Freq392 #= 1) or
+	(Row392 #= 98 and Freq392 #= 1) or
+	(Row392 #= 99 and Freq392 #= 1) or
+	(Row392 #= 100 and Freq392 #= 1) or
+	(Row392 #= 101 and Freq392 #= 1) or
+	(Row392 #= 102 and Freq392 #= 1) or
+	(Row392 #= 103 and Freq392 #= 1) or
+	(Row392 #= 104 and Freq392 #= 1) or
+	(Row392 #= 105 and Freq392 #= 1) or
+	(Row392 #= 106 and Freq392 #= 1) or
+	(Row392 #= 115 and Freq392 #= 1) or
+	(Row392 #= 116 and Freq392 #= 1) or
+	(Row392 #= 117 and Freq392 #= 1) or
+	(Row392 #= 119 and Freq392 #= 1) or
+	(Row392 #= 120 and Freq392 #= 1) or
+	(Row392 #= 121 and Freq392 #= 1) or
+	(Row392 #= 122 and Freq392 #= 1) or
+	(Row392 #= 123 and Freq392 #= 1) or
+	(Row392 #= 125 and Freq392 #= 1) or
+	(Row392 #= 127 and Freq392 #= 1) or
+	(Row392 #= 129 and Freq392 #= 1) or
+	(Row392 #= 130 and Freq392 #= 1) or
+	(Row392 #= 0 and Freq392 #= 0)), 
+
+	((Row393 #= 93 and Freq393 #= 1) or
+	(Row393 #= 94 and Freq393 #= 1) or
+	(Row393 #= 95 and Freq393 #= 1) or
+	(Row393 #= 97 and Freq393 #= 1) or
+	(Row393 #= 98 and Freq393 #= 1) or
+	(Row393 #= 99 and Freq393 #= 1) or
+	(Row393 #= 100 and Freq393 #= 1) or
+	(Row393 #= 101 and Freq393 #= 1) or
+	(Row393 #= 103 and Freq393 #= 1) or
+	(Row393 #= 104 and Freq393 #= 1) or
+	(Row393 #= 105 and Freq393 #= 1) or
+	(Row393 #= 116 and Freq393 #= 1) or
+	(Row393 #= 117 and Freq393 #= 1) or
+	(Row393 #= 119 and Freq393 #= 1) or
+	(Row393 #= 120 and Freq393 #= 1) or
+	(Row393 #= 121 and Freq393 #= 1) or
+	(Row393 #= 122 and Freq393 #= 1) or
+	(Row393 #= 124 and Freq393 #= 1) or
+	(Row393 #= 126 and Freq393 #= 1) or
+	(Row393 #= 129 and Freq393 #= 1) or
+	(Row393 #= 130 and Freq393 #= 1) or
+	(Row393 #= 131 and Freq393 #= 1) or
+	(Row393 #= 0 and Freq393 #= 0)), 
+
+	((Row394 #= 92 and Freq394 #= 1) or
+	(Row394 #= 97 and Freq394 #= 1) or
+	(Row394 #= 99 and Freq394 #= 1) or
+	(Row394 #= 100 and Freq394 #= 1) or
+	(Row394 #= 101 and Freq394 #= 1) or
+	(Row394 #= 105 and Freq394 #= 1) or
+	(Row394 #= 106 and Freq394 #= 1) or
+	(Row394 #= 115 and Freq394 #= 1) or
+	(Row394 #= 116 and Freq394 #= 1) or
+	(Row394 #= 117 and Freq394 #= 1) or
+	(Row394 #= 118 and Freq394 #= 1) or
+	(Row394 #= 119 and Freq394 #= 1) or
+	(Row394 #= 120 and Freq394 #= 1) or
+	(Row394 #= 121 and Freq394 #= 1) or
+	(Row394 #= 122 and Freq394 #= 1) or
+	(Row394 #= 125 and Freq394 #= 1) or
+	(Row394 #= 128 and Freq394 #= 1) or
+	(Row394 #= 131 and Freq394 #= 1) or
+	(Row394 #= 0 and Freq394 #= 0)), 
+
+	((Row395 #= 94 and Freq395 #= 1) or
+	(Row395 #= 97 and Freq395 #= 1) or
+	(Row395 #= 99 and Freq395 #= 1) or
+	(Row395 #= 103 and Freq395 #= 1) or
+	(Row395 #= 105 and Freq395 #= 1) or
+	(Row395 #= 115 and Freq395 #= 1) or
+	(Row395 #= 116 and Freq395 #= 1) or
+	(Row395 #= 117 and Freq395 #= 1) or
+	(Row395 #= 118 and Freq395 #= 1) or
+	(Row395 #= 119 and Freq395 #= 1) or
+	(Row395 #= 120 and Freq395 #= 1) or
+	(Row395 #= 121 and Freq395 #= 1) or
+	(Row395 #= 122 and Freq395 #= 1) or
+	(Row395 #= 125 and Freq395 #= 1) or
+	(Row395 #= 127 and Freq395 #= 1) or
+	(Row395 #= 0 and Freq395 #= 0)), 
+
+	((Row396 #= 84 and Freq396 #= 1) or
+	(Row396 #= 96 and Freq396 #= 1) or
+	(Row396 #= 97 and Freq396 #= 1) or
+	(Row396 #= 98 and Freq396 #= 1) or
+	(Row396 #= 99 and Freq396 #= 1) or
+	(Row396 #= 100 and Freq396 #= 1) or
+	(Row396 #= 101 and Freq396 #= 1) or
+	(Row396 #= 103 and Freq396 #= 1) or
+	(Row396 #= 104 and Freq396 #= 1) or
+	(Row396 #= 105 and Freq396 #= 1) or
+	(Row396 #= 115 and Freq396 #= 1) or
+	(Row396 #= 116 and Freq396 #= 1) or
+	(Row396 #= 117 and Freq396 #= 1) or
+	(Row396 #= 121 and Freq396 #= 1) or
+	(Row396 #= 125 and Freq396 #= 1) or
+	(Row396 #= 126 and Freq396 #= 1) or
+	(Row396 #= 127 and Freq396 #= 1) or
+	(Row396 #= 129 and Freq396 #= 1) or
+	(Row396 #= 131 and Freq396 #= 1) or
+	(Row396 #= 0 and Freq396 #= 0)), 
+
+	((Row397 #= 97 and Freq397 #= 1) or
+	(Row397 #= 98 and Freq397 #= 1) or
+	(Row397 #= 104 and Freq397 #= 1) or
+	(Row397 #= 125 and Freq397 #= 1) or
+	(Row397 #= 0 and Freq397 #= 0)), 
+
+	((Row398 #= 104 and Freq398 #= 1) or
+	(Row398 #= 0 and Freq398 #= 0)), 
+
+	((Row399 #= 98 and Freq399 #= 1) or
+	(Row399 #= 99 and Freq399 #= 1) or
+	(Row399 #= 100 and Freq399 #= 1) or
+	(Row399 #= 101 and Freq399 #= 1) or
+	(Row399 #= 104 and Freq399 #= 1) or
+	(Row399 #= 106 and Freq399 #= 1) or
+	(Row399 #= 124 and Freq399 #= 1) or
+	(Row399 #= 125 and Freq399 #= 1) or
+	(Row399 #= 0 and Freq399 #= 0)), 
+
+	((Row400 #= 97 and Freq400 #= 1) or
+	(Row400 #= 99 and Freq400 #= 1) or
+	(Row400 #= 125 and Freq400 #= 1) or
+	(Row400 #= 0 and Freq400 #= 0)), 
+
+	((Row401 #= 87 and Freq401 #= 1) or
+	(Row401 #= 98 and Freq401 #= 1) or
+	(Row401 #= 99 and Freq401 #= 1) or
+	(Row401 #= 116 and Freq401 #= 1) or
+	(Row401 #= 130 and Freq401 #= 1) or
+	(Row401 #= 131 and Freq401 #= 1) or
+	(Row401 #= 0 and Freq401 #= 0)), 
+
+	((Row402 #= 0 and Freq402 #= 0)), 
+
+	((Row403 #= 120 and Freq403 #= 1) or
+	(Row403 #= 0 and Freq403 #= 0)), 
+
+	((Row404 #= 0 and Freq404 #= 0)), 
+
+	((Row405 #= 0 and Freq405 #= 0)), 
+
+	((Row406 #= 0 and Freq406 #= 0)), 
+
+	((Row407 #= 0 and Freq407 #= 0)), 
+
+	((Row408 #= 0 and Freq408 #= 0)), 
+
+	((Row409 #= 0 and Freq409 #= 0)), 
+
+	((Row410 #= 0 and Freq410 #= 0)), 
+
+	((Row411 #= 0 and Freq411 #= 0)), 
+
+	((Row412 #= 0 and Freq412 #= 0)), 
+
+	((Row413 #= 0 and Freq413 #= 0)), 
+
+	((Row414 #= 0 and Freq414 #= 0)), 
+
+	((Row415 #= 0 and Freq415 #= 0)), 
+
+	((Row416 #= 0 and Freq416 #= 0)), 
+
+	((Row417 #= 0 and Freq417 #= 0)), 
+
+	((Row418 #= 0 and Freq418 #= 0)), 
+
+	((Row419 #= 0 and Freq419 #= 0)), 
+
+	((Row420 #= 0 and Freq420 #= 0)), 
+
+	((Row421 #= 0 and Freq421 #= 0)), 
+
+	((Row422 #= 0 and Freq422 #= 0)), 
+
+	((Row423 #= 0 and Freq423 #= 0)), 
+
+	((Row424 #= 0 and Freq424 #= 0)), 
+
+	((Row425 #= 0 and Freq425 #= 0)), 
+
+	((Row426 #= 0 and Freq426 #= 0)), 
+
+	((Row427 #= 0 and Freq427 #= 0)), 
+
+	((Row428 #= 0 and Freq428 #= 0)), 
+
+	((Row429 #= 0 and Freq429 #= 0)), 
+
+	((Row430 #= 0 and Freq430 #= 0)), 
+
+	((Row431 #= 0 and Freq431 #= 0)), 
+
+	((Row432 #= 0 and Freq432 #= 0)), 
+
+	((Row433 #= 0 and Freq433 #= 0)), 
+
+	((Row434 #= 0 and Freq434 #= 0)), 
+
+	((Row435 #= 0 and Freq435 #= 0)), 
+
+	((Row436 #= 0 and Freq436 #= 0)), 
+
+	((Row437 #= 0 and Freq437 #= 0)), 
+
+	((Row438 #= 0 and Freq438 #= 0)), 
+
+	((Row439 #= 0 and Freq439 #= 0)), 
+
+	((Row440 #= 0 and Freq440 #= 0)), 
+
+	((Row441 #= 0 and Freq441 #= 0)), 
+
+	((Row442 #= 0 and Freq442 #= 0)), 
+
+	((Row443 #= 0 and Freq443 #= 0)), 
+
+	((Row444 #= 0 and Freq444 #= 0)), 
+
+	((Row445 #= 0 and Freq445 #= 0)), 
+
+	((Row446 #= 0 and Freq446 #= 0)), 
+
+	((Row447 #= 0 and Freq447 #= 0)), 
+
+	((Row448 #= 0 and Freq448 #= 0)), 
+
+	((Row449 #= 0 and Freq449 #= 0)), 
+
+	((Row450 #= 0 and Freq450 #= 0)), 
+
+	((Row451 #= 0 and Freq451 #= 0)), 
+
+	((Row452 #= 0 and Freq452 #= 0)), 
+
+	((Row453 #= 0 and Freq453 #= 0)), 
+
+	((Row454 #= 0 and Freq454 #= 0)), 
+
+	((Row455 #= 0 and Freq455 #= 0)), 
+
+	((Row456 #= 0 and Freq456 #= 0)), 
+
+	((Row457 #= 0 and Freq457 #= 0)), 
+
+	((Row458 #= 0 and Freq458 #= 0)), 
+
+	((Row459 #= 0 and Freq459 #= 0)), 
+
+	((Row460 #= 0 and Freq460 #= 0)), 
+
+	((Row461 #= 0 and Freq461 #= 0)), 
+
+	((Row462 #= 0 and Freq462 #= 0)), 
+
+	((Row463 #= 0 and Freq463 #= 0)), 
+
+	((Row464 #= 0 and Freq464 #= 0)), 
+
+	((Row465 #= 0 and Freq465 #= 0)), 
+
+	((Row466 #= 0 and Freq466 #= 0)), 
+
+	((Row467 #= 0 and Freq467 #= 0)), 
+
+	((Row468 #= 0 and Freq468 #= 0)), 
+
+	((Row469 #= 0 and Freq469 #= 0)), 
+
+	((Row470 #= 0 and Freq470 #= 0)), 
+
+	((Row471 #= 0 and Freq471 #= 0)), 
+
+	((Row472 #= 0 and Freq472 #= 0)), 
+
+	((Row473 #= 0 and Freq473 #= 0)), 
+
+	((Row474 #= 0 and Freq474 #= 0)), 
+
+	((Row475 #= 0 and Freq475 #= 0)), 
+
+	((Row476 #= 0 and Freq476 #= 0)), 
+
+	((Row477 #= 0 and Freq477 #= 0)), 
+
+	((Row478 #= 0 and Freq478 #= 0)), 
+
+	((Row479 #= 245 and Freq479 #= 1) or
+	(Row479 #= 0 and Freq479 #= 0)), 
+
+	((Row480 #= 0 and Freq480 #= 0)), 
+
+	((Row481 #= 0 and Freq481 #= 0)), 
+
+	((Row482 #= 0 and Freq482 #= 0)), 
+
+	((Row483 #= 0 and Freq483 #= 0)), 
+
+	((Row484 #= 0 and Freq484 #= 0)), 
+
+	((Row485 #= 0 and Freq485 #= 0)), 
+
+	((Row486 #= 0 and Freq486 #= 0)), 
+
+	((Row487 #= 0 and Freq487 #= 0)), 
+
+	((Row488 #= 0 and Freq488 #= 0)), 
+
+	((Row489 #= 0 and Freq489 #= 0)), 
+
+	((Row490 #= 0 and Freq490 #= 0)), 
+
+	((Row491 #= 0 and Freq491 #= 0)), 
+
+	((Row492 #= 0 and Freq492 #= 0)), 
+
+	((Row493 #= 0 and Freq493 #= 0)), 
+
+	((Row494 #= 0 and Freq494 #= 0)), 
+
+	((Row495 #= 0 and Freq495 #= 0)), 
+
+	((Row496 #= 0 and Freq496 #= 0)), 
+
+	((Row497 #= 0 and Freq497 #= 0)), 
+
+	((Row498 #= 0 and Freq498 #= 0)), 
+
+	((Row499 #= 0 and Freq499 #= 0)), 
+
+	((Row500 #= 0 and Freq500 #= 0)), 
+
+	((Row501 #= 0 and Freq501 #= 0)), 
+
+	((Row502 #= 0 and Freq502 #= 0)), 
+
+	((Row503 #= 0 and Freq503 #= 0)), 
+
+	((Row504 #= 0 and Freq504 #= 0)), 
+
+	((Row505 #= 0 and Freq505 #= 0)), 
+
+	((Row506 #= 0 and Freq506 #= 0)), 
+
+	((Row507 #= 0 and Freq507 #= 0)), 
+
+	((Row508 #= 0 and Freq508 #= 0)), 
+
+	((Row509 #= 0 and Freq509 #= 0)), 
+
+	((Row510 #= 0 and Freq510 #= 0)), 
+
+	((Row511 #= 0 and Freq511 #= 0)), 
+
+	((Row512 #= 0 and Freq512 #= 0)), 
+
+	((Row513 #= 0 and Freq513 #= 0)), 
+
+	((Row514 #= 0 and Freq514 #= 0)), 
+
+	((Row515 #= 0 and Freq515 #= 0)), 
+
+	((Row516 #= 0 and Freq516 #= 0)), 
+
+	((Row517 #= 0 and Freq517 #= 0)), 
+
+	((Row518 #= 0 and Freq518 #= 0)), 
+
+	((Row519 #= 0 and Freq519 #= 0)), 
+
+	((Row520 #= 0 and Freq520 #= 0)), 
+
+	((Row521 #= 0 and Freq521 #= 0)), 
+
+	((Row522 #= 0 and Freq522 #= 0)), 
+
+	((Row523 #= 0 and Freq523 #= 0)), 
+
+	((Row524 #= 0 and Freq524 #= 0)), 
+
+	((Row525 #= 0 and Freq525 #= 0)), 
+
+	((Row526 #= 0 and Freq526 #= 0)), 
+
+	((Row527 #= 0 and Freq527 #= 0)), 
+
+	((Row528 #= 0 and Freq528 #= 0)), 
+
+	((Row529 #= 0 and Freq529 #= 0)), 
+
+	((Row530 #= 0 and Freq530 #= 0)), 
+
+	((Row531 #= 0 and Freq531 #= 0)), 
+
+	((Row532 #= 0 and Freq532 #= 0)), 
+
+	((Row533 #= 0 and Freq533 #= 0)), 
+
+	((Row534 #= 0 and Freq534 #= 0)), 
+
+	((Row535 #= 0 and Freq535 #= 0)), 
+
+	((Row536 #= 0 and Freq536 #= 0)), 
+
+	((Row537 #= 245 and Freq537 #= 1) or
+	(Row537 #= 246 and Freq537 #= 1) or
+	(Row537 #= 0 and Freq537 #= 0)), 
+
+	((Row538 #= 0 and Freq538 #= 0)), 
+
+	((Row539 #= 245 and Freq539 #= 1) or
+	(Row539 #= 0 and Freq539 #= 0)), 
+
+	((Row540 #= 0 and Freq540 #= 0)), 
+
+	((Row541 #= 246 and Freq541 #= 1) or
+	(Row541 #= 0 and Freq541 #= 0)), 
+
+	((Row542 #= 245 and Freq542 #= 1) or
+	(Row542 #= 246 and Freq542 #= 1) or
+	(Row542 #= 0 and Freq542 #= 0)), 
+
+	((Row543 #= 245 and Freq543 #= 1) or
+	(Row543 #= 246 and Freq543 #= 1) or
+	(Row543 #= 0 and Freq543 #= 0)), 
+
+	((Row544 #= 0 and Freq544 #= 0)), 
+
+	((Row545 #= 0 and Freq545 #= 0)), 
+
+	((Row546 #= 245 and Freq546 #= 1) or
+	(Row546 #= 246 and Freq546 #= 1) or
+	(Row546 #= 0 and Freq546 #= 0)), 
+
+	((Row547 #= 245 and Freq547 #= 1) or
+	(Row547 #= 0 and Freq547 #= 0)), 
+
+	((Row548 #= 245 and Freq548 #= 1) or
+	(Row548 #= 0 and Freq548 #= 0)), 
+
+	((Row549 #= 245 and Freq549 #= 1) or
+	(Row549 #= 0 and Freq549 #= 0)), 
+
+	((Row550 #= 246 and Freq550 #= 1) or
+	(Row550 #= 0 and Freq550 #= 0)), 
+
+	((Row551 #= 0 and Freq551 #= 0)), 
+
+	((Row552 #= 0 and Freq552 #= 0)), 
+
+	((Row553 #= 245 and Freq553 #= 1) or
+	(Row553 #= 246 and Freq553 #= 1) or
+	(Row553 #= 0 and Freq553 #= 0)), 
+
+	((Row554 #= 245 and Freq554 #= 1) or
+	(Row554 #= 246 and Freq554 #= 2) or
+	(Row554 #= 0 and Freq554 #= 0)), 
+
+	((Row555 #= 245 and Freq555 #= 2) or
+	(Row555 #= 246 and Freq555 #= 3) or
+	(Row555 #= 0 and Freq555 #= 0)), 
+
+	((Row556 #= 245 and Freq556 #= 4) or
+	(Row556 #= 246 and Freq556 #= 4) or
+	(Row556 #= 0 and Freq556 #= 0)), 
+
+	((Row557 #= 244 and Freq557 #= 1) or
+	(Row557 #= 245 and Freq557 #= 4) or
+	(Row557 #= 246 and Freq557 #= 6) or
+	(Row557 #= 0 and Freq557 #= 0)), 
+
+	((Row558 #= 0 and Freq558 #= 0)), 
 
 	% All of the values assumed by the Row<i> variables must be  
 	% all different or zero; multiple zeros are allowed  
