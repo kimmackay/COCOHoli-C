@@ -658,6 +658,7 @@ maximize(RowFile, FreqFile, Rows) :-
 	Row556 :: [0],
 	Row557 :: [0],
 	Row558 :: [0],
+
 	% Each frequency term can assume either the rounded 
 	% and scaled integer value (based on the corresponding 
 	% interaction frequency from the whole-genome contact 
