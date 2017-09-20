@@ -30,10 +30,17 @@ my $scale = $ARGV[1]; # for s.pombe work this was set to 1000
 my $chr1_start = $ARGV[2];
 my $chr1_stop = $ARGV[3];
 
+my $chr1_size = $chr1_stop - $chr1_start + 1;
+
 ## infor pertaining to the second chromosome of interest
 my $chr2_start = $ARGV[4];
 my $chr2_stop = $ARGV[5];
 
+my $chr2_size = $chr2_stop - $chr2_start + 1;
+
+# use row and column counters to index the variables with the program
+my $row_counter = 1;
+my $col_counter = 1;
 
 ###########################################################################################
 ##	parse the interaction matrix
@@ -168,10 +175,10 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% The list Rows has one variable for each row of the \n";
 	print "\t% whole-genome contact map \n";
 	print "\tRows = [";
-	for(my $i = $chr1_start; $i <= $chr1_stop; $i++)
+	for(my $i = 1; $i <= $chr1_size; $i++)
 	{
 		# account for the last variable, it won't have a comma
-		if($i == $chr1_stop)
+		if($i == $chr1_size)
 		{
 			print "Row".$i."],\n\n";
 		}
@@ -184,10 +191,10 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% The list Freqs has one variable for each row of the \n";
 	print "\t% whole-genome contact map	\n";
 	print "\tFreqs = [";
-	for(my $i = $chr1_start; $i <= $chr1_stop; $i++)
+	for(my $i = 1; $i <= $chr1_size; $i++)
 	{
 		# account for the last variable, it won't have a comma
-		if($i == $chr1_stop)
+		if($i == $chr1_size)
 		{
 			print "Freq".$i."],\n\n";
 		}
@@ -203,28 +210,41 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% selected and a non-zero value (ranging from 1 to N) \n";
 	print "\t% represents which genomic bin is involved in the selected \n";
 	print "\t% interaction \n";
+	
+	# use row and column counters to index the variables with the program
+	$row_counter = 1;
+	$col_counter = 1;
+	
+	# i and j will be used to index the relavent frequencies in the whole-genome contact map
 	for(my $i = $chr1_start; $i <= $chr1_stop; $i++)
 	{
 		# find the non-zero interactions
 		my @domain;
 		
+		$col_counter = 1;
 		for(my $j = $chr2_start; $j <= $chr2_stop; $j++)
 		{
 			# if the corresponding row and col freq is non-zero
 			if($frequencies[$i][$j] != 0)
 			{
 				# add the column to the rows domain
-				push @domain, $j;
+				push @domain, $col_counter;
 			}
+			
+			# increment the column counter
+			$col_counter = $col_counter + 1;
 		}	
 	
 		# print the domain values
-		print "\tRow".$i." :: [0";
+		print "\tRow".$row_counter." :: [0";
 		for(my $u = 0; $u <= $#domain; $u++)
 		{
 			print ", ".$domain[$u];	
 		}	
 		print "],\n";
+		
+		# increment the row counter
+		$row_counter = $row_counter + 1;
 	}
 	
 	print "\t% Each frequency term can assume either the rounded \n";
@@ -232,6 +252,11 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% interaction frequency from the whole-genome contact \n";
 	print "\t% map) or a value of 0 where 0  represents an \n";
 	print "\t% interaction not being selected \n";
+	# use row and column counters to index the variables with the program
+	$row_counter = 1;
+	$col_counter = 1;
+	
+	# i and j will be used to index the relavent frequencies in the whole-genome contact map
 	for(my $i = $chr1_start; $i <= $chr1_stop; $i++)
 	{
 		# find the non-zero interactions
@@ -249,12 +274,15 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 		
 		@unique_values = uniq @domain;
 		
-		print "\tFreq".$i." :: [0";
+		print "\tFreq".$row_counter." :: [0";
 		for(my $u = 0; $u <= $#unique_values; $u++)
 		{
 			print ", ".$unique_values[$u];	
 		}	
 		print "],\n";
+		
+		# increment the row counter
+		$row_counter = $row_counter + 1;
 	}
 
 	print "\n\n\t% Constraints: \n";
@@ -262,25 +290,62 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% must assume dependent values based on data from the \n";
 	print "\t% whole-genome contact map; A (Row, Freq) pair ground to \n";
 	print "\t% (0,0) encodes that nothing is chosen \n\n";
+	# use row and column counters to index the variables with the program
+	$row_counter = 1;
+	$col_counter = 1;
 	
+	# i and j will be used to index the relavent frequencies in the whole-genome contact map
 	for(my $i = $chr1_start; $i <= $chr1_stop; $i++)
 	{
-		# print the first conjunction
-		my $j = $chr2_start;
-		print "\t((Row".$i." #= ".$j." and Freq".$i." #= ".$frequencies[$i][$j].") or\n";
-	
-		for($j = $chr2_start+1; $j <= $chr2_stop; $j++)
+		# find the non-zero interactions
+		my @domain;
+		my @unique_values;
+		
+		for(my $j = $chr2_start; $j <= $chr2_stop; $j++)
 		{
-	
-			print "\t (Row".$i." #= ".$j." and Freq".$i." #= ".$frequencies[$i][$j].") or\n";
-			
-			# if it is the last variable, print the no case
-			if($j >= $chr2_stop)
+			##check to see if it is non-zero
+			if($frequencies[$i][$j] != 0)
 			{
-				print "\t (Row".$i." #= 0 and Freq".$i." #= 0)), \n\n"; 
-			}
+				push @domain, $frequencies[$i][$j];
+			}	
 		}
 		
+		# add zero to the domain
+		push @domain, 0;
+		
+		# get the unique values
+		@unique_values = uniq @domain;
+		
+		# if there is more then 1 value in the domain
+		if($#unique_values > 0)
+		{
+			$col_counter = 1;
+			for(my $j = $chr2_start; $j <= $chr2_stop; $j++)
+			{
+				# if it is a non-zero freqncy
+				if($frequencies[$i][$j] != 0)
+				{
+					print "\t (Row".$row_counter." #= ".$col_counter." and Freq".$row_counter." #= ".$frequencies[$i][$j].") or\n";
+				}
+				
+				# if it is the last variable, print the no case
+				if($j >= $chr2_stop)
+				{
+					print "\t (Row".$row_counter." #= 0 and Freq".$row_counter." #= 0)), \n\n"; 
+				}
+				
+				# increment the col counter
+				$col_counter = $col_counter + 1;
+			}
+		}
+		else
+		{
+			# only print the '0' case
+			print "\t (Row".$row_counter." #= 0 and Freq".$row_counter." #= 0)), \n\n";
+		}
+		
+		# increment the row counter
+		$row_counter = $row_counter + 1;
 	}		
 
 	print "\t% All of the values assumed by the Row<i> variables must be  \n";
