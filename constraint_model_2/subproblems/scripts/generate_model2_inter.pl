@@ -5,13 +5,10 @@
 ## argument 1: the interaction matrix
 ## argument 2: the value to scale the interaction frequency by (in order to convert it to
 ## an integer
-## argument 3: the first chromosome fo interest (refered to as chr1 throughout the rest of the code)
-## argument 4: chr1 start index
-## argument 5: chr1 stop index
-## argument 6: the second chromosome fo interest (refered to as chr2 throughout the rest of the code)
-## argument 7: chr2 start index
-## argument 8: chr2 stop index
-## argument 9: size of chr2 (number of bins)
+## argument 3: chr1 start index
+## argument 4: chr1 stop index
+## argument 5: chr2 start index
+## argument 6: chr2 stop index
 ##
 ## Kimberly MacKay June 13, 2016
 ## license: This work is licensed under the Creative Commons Attribution-NonCommercial-
@@ -23,8 +20,8 @@ use strict;
 use warnings;
 use List::MoreUtils 'uniq';
 
-## check to ensure seven arguments was passed in
-die "ERROR: must pass in seven argumnets." if @ARGV != 7;
+## check to ensure six arguments was passed in
+die "ERROR: must pass in six argumnets." if @ARGV != 6;
 
 my $HiC_file = $ARGV[0];
 my $scale = $ARGV[1]; # for s.pombe work this was set to 1000
@@ -36,7 +33,6 @@ my $chr1_stop = $ARGV[3];
 ## infor pertaining to the second chromosome of interest
 my $chr2_start = $ARGV[4];
 my $chr2_stop = $ARGV[5];
-my $chr2_size = $ARGV[6];
 
 
 ###########################################################################################
@@ -88,6 +84,7 @@ print "% PO Box 1866, Mountain View, CA 94042, USA.\n\n";
 
 print "% Load the relevant libraries \n";
 print ":- lib(gfd). \n";
+print ":- lib(gfd_search).\n";
 print ":- lib(branch_and_bound).\n\n";
 
 print "% alldifferent_except(Vars) is true if each term in list Vars is  \n";
@@ -141,7 +138,8 @@ print "enforce_symmetry(Vars) :- \n";
 	print "\t( foreach(X, Vars), param(Vars) do \n\n";
 		
 		print "\t% chose a value for X from it's domain\n";
-		print "\tindomain(X), \n\n";
+		print "\tgfd_update,\n";
+		print "\tindomain(X, min), \n\n";
 
 		print "\t\t% If the value bound to X is non-zero \n";
 		print "\t\t( (X \\= 0) -> \n\n";
@@ -151,7 +149,7 @@ print "enforce_symmetry(Vars) :- \n";
 			print "\t\t\telement(X, Vars, K), \n\n";
 		
 			print "\t\t\t% K must be bound to zero \n";
-			print "\t\t\tK = 0 \n";
+			print "\t\t\tK #= 0 \n";
 		print "\t\t; \n";
 			print "\t\t\ttrue \n";
 		print "\t\t) \n";
@@ -207,7 +205,26 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% interaction \n";
 	for(my $i = $chr1_start; $i <= $chr1_stop; $i++)
 	{
-		print "\tRow".$i." :: [0, ".$chr2_start."..".$chr2_stop."], \n";
+		# find the non-zero interactions
+		my @domain;
+		
+		for(my $j = $chr2_start; $j <= $chr2_stop; $j++)
+		{
+			# if the corresponding row and col freq is non-zero
+			if($frequencies[$i][$j] != 0)
+			{
+				# add the column to the rows domain
+				push @domain, $j;
+			}
+		}	
+	
+		# print the domain values
+		print "\tRow".$i." :: [0";
+		for(my $u = 0; $u <= $#domain; $u++)
+		{
+			print ", ".$domain[$u];	
+		}	
+		print "],\n";
 	}
 	
 	print "\t% Each frequency term can assume either the rounded \n";
@@ -217,6 +234,7 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% interaction not being selected \n";
 	for(my $i = $chr1_start; $i <= $chr1_stop; $i++)
 	{
+		# find the non-zero interactions
 		my @domain;
 		my @unique_values;
 		
@@ -268,7 +286,9 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% All of the values assumed by the Row<i> variables must be  \n";
 	print "\t% all different or zero; multiple zeros are allowed  \n";
 	print "\talldifferent_except(Rows), \n\n";
-#	print "\tatmost(".($#non_zero_row_index-1).", Non_Zero_Rows, 0),\n";
+
+#	print "\t the best solution will have at least one non-zero value\n";
+#	print "\tatmost(".($#non_zero_rows-1).", Rows, 0),\n";
 
 	print "\t% Optimize: the sum of the selected interaction \n";
 	print "\t% frequencies is maximal (it is the minimum of \n";
@@ -309,5 +329,3 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t\t\t\twrite(ROW_OUT, \"\\n\")\n";
 	print "\t),\n";
 	print "\tclose(ROW_OUT).\n";		
-
-	
