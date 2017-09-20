@@ -279,7 +279,7 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 		$row_counter = $row_counter + 1;
 	}
 
-	print "\n\t% Constraints: \n";
+	print "\n\n\t% Constraints: \n";
 	print "\t% Each pair of corresponding (Row<i>, Freq<i>) variables \n";
 	print "\t% must assume dependent values based on data from the \n";
 	print "\t% whole-genome contact map; A (Row, Freq) pair ground to \n";
