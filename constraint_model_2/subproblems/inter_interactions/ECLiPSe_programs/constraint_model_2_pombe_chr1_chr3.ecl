@@ -1229,15 +1229,15 @@ maximize(RowFile, FreqFile, Rows) :-
 	% whole-genome contact map; A (Row, Freq) pair ground to 
 	% (0,0) encodes that nothing is chosen 
 
-	 (Row1 #= 0 and Freq1 #= 0)), 
+	 ((Row1 #= 0 and Freq1 #= 0)), 
 
-	 (Row2 #= 0 and Freq2 #= 0)), 
+	 ((Row2 #= 0 and Freq2 #= 0)), 
 
-	 (Row3 #= 0 and Freq3 #= 0)), 
+	 ((Row3 #= 0 and Freq3 #= 0)), 
 
-	 (Row4 #= 0 and Freq4 #= 0)), 
+	 ((Row4 #= 0 and Freq4 #= 0)), 
 
-	 (Row5 #= 0 and Freq5 #= 0)), 
+	 ((Row5 #= 0 and Freq5 #= 0)), 
 
 	 (Row6 #= 245 and Freq6 #= 1) or
 	 (Row6 #= 0 and Freq6 #= 0)), 
@@ -1249,7 +1249,7 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row8 #= 246 and Freq8 #= 1) or
 	 (Row8 #= 0 and Freq8 #= 0)), 
 
-	 (Row9 #= 0 and Freq9 #= 0)), 
+	 ((Row9 #= 0 and Freq9 #= 0)), 
 
 	 (Row10 #= 246 and Freq10 #= 1) or
 	 (Row10 #= 0 and Freq10 #= 0)), 
@@ -1264,17 +1264,17 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row13 #= 245 and Freq13 #= 1) or
 	 (Row13 #= 0 and Freq13 #= 0)), 
 
-	 (Row14 #= 0 and Freq14 #= 0)), 
+	 ((Row14 #= 0 and Freq14 #= 0)), 
 
-	 (Row15 #= 0 and Freq15 #= 0)), 
+	 ((Row15 #= 0 and Freq15 #= 0)), 
 
-	 (Row16 #= 0 and Freq16 #= 0)), 
+	 ((Row16 #= 0 and Freq16 #= 0)), 
 
-	 (Row17 #= 0 and Freq17 #= 0)), 
+	 ((Row17 #= 0 and Freq17 #= 0)), 
 
-	 (Row18 #= 0 and Freq18 #= 0)), 
+	 ((Row18 #= 0 and Freq18 #= 0)), 
 
-	 (Row19 #= 0 and Freq19 #= 0)), 
+	 ((Row19 #= 0 and Freq19 #= 0)), 
 
 	 (Row20 #= 245 and Freq20 #= 1) or
 	 (Row20 #= 246 and Freq20 #= 1) or
@@ -1295,20 +1295,20 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row25 #= 245 and Freq25 #= 1) or
 	 (Row25 #= 0 and Freq25 #= 0)), 
 
-	 (Row26 #= 0 and Freq26 #= 0)), 
+	 ((Row26 #= 0 and Freq26 #= 0)), 
 
-	 (Row27 #= 0 and Freq27 #= 0)), 
+	 ((Row27 #= 0 and Freq27 #= 0)), 
 
-	 (Row28 #= 0 and Freq28 #= 0)), 
+	 ((Row28 #= 0 and Freq28 #= 0)), 
 
-	 (Row29 #= 0 and Freq29 #= 0)), 
+	 ((Row29 #= 0 and Freq29 #= 0)), 
 
 	 (Row30 #= 246 and Freq30 #= 1) or
 	 (Row30 #= 0 and Freq30 #= 0)), 
 
-	 (Row31 #= 0 and Freq31 #= 0)), 
+	 ((Row31 #= 0 and Freq31 #= 0)), 
 
-	 (Row32 #= 0 and Freq32 #= 0)), 
+	 ((Row32 #= 0 and Freq32 #= 0)), 
 
 	 (Row33 #= 246 and Freq33 #= 1) or
 	 (Row33 #= 0 and Freq33 #= 0)), 
@@ -1316,31 +1316,31 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row34 #= 245 and Freq34 #= 1) or
 	 (Row34 #= 0 and Freq34 #= 0)), 
 
-	 (Row35 #= 0 and Freq35 #= 0)), 
+	 ((Row35 #= 0 and Freq35 #= 0)), 
 
 	 (Row36 #= 246 and Freq36 #= 1) or
 	 (Row36 #= 0 and Freq36 #= 0)), 
 
-	 (Row37 #= 0 and Freq37 #= 0)), 
+	 ((Row37 #= 0 and Freq37 #= 0)), 
 
-	 (Row38 #= 0 and Freq38 #= 0)), 
+	 ((Row38 #= 0 and Freq38 #= 0)), 
 
 	 (Row39 #= 245 and Freq39 #= 1) or
 	 (Row39 #= 0 and Freq39 #= 0)), 
 
-	 (Row40 #= 0 and Freq40 #= 0)), 
+	 ((Row40 #= 0 and Freq40 #= 0)), 
 
-	 (Row41 #= 0 and Freq41 #= 0)), 
+	 ((Row41 #= 0 and Freq41 #= 0)), 
 
-	 (Row42 #= 0 and Freq42 #= 0)), 
+	 ((Row42 #= 0 and Freq42 #= 0)), 
 
-	 (Row43 #= 0 and Freq43 #= 0)), 
+	 ((Row43 #= 0 and Freq43 #= 0)), 
 
-	 (Row44 #= 0 and Freq44 #= 0)), 
+	 ((Row44 #= 0 and Freq44 #= 0)), 
 
-	 (Row45 #= 0 and Freq45 #= 0)), 
+	 ((Row45 #= 0 and Freq45 #= 0)), 
 
-	 (Row46 #= 0 and Freq46 #= 0)), 
+	 ((Row46 #= 0 and Freq46 #= 0)), 
 
 	 (Row47 #= 245 and Freq47 #= 1) or
 	 (Row47 #= 0 and Freq47 #= 0)), 
@@ -1351,24 +1351,24 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row49 #= 245 and Freq49 #= 1) or
 	 (Row49 #= 0 and Freq49 #= 0)), 
 
-	 (Row50 #= 0 and Freq50 #= 0)), 
+	 ((Row50 #= 0 and Freq50 #= 0)), 
 
 	 (Row51 #= 245 and Freq51 #= 1) or
 	 (Row51 #= 0 and Freq51 #= 0)), 
 
-	 (Row52 #= 0 and Freq52 #= 0)), 
+	 ((Row52 #= 0 and Freq52 #= 0)), 
 
 	 (Row53 #= 245 and Freq53 #= 1) or
 	 (Row53 #= 0 and Freq53 #= 0)), 
 
-	 (Row54 #= 0 and Freq54 #= 0)), 
+	 ((Row54 #= 0 and Freq54 #= 0)), 
 
-	 (Row55 #= 0 and Freq55 #= 0)), 
+	 ((Row55 #= 0 and Freq55 #= 0)), 
 
 	 (Row56 #= 246 and Freq56 #= 1) or
 	 (Row56 #= 0 and Freq56 #= 0)), 
 
-	 (Row57 #= 0 and Freq57 #= 0)), 
+	 ((Row57 #= 0 and Freq57 #= 0)), 
 
 	 (Row58 #= 245 and Freq58 #= 1) or
 	 (Row58 #= 246 and Freq58 #= 1) or
@@ -1377,600 +1377,600 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row59 #= 245 and Freq59 #= 1) or
 	 (Row59 #= 0 and Freq59 #= 0)), 
 
-	 (Row60 #= 0 and Freq60 #= 0)), 
+	 ((Row60 #= 0 and Freq60 #= 0)), 
 
-	 (Row61 #= 0 and Freq61 #= 0)), 
+	 ((Row61 #= 0 and Freq61 #= 0)), 
 
-	 (Row62 #= 0 and Freq62 #= 0)), 
+	 ((Row62 #= 0 and Freq62 #= 0)), 
 
-	 (Row63 #= 0 and Freq63 #= 0)), 
+	 ((Row63 #= 0 and Freq63 #= 0)), 
 
-	 (Row64 #= 0 and Freq64 #= 0)), 
+	 ((Row64 #= 0 and Freq64 #= 0)), 
 
 	 (Row65 #= 245 and Freq65 #= 1) or
 	 (Row65 #= 0 and Freq65 #= 0)), 
 
-	 (Row66 #= 0 and Freq66 #= 0)), 
+	 ((Row66 #= 0 and Freq66 #= 0)), 
 
-	 (Row67 #= 0 and Freq67 #= 0)), 
+	 ((Row67 #= 0 and Freq67 #= 0)), 
 
-	 (Row68 #= 0 and Freq68 #= 0)), 
+	 ((Row68 #= 0 and Freq68 #= 0)), 
 
 	 (Row69 #= 245 and Freq69 #= 1) or
 	 (Row69 #= 0 and Freq69 #= 0)), 
 
-	 (Row70 #= 0 and Freq70 #= 0)), 
+	 ((Row70 #= 0 and Freq70 #= 0)), 
 
 	 (Row71 #= 245 and Freq71 #= 1) or
 	 (Row71 #= 0 and Freq71 #= 0)), 
 
-	 (Row72 #= 0 and Freq72 #= 0)), 
+	 ((Row72 #= 0 and Freq72 #= 0)), 
 
 	 (Row73 #= 245 and Freq73 #= 1) or
 	 (Row73 #= 0 and Freq73 #= 0)), 
 
-	 (Row74 #= 0 and Freq74 #= 0)), 
+	 ((Row74 #= 0 and Freq74 #= 0)), 
 
-	 (Row75 #= 0 and Freq75 #= 0)), 
+	 ((Row75 #= 0 and Freq75 #= 0)), 
 
-	 (Row76 #= 0 and Freq76 #= 0)), 
+	 ((Row76 #= 0 and Freq76 #= 0)), 
 
-	 (Row77 #= 0 and Freq77 #= 0)), 
+	 ((Row77 #= 0 and Freq77 #= 0)), 
 
-	 (Row78 #= 0 and Freq78 #= 0)), 
+	 ((Row78 #= 0 and Freq78 #= 0)), 
 
-	 (Row79 #= 0 and Freq79 #= 0)), 
+	 ((Row79 #= 0 and Freq79 #= 0)), 
 
-	 (Row80 #= 0 and Freq80 #= 0)), 
+	 ((Row80 #= 0 and Freq80 #= 0)), 
 
-	 (Row81 #= 0 and Freq81 #= 0)), 
+	 ((Row81 #= 0 and Freq81 #= 0)), 
 
-	 (Row82 #= 0 and Freq82 #= 0)), 
+	 ((Row82 #= 0 and Freq82 #= 0)), 
 
-	 (Row83 #= 0 and Freq83 #= 0)), 
+	 ((Row83 #= 0 and Freq83 #= 0)), 
 
-	 (Row84 #= 0 and Freq84 #= 0)), 
+	 ((Row84 #= 0 and Freq84 #= 0)), 
 
-	 (Row85 #= 0 and Freq85 #= 0)), 
+	 ((Row85 #= 0 and Freq85 #= 0)), 
 
-	 (Row86 #= 0 and Freq86 #= 0)), 
+	 ((Row86 #= 0 and Freq86 #= 0)), 
 
-	 (Row87 #= 0 and Freq87 #= 0)), 
+	 ((Row87 #= 0 and Freq87 #= 0)), 
 
 	 (Row88 #= 245 and Freq88 #= 1) or
 	 (Row88 #= 0 and Freq88 #= 0)), 
 
-	 (Row89 #= 0 and Freq89 #= 0)), 
+	 ((Row89 #= 0 and Freq89 #= 0)), 
 
-	 (Row90 #= 0 and Freq90 #= 0)), 
+	 ((Row90 #= 0 and Freq90 #= 0)), 
 
-	 (Row91 #= 0 and Freq91 #= 0)), 
+	 ((Row91 #= 0 and Freq91 #= 0)), 
 
-	 (Row92 #= 0 and Freq92 #= 0)), 
+	 ((Row92 #= 0 and Freq92 #= 0)), 
 
-	 (Row93 #= 0 and Freq93 #= 0)), 
+	 ((Row93 #= 0 and Freq93 #= 0)), 
 
 	 (Row94 #= 245 and Freq94 #= 1) or
 	 (Row94 #= 0 and Freq94 #= 0)), 
 
-	 (Row95 #= 0 and Freq95 #= 0)), 
+	 ((Row95 #= 0 and Freq95 #= 0)), 
 
-	 (Row96 #= 0 and Freq96 #= 0)), 
+	 ((Row96 #= 0 and Freq96 #= 0)), 
 
-	 (Row97 #= 0 and Freq97 #= 0)), 
+	 ((Row97 #= 0 and Freq97 #= 0)), 
 
-	 (Row98 #= 0 and Freq98 #= 0)), 
+	 ((Row98 #= 0 and Freq98 #= 0)), 
 
-	 (Row99 #= 0 and Freq99 #= 0)), 
+	 ((Row99 #= 0 and Freq99 #= 0)), 
 
-	 (Row100 #= 0 and Freq100 #= 0)), 
+	 ((Row100 #= 0 and Freq100 #= 0)), 
 
-	 (Row101 #= 0 and Freq101 #= 0)), 
+	 ((Row101 #= 0 and Freq101 #= 0)), 
 
-	 (Row102 #= 0 and Freq102 #= 0)), 
+	 ((Row102 #= 0 and Freq102 #= 0)), 
 
-	 (Row103 #= 0 and Freq103 #= 0)), 
+	 ((Row103 #= 0 and Freq103 #= 0)), 
 
-	 (Row104 #= 0 and Freq104 #= 0)), 
+	 ((Row104 #= 0 and Freq104 #= 0)), 
 
-	 (Row105 #= 0 and Freq105 #= 0)), 
+	 ((Row105 #= 0 and Freq105 #= 0)), 
 
-	 (Row106 #= 0 and Freq106 #= 0)), 
+	 ((Row106 #= 0 and Freq106 #= 0)), 
 
-	 (Row107 #= 0 and Freq107 #= 0)), 
+	 ((Row107 #= 0 and Freq107 #= 0)), 
 
-	 (Row108 #= 0 and Freq108 #= 0)), 
+	 ((Row108 #= 0 and Freq108 #= 0)), 
 
-	 (Row109 #= 0 and Freq109 #= 0)), 
+	 ((Row109 #= 0 and Freq109 #= 0)), 
 
-	 (Row110 #= 0 and Freq110 #= 0)), 
+	 ((Row110 #= 0 and Freq110 #= 0)), 
 
-	 (Row111 #= 0 and Freq111 #= 0)), 
+	 ((Row111 #= 0 and Freq111 #= 0)), 
 
-	 (Row112 #= 0 and Freq112 #= 0)), 
+	 ((Row112 #= 0 and Freq112 #= 0)), 
 
-	 (Row113 #= 0 and Freq113 #= 0)), 
+	 ((Row113 #= 0 and Freq113 #= 0)), 
 
-	 (Row114 #= 0 and Freq114 #= 0)), 
+	 ((Row114 #= 0 and Freq114 #= 0)), 
 
-	 (Row115 #= 0 and Freq115 #= 0)), 
+	 ((Row115 #= 0 and Freq115 #= 0)), 
 
-	 (Row116 #= 0 and Freq116 #= 0)), 
+	 ((Row116 #= 0 and Freq116 #= 0)), 
 
-	 (Row117 #= 0 and Freq117 #= 0)), 
+	 ((Row117 #= 0 and Freq117 #= 0)), 
 
-	 (Row118 #= 0 and Freq118 #= 0)), 
+	 ((Row118 #= 0 and Freq118 #= 0)), 
 
-	 (Row119 #= 0 and Freq119 #= 0)), 
+	 ((Row119 #= 0 and Freq119 #= 0)), 
 
-	 (Row120 #= 0 and Freq120 #= 0)), 
+	 ((Row120 #= 0 and Freq120 #= 0)), 
 
-	 (Row121 #= 0 and Freq121 #= 0)), 
+	 ((Row121 #= 0 and Freq121 #= 0)), 
 
-	 (Row122 #= 0 and Freq122 #= 0)), 
+	 ((Row122 #= 0 and Freq122 #= 0)), 
 
-	 (Row123 #= 0 and Freq123 #= 0)), 
+	 ((Row123 #= 0 and Freq123 #= 0)), 
 
-	 (Row124 #= 0 and Freq124 #= 0)), 
+	 ((Row124 #= 0 and Freq124 #= 0)), 
 
-	 (Row125 #= 0 and Freq125 #= 0)), 
+	 ((Row125 #= 0 and Freq125 #= 0)), 
 
-	 (Row126 #= 0 and Freq126 #= 0)), 
+	 ((Row126 #= 0 and Freq126 #= 0)), 
 
-	 (Row127 #= 0 and Freq127 #= 0)), 
+	 ((Row127 #= 0 and Freq127 #= 0)), 
 
-	 (Row128 #= 0 and Freq128 #= 0)), 
+	 ((Row128 #= 0 and Freq128 #= 0)), 
 
-	 (Row129 #= 0 and Freq129 #= 0)), 
+	 ((Row129 #= 0 and Freq129 #= 0)), 
 
-	 (Row130 #= 0 and Freq130 #= 0)), 
+	 ((Row130 #= 0 and Freq130 #= 0)), 
 
-	 (Row131 #= 0 and Freq131 #= 0)), 
+	 ((Row131 #= 0 and Freq131 #= 0)), 
 
-	 (Row132 #= 0 and Freq132 #= 0)), 
+	 ((Row132 #= 0 and Freq132 #= 0)), 
 
-	 (Row133 #= 0 and Freq133 #= 0)), 
+	 ((Row133 #= 0 and Freq133 #= 0)), 
 
-	 (Row134 #= 0 and Freq134 #= 0)), 
+	 ((Row134 #= 0 and Freq134 #= 0)), 
 
-	 (Row135 #= 0 and Freq135 #= 0)), 
+	 ((Row135 #= 0 and Freq135 #= 0)), 
 
-	 (Row136 #= 0 and Freq136 #= 0)), 
+	 ((Row136 #= 0 and Freq136 #= 0)), 
 
-	 (Row137 #= 0 and Freq137 #= 0)), 
+	 ((Row137 #= 0 and Freq137 #= 0)), 
 
-	 (Row138 #= 0 and Freq138 #= 0)), 
+	 ((Row138 #= 0 and Freq138 #= 0)), 
 
-	 (Row139 #= 0 and Freq139 #= 0)), 
+	 ((Row139 #= 0 and Freq139 #= 0)), 
 
-	 (Row140 #= 0 and Freq140 #= 0)), 
+	 ((Row140 #= 0 and Freq140 #= 0)), 
 
-	 (Row141 #= 0 and Freq141 #= 0)), 
+	 ((Row141 #= 0 and Freq141 #= 0)), 
 
-	 (Row142 #= 0 and Freq142 #= 0)), 
+	 ((Row142 #= 0 and Freq142 #= 0)), 
 
-	 (Row143 #= 0 and Freq143 #= 0)), 
+	 ((Row143 #= 0 and Freq143 #= 0)), 
 
-	 (Row144 #= 0 and Freq144 #= 0)), 
+	 ((Row144 #= 0 and Freq144 #= 0)), 
 
-	 (Row145 #= 0 and Freq145 #= 0)), 
+	 ((Row145 #= 0 and Freq145 #= 0)), 
 
-	 (Row146 #= 0 and Freq146 #= 0)), 
+	 ((Row146 #= 0 and Freq146 #= 0)), 
 
-	 (Row147 #= 0 and Freq147 #= 0)), 
+	 ((Row147 #= 0 and Freq147 #= 0)), 
 
-	 (Row148 #= 0 and Freq148 #= 0)), 
+	 ((Row148 #= 0 and Freq148 #= 0)), 
 
-	 (Row149 #= 0 and Freq149 #= 0)), 
+	 ((Row149 #= 0 and Freq149 #= 0)), 
 
-	 (Row150 #= 0 and Freq150 #= 0)), 
+	 ((Row150 #= 0 and Freq150 #= 0)), 
 
-	 (Row151 #= 0 and Freq151 #= 0)), 
+	 ((Row151 #= 0 and Freq151 #= 0)), 
 
-	 (Row152 #= 0 and Freq152 #= 0)), 
+	 ((Row152 #= 0 and Freq152 #= 0)), 
 
-	 (Row153 #= 0 and Freq153 #= 0)), 
+	 ((Row153 #= 0 and Freq153 #= 0)), 
 
-	 (Row154 #= 0 and Freq154 #= 0)), 
+	 ((Row154 #= 0 and Freq154 #= 0)), 
 
-	 (Row155 #= 0 and Freq155 #= 0)), 
+	 ((Row155 #= 0 and Freq155 #= 0)), 
 
-	 (Row156 #= 0 and Freq156 #= 0)), 
+	 ((Row156 #= 0 and Freq156 #= 0)), 
 
-	 (Row157 #= 0 and Freq157 #= 0)), 
+	 ((Row157 #= 0 and Freq157 #= 0)), 
 
-	 (Row158 #= 0 and Freq158 #= 0)), 
+	 ((Row158 #= 0 and Freq158 #= 0)), 
 
-	 (Row159 #= 0 and Freq159 #= 0)), 
+	 ((Row159 #= 0 and Freq159 #= 0)), 
 
-	 (Row160 #= 0 and Freq160 #= 0)), 
+	 ((Row160 #= 0 and Freq160 #= 0)), 
 
-	 (Row161 #= 0 and Freq161 #= 0)), 
+	 ((Row161 #= 0 and Freq161 #= 0)), 
 
-	 (Row162 #= 0 and Freq162 #= 0)), 
+	 ((Row162 #= 0 and Freq162 #= 0)), 
 
-	 (Row163 #= 0 and Freq163 #= 0)), 
+	 ((Row163 #= 0 and Freq163 #= 0)), 
 
-	 (Row164 #= 0 and Freq164 #= 0)), 
+	 ((Row164 #= 0 and Freq164 #= 0)), 
 
 	 (Row165 #= 82 and Freq165 #= 1) or
 	 (Row165 #= 0 and Freq165 #= 0)), 
 
-	 (Row166 #= 0 and Freq166 #= 0)), 
+	 ((Row166 #= 0 and Freq166 #= 0)), 
 
-	 (Row167 #= 0 and Freq167 #= 0)), 
+	 ((Row167 #= 0 and Freq167 #= 0)), 
 
-	 (Row168 #= 0 and Freq168 #= 0)), 
+	 ((Row168 #= 0 and Freq168 #= 0)), 
 
-	 (Row169 #= 0 and Freq169 #= 0)), 
+	 ((Row169 #= 0 and Freq169 #= 0)), 
 
-	 (Row170 #= 0 and Freq170 #= 0)), 
+	 ((Row170 #= 0 and Freq170 #= 0)), 
 
-	 (Row171 #= 0 and Freq171 #= 0)), 
+	 ((Row171 #= 0 and Freq171 #= 0)), 
 
-	 (Row172 #= 0 and Freq172 #= 0)), 
+	 ((Row172 #= 0 and Freq172 #= 0)), 
 
-	 (Row173 #= 0 and Freq173 #= 0)), 
+	 ((Row173 #= 0 and Freq173 #= 0)), 
 
-	 (Row174 #= 0 and Freq174 #= 0)), 
+	 ((Row174 #= 0 and Freq174 #= 0)), 
 
-	 (Row175 #= 0 and Freq175 #= 0)), 
+	 ((Row175 #= 0 and Freq175 #= 0)), 
 
 	 (Row176 #= 245 and Freq176 #= 1) or
 	 (Row176 #= 0 and Freq176 #= 0)), 
 
-	 (Row177 #= 0 and Freq177 #= 0)), 
+	 ((Row177 #= 0 and Freq177 #= 0)), 
 
-	 (Row178 #= 0 and Freq178 #= 0)), 
+	 ((Row178 #= 0 and Freq178 #= 0)), 
 
-	 (Row179 #= 0 and Freq179 #= 0)), 
+	 ((Row179 #= 0 and Freq179 #= 0)), 
 
-	 (Row180 #= 0 and Freq180 #= 0)), 
+	 ((Row180 #= 0 and Freq180 #= 0)), 
 
-	 (Row181 #= 0 and Freq181 #= 0)), 
+	 ((Row181 #= 0 and Freq181 #= 0)), 
 
-	 (Row182 #= 0 and Freq182 #= 0)), 
+	 ((Row182 #= 0 and Freq182 #= 0)), 
 
-	 (Row183 #= 0 and Freq183 #= 0)), 
+	 ((Row183 #= 0 and Freq183 #= 0)), 
 
-	 (Row184 #= 0 and Freq184 #= 0)), 
+	 ((Row184 #= 0 and Freq184 #= 0)), 
 
-	 (Row185 #= 0 and Freq185 #= 0)), 
+	 ((Row185 #= 0 and Freq185 #= 0)), 
 
-	 (Row186 #= 0 and Freq186 #= 0)), 
+	 ((Row186 #= 0 and Freq186 #= 0)), 
 
-	 (Row187 #= 0 and Freq187 #= 0)), 
+	 ((Row187 #= 0 and Freq187 #= 0)), 
 
-	 (Row188 #= 0 and Freq188 #= 0)), 
+	 ((Row188 #= 0 and Freq188 #= 0)), 
 
-	 (Row189 #= 0 and Freq189 #= 0)), 
+	 ((Row189 #= 0 and Freq189 #= 0)), 
 
-	 (Row190 #= 0 and Freq190 #= 0)), 
+	 ((Row190 #= 0 and Freq190 #= 0)), 
 
-	 (Row191 #= 0 and Freq191 #= 0)), 
+	 ((Row191 #= 0 and Freq191 #= 0)), 
 
-	 (Row192 #= 0 and Freq192 #= 0)), 
+	 ((Row192 #= 0 and Freq192 #= 0)), 
 
-	 (Row193 #= 0 and Freq193 #= 0)), 
+	 ((Row193 #= 0 and Freq193 #= 0)), 
 
-	 (Row194 #= 0 and Freq194 #= 0)), 
+	 ((Row194 #= 0 and Freq194 #= 0)), 
 
-	 (Row195 #= 0 and Freq195 #= 0)), 
+	 ((Row195 #= 0 and Freq195 #= 0)), 
 
 	 (Row196 #= 99 and Freq196 #= 1) or
 	 (Row196 #= 0 and Freq196 #= 0)), 
 
-	 (Row197 #= 0 and Freq197 #= 0)), 
+	 ((Row197 #= 0 and Freq197 #= 0)), 
 
-	 (Row198 #= 0 and Freq198 #= 0)), 
+	 ((Row198 #= 0 and Freq198 #= 0)), 
 
-	 (Row199 #= 0 and Freq199 #= 0)), 
+	 ((Row199 #= 0 and Freq199 #= 0)), 
 
-	 (Row200 #= 0 and Freq200 #= 0)), 
+	 ((Row200 #= 0 and Freq200 #= 0)), 
 
-	 (Row201 #= 0 and Freq201 #= 0)), 
+	 ((Row201 #= 0 and Freq201 #= 0)), 
 
-	 (Row202 #= 0 and Freq202 #= 0)), 
+	 ((Row202 #= 0 and Freq202 #= 0)), 
 
-	 (Row203 #= 0 and Freq203 #= 0)), 
+	 ((Row203 #= 0 and Freq203 #= 0)), 
 
 	 (Row204 #= 245 and Freq204 #= 1) or
 	 (Row204 #= 0 and Freq204 #= 0)), 
 
-	 (Row205 #= 0 and Freq205 #= 0)), 
+	 ((Row205 #= 0 and Freq205 #= 0)), 
 
-	 (Row206 #= 0 and Freq206 #= 0)), 
+	 ((Row206 #= 0 and Freq206 #= 0)), 
 
-	 (Row207 #= 0 and Freq207 #= 0)), 
+	 ((Row207 #= 0 and Freq207 #= 0)), 
 
-	 (Row208 #= 0 and Freq208 #= 0)), 
+	 ((Row208 #= 0 and Freq208 #= 0)), 
 
-	 (Row209 #= 0 and Freq209 #= 0)), 
+	 ((Row209 #= 0 and Freq209 #= 0)), 
 
-	 (Row210 #= 0 and Freq210 #= 0)), 
+	 ((Row210 #= 0 and Freq210 #= 0)), 
 
 	 (Row211 #= 245 and Freq211 #= 1) or
 	 (Row211 #= 0 and Freq211 #= 0)), 
 
-	 (Row212 #= 0 and Freq212 #= 0)), 
+	 ((Row212 #= 0 and Freq212 #= 0)), 
 
-	 (Row213 #= 0 and Freq213 #= 0)), 
+	 ((Row213 #= 0 and Freq213 #= 0)), 
 
-	 (Row214 #= 0 and Freq214 #= 0)), 
+	 ((Row214 #= 0 and Freq214 #= 0)), 
 
 	 (Row215 #= 246 and Freq215 #= 1) or
 	 (Row215 #= 0 and Freq215 #= 0)), 
 
-	 (Row216 #= 0 and Freq216 #= 0)), 
+	 ((Row216 #= 0 and Freq216 #= 0)), 
 
-	 (Row217 #= 0 and Freq217 #= 0)), 
+	 ((Row217 #= 0 and Freq217 #= 0)), 
 
-	 (Row218 #= 0 and Freq218 #= 0)), 
+	 ((Row218 #= 0 and Freq218 #= 0)), 
 
-	 (Row219 #= 0 and Freq219 #= 0)), 
+	 ((Row219 #= 0 and Freq219 #= 0)), 
 
-	 (Row220 #= 0 and Freq220 #= 0)), 
+	 ((Row220 #= 0 and Freq220 #= 0)), 
 
-	 (Row221 #= 0 and Freq221 #= 0)), 
+	 ((Row221 #= 0 and Freq221 #= 0)), 
 
-	 (Row222 #= 0 and Freq222 #= 0)), 
+	 ((Row222 #= 0 and Freq222 #= 0)), 
 
-	 (Row223 #= 0 and Freq223 #= 0)), 
+	 ((Row223 #= 0 and Freq223 #= 0)), 
 
-	 (Row224 #= 0 and Freq224 #= 0)), 
+	 ((Row224 #= 0 and Freq224 #= 0)), 
 
 	 (Row225 #= 82 and Freq225 #= 1) or
 	 (Row225 #= 245 and Freq225 #= 1) or
 	 (Row225 #= 246 and Freq225 #= 1) or
 	 (Row225 #= 0 and Freq225 #= 0)), 
 
-	 (Row226 #= 0 and Freq226 #= 0)), 
+	 ((Row226 #= 0 and Freq226 #= 0)), 
 
-	 (Row227 #= 0 and Freq227 #= 0)), 
+	 ((Row227 #= 0 and Freq227 #= 0)), 
 
-	 (Row228 #= 0 and Freq228 #= 0)), 
+	 ((Row228 #= 0 and Freq228 #= 0)), 
 
-	 (Row229 #= 0 and Freq229 #= 0)), 
+	 ((Row229 #= 0 and Freq229 #= 0)), 
 
-	 (Row230 #= 0 and Freq230 #= 0)), 
+	 ((Row230 #= 0 and Freq230 #= 0)), 
 
-	 (Row231 #= 0 and Freq231 #= 0)), 
+	 ((Row231 #= 0 and Freq231 #= 0)), 
 
-	 (Row232 #= 0 and Freq232 #= 0)), 
+	 ((Row232 #= 0 and Freq232 #= 0)), 
 
-	 (Row233 #= 0 and Freq233 #= 0)), 
+	 ((Row233 #= 0 and Freq233 #= 0)), 
 
-	 (Row234 #= 0 and Freq234 #= 0)), 
+	 ((Row234 #= 0 and Freq234 #= 0)), 
 
-	 (Row235 #= 0 and Freq235 #= 0)), 
+	 ((Row235 #= 0 and Freq235 #= 0)), 
 
-	 (Row236 #= 0 and Freq236 #= 0)), 
+	 ((Row236 #= 0 and Freq236 #= 0)), 
 
-	 (Row237 #= 0 and Freq237 #= 0)), 
+	 ((Row237 #= 0 and Freq237 #= 0)), 
 
-	 (Row238 #= 0 and Freq238 #= 0)), 
+	 ((Row238 #= 0 and Freq238 #= 0)), 
 
-	 (Row239 #= 0 and Freq239 #= 0)), 
+	 ((Row239 #= 0 and Freq239 #= 0)), 
 
-	 (Row240 #= 0 and Freq240 #= 0)), 
+	 ((Row240 #= 0 and Freq240 #= 0)), 
 
-	 (Row241 #= 0 and Freq241 #= 0)), 
+	 ((Row241 #= 0 and Freq241 #= 0)), 
 
-	 (Row242 #= 0 and Freq242 #= 0)), 
+	 ((Row242 #= 0 and Freq242 #= 0)), 
 
-	 (Row243 #= 0 and Freq243 #= 0)), 
+	 ((Row243 #= 0 and Freq243 #= 0)), 
 
 	 (Row244 #= 245 and Freq244 #= 1) or
 	 (Row244 #= 0 and Freq244 #= 0)), 
 
-	 (Row245 #= 0 and Freq245 #= 0)), 
+	 ((Row245 #= 0 and Freq245 #= 0)), 
 
-	 (Row246 #= 0 and Freq246 #= 0)), 
+	 ((Row246 #= 0 and Freq246 #= 0)), 
 
-	 (Row247 #= 0 and Freq247 #= 0)), 
+	 ((Row247 #= 0 and Freq247 #= 0)), 
 
-	 (Row248 #= 0 and Freq248 #= 0)), 
+	 ((Row248 #= 0 and Freq248 #= 0)), 
 
-	 (Row249 #= 0 and Freq249 #= 0)), 
+	 ((Row249 #= 0 and Freq249 #= 0)), 
 
-	 (Row250 #= 0 and Freq250 #= 0)), 
+	 ((Row250 #= 0 and Freq250 #= 0)), 
 
-	 (Row251 #= 0 and Freq251 #= 0)), 
+	 ((Row251 #= 0 and Freq251 #= 0)), 
 
-	 (Row252 #= 0 and Freq252 #= 0)), 
+	 ((Row252 #= 0 and Freq252 #= 0)), 
 
-	 (Row253 #= 0 and Freq253 #= 0)), 
+	 ((Row253 #= 0 and Freq253 #= 0)), 
 
-	 (Row254 #= 0 and Freq254 #= 0)), 
+	 ((Row254 #= 0 and Freq254 #= 0)), 
 
-	 (Row255 #= 0 and Freq255 #= 0)), 
+	 ((Row255 #= 0 and Freq255 #= 0)), 
 
-	 (Row256 #= 0 and Freq256 #= 0)), 
+	 ((Row256 #= 0 and Freq256 #= 0)), 
 
-	 (Row257 #= 0 and Freq257 #= 0)), 
+	 ((Row257 #= 0 and Freq257 #= 0)), 
 
-	 (Row258 #= 0 and Freq258 #= 0)), 
+	 ((Row258 #= 0 and Freq258 #= 0)), 
 
-	 (Row259 #= 0 and Freq259 #= 0)), 
+	 ((Row259 #= 0 and Freq259 #= 0)), 
 
-	 (Row260 #= 0 and Freq260 #= 0)), 
+	 ((Row260 #= 0 and Freq260 #= 0)), 
 
-	 (Row261 #= 0 and Freq261 #= 0)), 
+	 ((Row261 #= 0 and Freq261 #= 0)), 
 
-	 (Row262 #= 0 and Freq262 #= 0)), 
+	 ((Row262 #= 0 and Freq262 #= 0)), 
 
-	 (Row263 #= 0 and Freq263 #= 0)), 
+	 ((Row263 #= 0 and Freq263 #= 0)), 
 
-	 (Row264 #= 0 and Freq264 #= 0)), 
+	 ((Row264 #= 0 and Freq264 #= 0)), 
 
-	 (Row265 #= 0 and Freq265 #= 0)), 
+	 ((Row265 #= 0 and Freq265 #= 0)), 
 
-	 (Row266 #= 0 and Freq266 #= 0)), 
+	 ((Row266 #= 0 and Freq266 #= 0)), 
 
-	 (Row267 #= 0 and Freq267 #= 0)), 
+	 ((Row267 #= 0 and Freq267 #= 0)), 
 
-	 (Row268 #= 0 and Freq268 #= 0)), 
+	 ((Row268 #= 0 and Freq268 #= 0)), 
 
-	 (Row269 #= 0 and Freq269 #= 0)), 
+	 ((Row269 #= 0 and Freq269 #= 0)), 
 
-	 (Row270 #= 0 and Freq270 #= 0)), 
+	 ((Row270 #= 0 and Freq270 #= 0)), 
 
-	 (Row271 #= 0 and Freq271 #= 0)), 
+	 ((Row271 #= 0 and Freq271 #= 0)), 
 
-	 (Row272 #= 0 and Freq272 #= 0)), 
+	 ((Row272 #= 0 and Freq272 #= 0)), 
 
-	 (Row273 #= 0 and Freq273 #= 0)), 
+	 ((Row273 #= 0 and Freq273 #= 0)), 
 
-	 (Row274 #= 0 and Freq274 #= 0)), 
+	 ((Row274 #= 0 and Freq274 #= 0)), 
 
-	 (Row275 #= 0 and Freq275 #= 0)), 
+	 ((Row275 #= 0 and Freq275 #= 0)), 
 
-	 (Row276 #= 0 and Freq276 #= 0)), 
+	 ((Row276 #= 0 and Freq276 #= 0)), 
 
-	 (Row277 #= 0 and Freq277 #= 0)), 
+	 ((Row277 #= 0 and Freq277 #= 0)), 
 
-	 (Row278 #= 0 and Freq278 #= 0)), 
+	 ((Row278 #= 0 and Freq278 #= 0)), 
 
-	 (Row279 #= 0 and Freq279 #= 0)), 
+	 ((Row279 #= 0 and Freq279 #= 0)), 
 
-	 (Row280 #= 0 and Freq280 #= 0)), 
+	 ((Row280 #= 0 and Freq280 #= 0)), 
 
-	 (Row281 #= 0 and Freq281 #= 0)), 
+	 ((Row281 #= 0 and Freq281 #= 0)), 
 
-	 (Row282 #= 0 and Freq282 #= 0)), 
+	 ((Row282 #= 0 and Freq282 #= 0)), 
 
-	 (Row283 #= 0 and Freq283 #= 0)), 
+	 ((Row283 #= 0 and Freq283 #= 0)), 
 
-	 (Row284 #= 0 and Freq284 #= 0)), 
+	 ((Row284 #= 0 and Freq284 #= 0)), 
 
-	 (Row285 #= 0 and Freq285 #= 0)), 
+	 ((Row285 #= 0 and Freq285 #= 0)), 
 
-	 (Row286 #= 0 and Freq286 #= 0)), 
+	 ((Row286 #= 0 and Freq286 #= 0)), 
 
-	 (Row287 #= 0 and Freq287 #= 0)), 
+	 ((Row287 #= 0 and Freq287 #= 0)), 
 
-	 (Row288 #= 0 and Freq288 #= 0)), 
+	 ((Row288 #= 0 and Freq288 #= 0)), 
 
-	 (Row289 #= 0 and Freq289 #= 0)), 
+	 ((Row289 #= 0 and Freq289 #= 0)), 
 
-	 (Row290 #= 0 and Freq290 #= 0)), 
+	 ((Row290 #= 0 and Freq290 #= 0)), 
 
-	 (Row291 #= 0 and Freq291 #= 0)), 
+	 ((Row291 #= 0 and Freq291 #= 0)), 
 
-	 (Row292 #= 0 and Freq292 #= 0)), 
+	 ((Row292 #= 0 and Freq292 #= 0)), 
 
-	 (Row293 #= 0 and Freq293 #= 0)), 
+	 ((Row293 #= 0 and Freq293 #= 0)), 
 
-	 (Row294 #= 0 and Freq294 #= 0)), 
+	 ((Row294 #= 0 and Freq294 #= 0)), 
 
-	 (Row295 #= 0 and Freq295 #= 0)), 
+	 ((Row295 #= 0 and Freq295 #= 0)), 
 
-	 (Row296 #= 0 and Freq296 #= 0)), 
+	 ((Row296 #= 0 and Freq296 #= 0)), 
 
-	 (Row297 #= 0 and Freq297 #= 0)), 
+	 ((Row297 #= 0 and Freq297 #= 0)), 
 
-	 (Row298 #= 0 and Freq298 #= 0)), 
+	 ((Row298 #= 0 and Freq298 #= 0)), 
 
-	 (Row299 #= 0 and Freq299 #= 0)), 
+	 ((Row299 #= 0 and Freq299 #= 0)), 
 
-	 (Row300 #= 0 and Freq300 #= 0)), 
+	 ((Row300 #= 0 and Freq300 #= 0)), 
 
-	 (Row301 #= 0 and Freq301 #= 0)), 
+	 ((Row301 #= 0 and Freq301 #= 0)), 
 
-	 (Row302 #= 0 and Freq302 #= 0)), 
+	 ((Row302 #= 0 and Freq302 #= 0)), 
 
-	 (Row303 #= 0 and Freq303 #= 0)), 
+	 ((Row303 #= 0 and Freq303 #= 0)), 
 
-	 (Row304 #= 0 and Freq304 #= 0)), 
+	 ((Row304 #= 0 and Freq304 #= 0)), 
 
-	 (Row305 #= 0 and Freq305 #= 0)), 
+	 ((Row305 #= 0 and Freq305 #= 0)), 
 
-	 (Row306 #= 0 and Freq306 #= 0)), 
+	 ((Row306 #= 0 and Freq306 #= 0)), 
 
-	 (Row307 #= 0 and Freq307 #= 0)), 
+	 ((Row307 #= 0 and Freq307 #= 0)), 
 
-	 (Row308 #= 0 and Freq308 #= 0)), 
+	 ((Row308 #= 0 and Freq308 #= 0)), 
 
-	 (Row309 #= 0 and Freq309 #= 0)), 
+	 ((Row309 #= 0 and Freq309 #= 0)), 
 
-	 (Row310 #= 0 and Freq310 #= 0)), 
+	 ((Row310 #= 0 and Freq310 #= 0)), 
 
-	 (Row311 #= 0 and Freq311 #= 0)), 
+	 ((Row311 #= 0 and Freq311 #= 0)), 
 
-	 (Row312 #= 0 and Freq312 #= 0)), 
+	 ((Row312 #= 0 and Freq312 #= 0)), 
 
-	 (Row313 #= 0 and Freq313 #= 0)), 
+	 ((Row313 #= 0 and Freq313 #= 0)), 
 
-	 (Row314 #= 0 and Freq314 #= 0)), 
+	 ((Row314 #= 0 and Freq314 #= 0)), 
 
-	 (Row315 #= 0 and Freq315 #= 0)), 
+	 ((Row315 #= 0 and Freq315 #= 0)), 
 
-	 (Row316 #= 0 and Freq316 #= 0)), 
+	 ((Row316 #= 0 and Freq316 #= 0)), 
 
-	 (Row317 #= 0 and Freq317 #= 0)), 
+	 ((Row317 #= 0 and Freq317 #= 0)), 
 
-	 (Row318 #= 0 and Freq318 #= 0)), 
+	 ((Row318 #= 0 and Freq318 #= 0)), 
 
-	 (Row319 #= 0 and Freq319 #= 0)), 
+	 ((Row319 #= 0 and Freq319 #= 0)), 
 
-	 (Row320 #= 0 and Freq320 #= 0)), 
+	 ((Row320 #= 0 and Freq320 #= 0)), 
 
-	 (Row321 #= 0 and Freq321 #= 0)), 
+	 ((Row321 #= 0 and Freq321 #= 0)), 
 
-	 (Row322 #= 0 and Freq322 #= 0)), 
+	 ((Row322 #= 0 and Freq322 #= 0)), 
 
-	 (Row323 #= 0 and Freq323 #= 0)), 
+	 ((Row323 #= 0 and Freq323 #= 0)), 
 
-	 (Row324 #= 0 and Freq324 #= 0)), 
+	 ((Row324 #= 0 and Freq324 #= 0)), 
 
-	 (Row325 #= 0 and Freq325 #= 0)), 
+	 ((Row325 #= 0 and Freq325 #= 0)), 
 
-	 (Row326 #= 0 and Freq326 #= 0)), 
+	 ((Row326 #= 0 and Freq326 #= 0)), 
 
-	 (Row327 #= 0 and Freq327 #= 0)), 
+	 ((Row327 #= 0 and Freq327 #= 0)), 
 
-	 (Row328 #= 0 and Freq328 #= 0)), 
+	 ((Row328 #= 0 and Freq328 #= 0)), 
 
-	 (Row329 #= 0 and Freq329 #= 0)), 
+	 ((Row329 #= 0 and Freq329 #= 0)), 
 
-	 (Row330 #= 0 and Freq330 #= 0)), 
+	 ((Row330 #= 0 and Freq330 #= 0)), 
 
-	 (Row331 #= 0 and Freq331 #= 0)), 
+	 ((Row331 #= 0 and Freq331 #= 0)), 
 
-	 (Row332 #= 0 and Freq332 #= 0)), 
+	 ((Row332 #= 0 and Freq332 #= 0)), 
 
-	 (Row333 #= 0 and Freq333 #= 0)), 
+	 ((Row333 #= 0 and Freq333 #= 0)), 
 
-	 (Row334 #= 0 and Freq334 #= 0)), 
+	 ((Row334 #= 0 and Freq334 #= 0)), 
 
-	 (Row335 #= 0 and Freq335 #= 0)), 
+	 ((Row335 #= 0 and Freq335 #= 0)), 
 
-	 (Row336 #= 0 and Freq336 #= 0)), 
+	 ((Row336 #= 0 and Freq336 #= 0)), 
 
-	 (Row337 #= 0 and Freq337 #= 0)), 
+	 ((Row337 #= 0 and Freq337 #= 0)), 
 
 	 (Row338 #= 160 and Freq338 #= 1) or
 	 (Row338 #= 0 and Freq338 #= 0)), 
 
-	 (Row339 #= 0 and Freq339 #= 0)), 
+	 ((Row339 #= 0 and Freq339 #= 0)), 
 
-	 (Row340 #= 0 and Freq340 #= 0)), 
+	 ((Row340 #= 0 and Freq340 #= 0)), 
 
-	 (Row341 #= 0 and Freq341 #= 0)), 
+	 ((Row341 #= 0 and Freq341 #= 0)), 
 
 	 (Row342 #= 101 and Freq342 #= 1) or
 	 (Row342 #= 0 and Freq342 #= 0)), 
 
-	 (Row343 #= 0 and Freq343 #= 0)), 
+	 ((Row343 #= 0 and Freq343 #= 0)), 
 
-	 (Row344 #= 0 and Freq344 #= 0)), 
+	 ((Row344 #= 0 and Freq344 #= 0)), 
 
 	 (Row345 #= 130 and Freq345 #= 1) or
 	 (Row345 #= 0 and Freq345 #= 0)), 
 
-	 (Row346 #= 0 and Freq346 #= 0)), 
+	 ((Row346 #= 0 and Freq346 #= 0)), 
 
-	 (Row347 #= 0 and Freq347 #= 0)), 
+	 ((Row347 #= 0 and Freq347 #= 0)), 
 
 	 (Row348 #= 88 and Freq348 #= 1) or
 	 (Row348 #= 96 and Freq348 #= 1) or
@@ -2626,15 +2626,15 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row374 #= 136 and Freq374 #= 1) or
 	 (Row374 #= 0 and Freq374 #= 0)), 
 
-	 (Row375 #= 0 and Freq375 #= 0)), 
+	 ((Row375 #= 0 and Freq375 #= 0)), 
 
-	 (Row376 #= 0 and Freq376 #= 0)), 
+	 ((Row376 #= 0 and Freq376 #= 0)), 
 
-	 (Row377 #= 0 and Freq377 #= 0)), 
+	 ((Row377 #= 0 and Freq377 #= 0)), 
 
-	 (Row378 #= 0 and Freq378 #= 0)), 
+	 ((Row378 #= 0 and Freq378 #= 0)), 
 
-	 (Row379 #= 0 and Freq379 #= 0)), 
+	 ((Row379 #= 0 and Freq379 #= 0)), 
 
 	 (Row380 #= 12 and Freq380 #= 7) or
 	 (Row380 #= 93 and Freq380 #= 1) or
@@ -3196,288 +3196,288 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row401 #= 131 and Freq401 #= 1) or
 	 (Row401 #= 0 and Freq401 #= 0)), 
 
-	 (Row402 #= 0 and Freq402 #= 0)), 
+	 ((Row402 #= 0 and Freq402 #= 0)), 
 
 	 (Row403 #= 120 and Freq403 #= 1) or
 	 (Row403 #= 0 and Freq403 #= 0)), 
 
-	 (Row404 #= 0 and Freq404 #= 0)), 
+	 ((Row404 #= 0 and Freq404 #= 0)), 
 
-	 (Row405 #= 0 and Freq405 #= 0)), 
+	 ((Row405 #= 0 and Freq405 #= 0)), 
 
-	 (Row406 #= 0 and Freq406 #= 0)), 
+	 ((Row406 #= 0 and Freq406 #= 0)), 
 
-	 (Row407 #= 0 and Freq407 #= 0)), 
+	 ((Row407 #= 0 and Freq407 #= 0)), 
 
-	 (Row408 #= 0 and Freq408 #= 0)), 
+	 ((Row408 #= 0 and Freq408 #= 0)), 
 
-	 (Row409 #= 0 and Freq409 #= 0)), 
+	 ((Row409 #= 0 and Freq409 #= 0)), 
 
-	 (Row410 #= 0 and Freq410 #= 0)), 
+	 ((Row410 #= 0 and Freq410 #= 0)), 
 
-	 (Row411 #= 0 and Freq411 #= 0)), 
+	 ((Row411 #= 0 and Freq411 #= 0)), 
 
-	 (Row412 #= 0 and Freq412 #= 0)), 
+	 ((Row412 #= 0 and Freq412 #= 0)), 
 
-	 (Row413 #= 0 and Freq413 #= 0)), 
+	 ((Row413 #= 0 and Freq413 #= 0)), 
 
-	 (Row414 #= 0 and Freq414 #= 0)), 
+	 ((Row414 #= 0 and Freq414 #= 0)), 
 
-	 (Row415 #= 0 and Freq415 #= 0)), 
+	 ((Row415 #= 0 and Freq415 #= 0)), 
 
-	 (Row416 #= 0 and Freq416 #= 0)), 
+	 ((Row416 #= 0 and Freq416 #= 0)), 
 
-	 (Row417 #= 0 and Freq417 #= 0)), 
+	 ((Row417 #= 0 and Freq417 #= 0)), 
 
-	 (Row418 #= 0 and Freq418 #= 0)), 
+	 ((Row418 #= 0 and Freq418 #= 0)), 
 
-	 (Row419 #= 0 and Freq419 #= 0)), 
+	 ((Row419 #= 0 and Freq419 #= 0)), 
 
-	 (Row420 #= 0 and Freq420 #= 0)), 
+	 ((Row420 #= 0 and Freq420 #= 0)), 
 
-	 (Row421 #= 0 and Freq421 #= 0)), 
+	 ((Row421 #= 0 and Freq421 #= 0)), 
 
-	 (Row422 #= 0 and Freq422 #= 0)), 
+	 ((Row422 #= 0 and Freq422 #= 0)), 
 
-	 (Row423 #= 0 and Freq423 #= 0)), 
+	 ((Row423 #= 0 and Freq423 #= 0)), 
 
-	 (Row424 #= 0 and Freq424 #= 0)), 
+	 ((Row424 #= 0 and Freq424 #= 0)), 
 
-	 (Row425 #= 0 and Freq425 #= 0)), 
+	 ((Row425 #= 0 and Freq425 #= 0)), 
 
-	 (Row426 #= 0 and Freq426 #= 0)), 
+	 ((Row426 #= 0 and Freq426 #= 0)), 
 
-	 (Row427 #= 0 and Freq427 #= 0)), 
+	 ((Row427 #= 0 and Freq427 #= 0)), 
 
-	 (Row428 #= 0 and Freq428 #= 0)), 
+	 ((Row428 #= 0 and Freq428 #= 0)), 
 
-	 (Row429 #= 0 and Freq429 #= 0)), 
+	 ((Row429 #= 0 and Freq429 #= 0)), 
 
-	 (Row430 #= 0 and Freq430 #= 0)), 
+	 ((Row430 #= 0 and Freq430 #= 0)), 
 
-	 (Row431 #= 0 and Freq431 #= 0)), 
+	 ((Row431 #= 0 and Freq431 #= 0)), 
 
-	 (Row432 #= 0 and Freq432 #= 0)), 
+	 ((Row432 #= 0 and Freq432 #= 0)), 
 
-	 (Row433 #= 0 and Freq433 #= 0)), 
+	 ((Row433 #= 0 and Freq433 #= 0)), 
 
-	 (Row434 #= 0 and Freq434 #= 0)), 
+	 ((Row434 #= 0 and Freq434 #= 0)), 
 
-	 (Row435 #= 0 and Freq435 #= 0)), 
+	 ((Row435 #= 0 and Freq435 #= 0)), 
 
-	 (Row436 #= 0 and Freq436 #= 0)), 
+	 ((Row436 #= 0 and Freq436 #= 0)), 
 
-	 (Row437 #= 0 and Freq437 #= 0)), 
+	 ((Row437 #= 0 and Freq437 #= 0)), 
 
-	 (Row438 #= 0 and Freq438 #= 0)), 
+	 ((Row438 #= 0 and Freq438 #= 0)), 
 
-	 (Row439 #= 0 and Freq439 #= 0)), 
+	 ((Row439 #= 0 and Freq439 #= 0)), 
 
-	 (Row440 #= 0 and Freq440 #= 0)), 
+	 ((Row440 #= 0 and Freq440 #= 0)), 
 
-	 (Row441 #= 0 and Freq441 #= 0)), 
+	 ((Row441 #= 0 and Freq441 #= 0)), 
 
-	 (Row442 #= 0 and Freq442 #= 0)), 
+	 ((Row442 #= 0 and Freq442 #= 0)), 
 
-	 (Row443 #= 0 and Freq443 #= 0)), 
+	 ((Row443 #= 0 and Freq443 #= 0)), 
 
-	 (Row444 #= 0 and Freq444 #= 0)), 
+	 ((Row444 #= 0 and Freq444 #= 0)), 
 
-	 (Row445 #= 0 and Freq445 #= 0)), 
+	 ((Row445 #= 0 and Freq445 #= 0)), 
 
-	 (Row446 #= 0 and Freq446 #= 0)), 
+	 ((Row446 #= 0 and Freq446 #= 0)), 
 
-	 (Row447 #= 0 and Freq447 #= 0)), 
+	 ((Row447 #= 0 and Freq447 #= 0)), 
 
-	 (Row448 #= 0 and Freq448 #= 0)), 
+	 ((Row448 #= 0 and Freq448 #= 0)), 
 
-	 (Row449 #= 0 and Freq449 #= 0)), 
+	 ((Row449 #= 0 and Freq449 #= 0)), 
 
-	 (Row450 #= 0 and Freq450 #= 0)), 
+	 ((Row450 #= 0 and Freq450 #= 0)), 
 
-	 (Row451 #= 0 and Freq451 #= 0)), 
+	 ((Row451 #= 0 and Freq451 #= 0)), 
 
-	 (Row452 #= 0 and Freq452 #= 0)), 
+	 ((Row452 #= 0 and Freq452 #= 0)), 
 
-	 (Row453 #= 0 and Freq453 #= 0)), 
+	 ((Row453 #= 0 and Freq453 #= 0)), 
 
-	 (Row454 #= 0 and Freq454 #= 0)), 
+	 ((Row454 #= 0 and Freq454 #= 0)), 
 
-	 (Row455 #= 0 and Freq455 #= 0)), 
+	 ((Row455 #= 0 and Freq455 #= 0)), 
 
-	 (Row456 #= 0 and Freq456 #= 0)), 
+	 ((Row456 #= 0 and Freq456 #= 0)), 
 
-	 (Row457 #= 0 and Freq457 #= 0)), 
+	 ((Row457 #= 0 and Freq457 #= 0)), 
 
-	 (Row458 #= 0 and Freq458 #= 0)), 
+	 ((Row458 #= 0 and Freq458 #= 0)), 
 
-	 (Row459 #= 0 and Freq459 #= 0)), 
+	 ((Row459 #= 0 and Freq459 #= 0)), 
 
-	 (Row460 #= 0 and Freq460 #= 0)), 
+	 ((Row460 #= 0 and Freq460 #= 0)), 
 
-	 (Row461 #= 0 and Freq461 #= 0)), 
+	 ((Row461 #= 0 and Freq461 #= 0)), 
 
-	 (Row462 #= 0 and Freq462 #= 0)), 
+	 ((Row462 #= 0 and Freq462 #= 0)), 
 
-	 (Row463 #= 0 and Freq463 #= 0)), 
+	 ((Row463 #= 0 and Freq463 #= 0)), 
 
-	 (Row464 #= 0 and Freq464 #= 0)), 
+	 ((Row464 #= 0 and Freq464 #= 0)), 
 
-	 (Row465 #= 0 and Freq465 #= 0)), 
+	 ((Row465 #= 0 and Freq465 #= 0)), 
 
-	 (Row466 #= 0 and Freq466 #= 0)), 
+	 ((Row466 #= 0 and Freq466 #= 0)), 
 
-	 (Row467 #= 0 and Freq467 #= 0)), 
+	 ((Row467 #= 0 and Freq467 #= 0)), 
 
-	 (Row468 #= 0 and Freq468 #= 0)), 
+	 ((Row468 #= 0 and Freq468 #= 0)), 
 
-	 (Row469 #= 0 and Freq469 #= 0)), 
+	 ((Row469 #= 0 and Freq469 #= 0)), 
 
-	 (Row470 #= 0 and Freq470 #= 0)), 
+	 ((Row470 #= 0 and Freq470 #= 0)), 
 
-	 (Row471 #= 0 and Freq471 #= 0)), 
+	 ((Row471 #= 0 and Freq471 #= 0)), 
 
-	 (Row472 #= 0 and Freq472 #= 0)), 
+	 ((Row472 #= 0 and Freq472 #= 0)), 
 
-	 (Row473 #= 0 and Freq473 #= 0)), 
+	 ((Row473 #= 0 and Freq473 #= 0)), 
 
-	 (Row474 #= 0 and Freq474 #= 0)), 
+	 ((Row474 #= 0 and Freq474 #= 0)), 
 
-	 (Row475 #= 0 and Freq475 #= 0)), 
+	 ((Row475 #= 0 and Freq475 #= 0)), 
 
-	 (Row476 #= 0 and Freq476 #= 0)), 
+	 ((Row476 #= 0 and Freq476 #= 0)), 
 
-	 (Row477 #= 0 and Freq477 #= 0)), 
+	 ((Row477 #= 0 and Freq477 #= 0)), 
 
-	 (Row478 #= 0 and Freq478 #= 0)), 
+	 ((Row478 #= 0 and Freq478 #= 0)), 
 
 	 (Row479 #= 245 and Freq479 #= 1) or
 	 (Row479 #= 0 and Freq479 #= 0)), 
 
-	 (Row480 #= 0 and Freq480 #= 0)), 
+	 ((Row480 #= 0 and Freq480 #= 0)), 
 
-	 (Row481 #= 0 and Freq481 #= 0)), 
+	 ((Row481 #= 0 and Freq481 #= 0)), 
 
-	 (Row482 #= 0 and Freq482 #= 0)), 
+	 ((Row482 #= 0 and Freq482 #= 0)), 
 
-	 (Row483 #= 0 and Freq483 #= 0)), 
+	 ((Row483 #= 0 and Freq483 #= 0)), 
 
-	 (Row484 #= 0 and Freq484 #= 0)), 
+	 ((Row484 #= 0 and Freq484 #= 0)), 
 
-	 (Row485 #= 0 and Freq485 #= 0)), 
+	 ((Row485 #= 0 and Freq485 #= 0)), 
 
-	 (Row486 #= 0 and Freq486 #= 0)), 
+	 ((Row486 #= 0 and Freq486 #= 0)), 
 
-	 (Row487 #= 0 and Freq487 #= 0)), 
+	 ((Row487 #= 0 and Freq487 #= 0)), 
 
-	 (Row488 #= 0 and Freq488 #= 0)), 
+	 ((Row488 #= 0 and Freq488 #= 0)), 
 
-	 (Row489 #= 0 and Freq489 #= 0)), 
+	 ((Row489 #= 0 and Freq489 #= 0)), 
 
-	 (Row490 #= 0 and Freq490 #= 0)), 
+	 ((Row490 #= 0 and Freq490 #= 0)), 
 
-	 (Row491 #= 0 and Freq491 #= 0)), 
+	 ((Row491 #= 0 and Freq491 #= 0)), 
 
-	 (Row492 #= 0 and Freq492 #= 0)), 
+	 ((Row492 #= 0 and Freq492 #= 0)), 
 
-	 (Row493 #= 0 and Freq493 #= 0)), 
+	 ((Row493 #= 0 and Freq493 #= 0)), 
 
-	 (Row494 #= 0 and Freq494 #= 0)), 
+	 ((Row494 #= 0 and Freq494 #= 0)), 
 
-	 (Row495 #= 0 and Freq495 #= 0)), 
+	 ((Row495 #= 0 and Freq495 #= 0)), 
 
-	 (Row496 #= 0 and Freq496 #= 0)), 
+	 ((Row496 #= 0 and Freq496 #= 0)), 
 
-	 (Row497 #= 0 and Freq497 #= 0)), 
+	 ((Row497 #= 0 and Freq497 #= 0)), 
 
-	 (Row498 #= 0 and Freq498 #= 0)), 
+	 ((Row498 #= 0 and Freq498 #= 0)), 
 
-	 (Row499 #= 0 and Freq499 #= 0)), 
+	 ((Row499 #= 0 and Freq499 #= 0)), 
 
-	 (Row500 #= 0 and Freq500 #= 0)), 
+	 ((Row500 #= 0 and Freq500 #= 0)), 
 
-	 (Row501 #= 0 and Freq501 #= 0)), 
+	 ((Row501 #= 0 and Freq501 #= 0)), 
 
-	 (Row502 #= 0 and Freq502 #= 0)), 
+	 ((Row502 #= 0 and Freq502 #= 0)), 
 
-	 (Row503 #= 0 and Freq503 #= 0)), 
+	 ((Row503 #= 0 and Freq503 #= 0)), 
 
-	 (Row504 #= 0 and Freq504 #= 0)), 
+	 ((Row504 #= 0 and Freq504 #= 0)), 
 
-	 (Row505 #= 0 and Freq505 #= 0)), 
+	 ((Row505 #= 0 and Freq505 #= 0)), 
 
-	 (Row506 #= 0 and Freq506 #= 0)), 
+	 ((Row506 #= 0 and Freq506 #= 0)), 
 
-	 (Row507 #= 0 and Freq507 #= 0)), 
+	 ((Row507 #= 0 and Freq507 #= 0)), 
 
-	 (Row508 #= 0 and Freq508 #= 0)), 
+	 ((Row508 #= 0 and Freq508 #= 0)), 
 
-	 (Row509 #= 0 and Freq509 #= 0)), 
+	 ((Row509 #= 0 and Freq509 #= 0)), 
 
-	 (Row510 #= 0 and Freq510 #= 0)), 
+	 ((Row510 #= 0 and Freq510 #= 0)), 
 
-	 (Row511 #= 0 and Freq511 #= 0)), 
+	 ((Row511 #= 0 and Freq511 #= 0)), 
 
-	 (Row512 #= 0 and Freq512 #= 0)), 
+	 ((Row512 #= 0 and Freq512 #= 0)), 
 
-	 (Row513 #= 0 and Freq513 #= 0)), 
+	 ((Row513 #= 0 and Freq513 #= 0)), 
 
-	 (Row514 #= 0 and Freq514 #= 0)), 
+	 ((Row514 #= 0 and Freq514 #= 0)), 
 
-	 (Row515 #= 0 and Freq515 #= 0)), 
+	 ((Row515 #= 0 and Freq515 #= 0)), 
 
-	 (Row516 #= 0 and Freq516 #= 0)), 
+	 ((Row516 #= 0 and Freq516 #= 0)), 
 
-	 (Row517 #= 0 and Freq517 #= 0)), 
+	 ((Row517 #= 0 and Freq517 #= 0)), 
 
-	 (Row518 #= 0 and Freq518 #= 0)), 
+	 ((Row518 #= 0 and Freq518 #= 0)), 
 
-	 (Row519 #= 0 and Freq519 #= 0)), 
+	 ((Row519 #= 0 and Freq519 #= 0)), 
 
-	 (Row520 #= 0 and Freq520 #= 0)), 
+	 ((Row520 #= 0 and Freq520 #= 0)), 
 
-	 (Row521 #= 0 and Freq521 #= 0)), 
+	 ((Row521 #= 0 and Freq521 #= 0)), 
 
-	 (Row522 #= 0 and Freq522 #= 0)), 
+	 ((Row522 #= 0 and Freq522 #= 0)), 
 
-	 (Row523 #= 0 and Freq523 #= 0)), 
+	 ((Row523 #= 0 and Freq523 #= 0)), 
 
-	 (Row524 #= 0 and Freq524 #= 0)), 
+	 ((Row524 #= 0 and Freq524 #= 0)), 
 
-	 (Row525 #= 0 and Freq525 #= 0)), 
+	 ((Row525 #= 0 and Freq525 #= 0)), 
 
-	 (Row526 #= 0 and Freq526 #= 0)), 
+	 ((Row526 #= 0 and Freq526 #= 0)), 
 
-	 (Row527 #= 0 and Freq527 #= 0)), 
+	 ((Row527 #= 0 and Freq527 #= 0)), 
 
-	 (Row528 #= 0 and Freq528 #= 0)), 
+	 ((Row528 #= 0 and Freq528 #= 0)), 
 
-	 (Row529 #= 0 and Freq529 #= 0)), 
+	 ((Row529 #= 0 and Freq529 #= 0)), 
 
-	 (Row530 #= 0 and Freq530 #= 0)), 
+	 ((Row530 #= 0 and Freq530 #= 0)), 
 
-	 (Row531 #= 0 and Freq531 #= 0)), 
+	 ((Row531 #= 0 and Freq531 #= 0)), 
 
-	 (Row532 #= 0 and Freq532 #= 0)), 
+	 ((Row532 #= 0 and Freq532 #= 0)), 
 
-	 (Row533 #= 0 and Freq533 #= 0)), 
+	 ((Row533 #= 0 and Freq533 #= 0)), 
 
-	 (Row534 #= 0 and Freq534 #= 0)), 
+	 ((Row534 #= 0 and Freq534 #= 0)), 
 
-	 (Row535 #= 0 and Freq535 #= 0)), 
+	 ((Row535 #= 0 and Freq535 #= 0)), 
 
-	 (Row536 #= 0 and Freq536 #= 0)), 
+	 ((Row536 #= 0 and Freq536 #= 0)), 
 
 	 (Row537 #= 245 and Freq537 #= 1) or
 	 (Row537 #= 246 and Freq537 #= 1) or
 	 (Row537 #= 0 and Freq537 #= 0)), 
 
-	 (Row538 #= 0 and Freq538 #= 0)), 
+	 ((Row538 #= 0 and Freq538 #= 0)), 
 
 	 (Row539 #= 245 and Freq539 #= 1) or
 	 (Row539 #= 0 and Freq539 #= 0)), 
 
-	 (Row540 #= 0 and Freq540 #= 0)), 
+	 ((Row540 #= 0 and Freq540 #= 0)), 
 
 	 (Row541 #= 246 and Freq541 #= 1) or
 	 (Row541 #= 0 and Freq541 #= 0)), 
@@ -3490,9 +3490,9 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row543 #= 246 and Freq543 #= 1) or
 	 (Row543 #= 0 and Freq543 #= 0)), 
 
-	 (Row544 #= 0 and Freq544 #= 0)), 
+	 ((Row544 #= 0 and Freq544 #= 0)), 
 
-	 (Row545 #= 0 and Freq545 #= 0)), 
+	 ((Row545 #= 0 and Freq545 #= 0)), 
 
 	 (Row546 #= 245 and Freq546 #= 1) or
 	 (Row546 #= 246 and Freq546 #= 1) or
@@ -3510,9 +3510,9 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row550 #= 246 and Freq550 #= 1) or
 	 (Row550 #= 0 and Freq550 #= 0)), 
 
-	 (Row551 #= 0 and Freq551 #= 0)), 
+	 ((Row551 #= 0 and Freq551 #= 0)), 
 
-	 (Row552 #= 0 and Freq552 #= 0)), 
+	 ((Row552 #= 0 and Freq552 #= 0)), 
 
 	 (Row553 #= 245 and Freq553 #= 1) or
 	 (Row553 #= 246 and Freq553 #= 1) or
@@ -3535,7 +3535,7 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row557 #= 246 and Freq557 #= 6) or
 	 (Row557 #= 0 and Freq557 #= 0)), 
 
-	 (Row558 #= 0 and Freq558 #= 0)), 
+	 ((Row558 #= 0 and Freq558 #= 0)), 
 
 	% All of the values assumed by the Row<i> variables must be  
 	% all different or zero; multiple zeros are allowed  
