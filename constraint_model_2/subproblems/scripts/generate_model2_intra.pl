@@ -26,6 +26,7 @@ my $scale = $ARGV[1]; # for s.pombe work this was set to 1000
 my $chr_start = $ARGV[2];
 my $chr_stop = $ARGV[3];
 
+
 ###########################################################################################
 ##	parse the interaction matrix
 ###########################################################################################
@@ -76,6 +77,7 @@ print "% PO Box 1866, Mountain View, CA 94042, USA.\n\n";
 
 print "% Load the relevant libraries \n";
 print ":- lib(gfd). \n";
+print ":- lib(gfd_search).\n";
 print ":- lib(branch_and_bound).\n\n";
 
 print "% alldifferent_except(Vars) is true if each term in list Vars is  \n";
@@ -129,7 +131,8 @@ print "enforce_symmetry(Vars) :- \n";
 	print "\t( foreach(X, Vars), param(Vars) do \n\n";
 		
 		print "\t% chose a value for X from it's domain\n";
-		print "\tindomain(X), \n\n";
+		print "\tgfd_update,\n";
+		print "\tindomain(X, min), \n\n";
 
 		print "\t\t% If the value bound to X is non-zero \n";
 		print "\t\t( (X \\= 0) -> \n\n";
@@ -139,7 +142,7 @@ print "enforce_symmetry(Vars) :- \n";
 			print "\t\t\telement(X, Vars, K), \n\n";
 		
 			print "\t\t\t% K must be bound to zero \n";
-			print "\t\t\tK = 0 \n";
+			print "\t\t\tK #= 0 \n";
 		print "\t\t; \n";
 			print "\t\t\ttrue \n";
 		print "\t\t) \n";
@@ -195,19 +198,27 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% interaction \n";
 	for(my $i = $chr_start; $i <= $chr_stop; $i++)
 	{
-		# account for the last number
-		if($i == $chr_stop)
+		# find the non-zero interactions
+		my @domain;
+		
+		for(my $j = $i+1; $j <= $chr_stop; $j++)
 		{
-			print "\tRow".$i." :: [0], \n\n";
+			# if the corresponding row and col freq is non-zero
+			if($frequencies[$i][$j] != 0)
+			{
+				# add the column to the rows domain
+				push @domain, $j;
+			}
 		}
-		elsif($i+1 == $chr_stop)
+		
+		# print the domain values
+		print "\tRow".$i." :: [0";
+		for(my $u = 0; $u <= $#domain; $u++)
 		{
-			print "\tRow".$i." :: [0, ".($i+1)."], \n";
-		}
-		else
-		{
-			print "\tRow".$i." :: [0, ".($i+1)."..".$num_variables."], \n";
-		}
+			print ", ".$domain[$u];	
+		}	
+		print "],\n";
+		
 	}
 
 	print "\t% Each frequency term can assume either the rounded \n";
@@ -217,7 +228,7 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% interaction not being selected \n";
 	for(my $i = $chr_start; $i <= $chr_stop; $i++)
 	{
-	
+		# find the non-zero interactions
 		my @domain;
 		my @unique_values;
 	
@@ -290,7 +301,9 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% All of the values assumed by the Row<i> variables must be  \n";
 	print "\t% all different or zero; multiple zeros are allowed  \n";
 	print "\talldifferent_except(Rows), \n\n";
-#	print "\tatmost(".($#non_zero_row_index-1).", Non_Zero_Rows, 0),\n";
+	
+#	print "\t the best solution will have at least one non-zero value\n";
+#	print "\tatmost(".($#non_zero_rows-1).", Rows, 0),\n";
 
 	print "\t% Optimize: the sum of the selected interaction \n";
 	print "\t% frequencies is maximal (it is the minimum of \n";
