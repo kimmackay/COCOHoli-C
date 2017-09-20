@@ -341,7 +341,7 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 		else
 		{
 			# only print the '0' case
-			print "\t (Row".$row_counter." #= 0 and Freq".$row_counter." #= 0)), \n\n";
+			print "\t ((Row".$row_counter." #= 0 and Freq".$row_counter." #= 0)), \n\n";
 		}
 		
 		# increment the row counter
