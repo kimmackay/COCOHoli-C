@@ -88,11 +88,11 @@ maximize(RowFile, FreqFile, Rows) :-
 	% Variable Declarations: 
 	% The list Rows has one variable for each row of the 
 	% whole-genome contact map 
-	Rows = [Row1, Row2, Row3, Row4, Row5, Row6, Row7, Row8, Row9, Row10],
+	Rows = [Row1, Row2, Row3, Row4, Row5],
 
 	% The list Freqs has one variable for each row of the 
 	% whole-genome contact map	
-	Freqs = [Freq1, Freq2, Freq3, Freq4, Freq5, Freq6, Freq7, Freq8, Freq9, Freq10],
+	Freqs = [Freq1, Freq2, Freq3, Freq4, Freq5],
 
 	% Representation of the Genome: 
 	% Each Row term can assume a value based on interacting bin 
@@ -100,32 +100,22 @@ maximize(RowFile, FreqFile, Rows) :-
 	% selected and a non-zero value (ranging from 1 to N) 
 	% represents which genomic bin is involved in the selected 
 	% interaction 
-	Row1 :: [0, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-	Row2 :: [0, 3, 4, 5, 6, 7, 8, 9, 10],
-	Row3 :: [0, 4, 5, 6, 7, 8, 9, 10],
-	Row4 :: [0, 5, 6, 7, 8, 9, 10],
-	Row5 :: [0, 6, 7, 8, 9, 10],
-	Row6 :: [0, 7, 8, 9, 10],
-	Row7 :: [0, 8, 9, 10],
-	Row8 :: [0, 9, 10],
-	Row9 :: [0, 10],
-	Row10 :: [0],
+	Row1 :: [0, 2, 3, 4, 5],
+	Row2 :: [0, 3, 4, 5],
+	Row3 :: [0, 4, 5],
+	Row4 :: [0, 5],
+	Row5 :: [0],
 
 	% Each frequency term can assume either the rounded 
 	% and scaled integer value (based on the corresponding 
 	% interaction frequency from the whole-genome contact 
 	% map) or a value of `0' where `0'  represents an 
 	% interaction not being selected 
-	Freq1 :: [0, 2, 3, 4, 5, 7, 9, 1],
-	Freq2 :: [0, 4, 5, 7, 9, 1, 2, 3],
-	Freq3 :: [0, 7, 9, 1, 2, 3, 4, 5],
-	Freq4 :: [0, 1, 2, 3, 4, 5, 7],
-	Freq5 :: [0, 3, 4, 5, 7, 9],
-	Freq6 :: [0, 5, 7, 9, 1],
-	Freq7 :: [0, 9, 1, 2],
-	Freq8 :: [0, 1, 2],
-	Freq9 :: [0, 3],
-	Freq10 :: [0],
+	Freq1 :: [0, 2, 3, 4, 5],
+	Freq2 :: [0, 4, 5, 2],
+	Freq3 :: [0, 2, 3],
+	Freq4 :: [0, 4],
+	Freq5 :: [0],
 
 	% Constraints: 
 	% Each pair of corresponding (Row<i>, Freq<i>) variables 
@@ -137,66 +127,21 @@ maximize(RowFile, FreqFile, Rows) :-
 	 (Row1 #= 3 and Freq1 #= 3) or
 	 (Row1 #= 4 and Freq1 #= 4) or
 	 (Row1 #= 5 and Freq1 #= 5) or
-	 (Row1 #= 6 and Freq1 #= 7) or
-	 (Row1 #= 7 and Freq1 #= 9) or
-	 (Row1 #= 8 and Freq1 #= 1) or
-	 (Row1 #= 9 and Freq1 #= 2) or
-	 (Row1 #= 10 and Freq1 #= 3) or
 	 (Row1 #= 0 and Freq1 #= 0)), 
 
 	((Row2 #= 3 and Freq2 #= 4) or
 	 (Row2 #= 4 and Freq2 #= 5) or
-	 (Row2 #= 5 and Freq2 #= 7) or
-	 (Row2 #= 6 and Freq2 #= 9) or
-	 (Row2 #= 7 and Freq2 #= 1) or
-	 (Row2 #= 8 and Freq2 #= 2) or
-	 (Row2 #= 9 and Freq2 #= 3) or
-	 (Row2 #= 10 and Freq2 #= 4) or
+	 (Row2 #= 5 and Freq2 #= 2) or
 	 (Row2 #= 0 and Freq2 #= 0)), 
 
-	((Row3 #= 4 and Freq3 #= 7) or
-	 (Row3 #= 5 and Freq3 #= 9) or
-	 (Row3 #= 6 and Freq3 #= 1) or
-	 (Row3 #= 7 and Freq3 #= 2) or
-	 (Row3 #= 8 and Freq3 #= 3) or
-	 (Row3 #= 9 and Freq3 #= 4) or
-	 (Row3 #= 10 and Freq3 #= 5) or
+	((Row3 #= 4 and Freq3 #= 2) or
+	 (Row3 #= 5 and Freq3 #= 3) or
 	 (Row3 #= 0 and Freq3 #= 0)), 
 
-	((Row4 #= 5 and Freq4 #= 1) or
-	 (Row4 #= 6 and Freq4 #= 2) or
-	 (Row4 #= 7 and Freq4 #= 3) or
-	 (Row4 #= 8 and Freq4 #= 4) or
-	 (Row4 #= 9 and Freq4 #= 5) or
-	 (Row4 #= 10 and Freq4 #= 7) or
+	((Row4 #= 5 and Freq4 #= 4) or
 	 (Row4 #= 0 and Freq4 #= 0)), 
 
-	((Row5 #= 6 and Freq5 #= 3) or
-	 (Row5 #= 7 and Freq5 #= 4) or
-	 (Row5 #= 8 and Freq5 #= 5) or
-	 (Row5 #= 9 and Freq5 #= 7) or
-	 (Row5 #= 10 and Freq5 #= 9) or
-	 (Row5 #= 0 and Freq5 #= 0)), 
-
-	((Row6 #= 7 and Freq6 #= 5) or
-	 (Row6 #= 8 and Freq6 #= 7) or
-	 (Row6 #= 9 and Freq6 #= 9) or
-	 (Row6 #= 10 and Freq6 #= 1) or
-	 (Row6 #= 0 and Freq6 #= 0)), 
-
-	((Row7 #= 8 and Freq7 #= 9) or
-	 (Row7 #= 9 and Freq7 #= 1) or
-	 (Row7 #= 10 and Freq7 #= 2) or
-	 (Row7 #= 0 and Freq7 #= 0)), 
-
-	((Row8 #= 9 and Freq8 #= 1) or
-	 (Row8 #= 10 and Freq8 #= 2) or
-	 (Row8 #= 0 and Freq8 #= 0)), 
-
-	((Row9 #= 10 and Freq9 #= 3) or
-	 (Row9 #= 0 and Freq9 #= 0)), 
-
-	((Row10 #= 0 and Freq10 #= 0)), 
+	((Row5 #= 0 and Freq5 #= 0)), 
 
 	% All of the values assumed by the Row<i> variables must be  
 	% all different or zero; multiple zeros are allowed  
