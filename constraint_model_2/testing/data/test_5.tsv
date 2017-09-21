@@ -1,0 +1,6 @@
+bin1	bin2	bin3	bin4	bin5
+bin1	0	2	3	4	5
+bin2	2	0	4	5	2
+bin3	3	4	0	2	3
+bin4	4	5	2	0	4
+bin5	5	2	3	4	0
