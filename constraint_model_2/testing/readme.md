@@ -22,6 +22,29 @@ The resultant output files are in ./output and labeled test_matrix_row.txt and t
 
 ===========================================================================
 
+test_5.ecl is the ECLiPSe file for a 5 X 5 fictional matrix (./data/test_5.tsv)
+
+invoking it in ECLiPSe produces the following output: 
+
+[eclipse 2]: maximize("test_5_row.txt", "test_5_freq.txt", R).
+Found a solution with cost 0
+Found a solution with cost -4
+Found a solution with cost -8
+Found a solution with cost -9
+Found a solution with cost -10
+Found no solution with cost -17.0 .. -11.0
+
+R = [5, 4, 0, 0, 0]
+
+
+Delayed goals:
+	gfd : gfd_do_propagate(gfd_prob(nvars(39)))
+Yes (0.00s cpu)
+
+The resultant output files are in ./output and labeled test_5_row.txt and test_5_freq.txt
+
+===========================================================================
+
 test_10.ecl is the ECLiPSe file for a 10 X 10 fictional matrix (./data/test_10.tsv)
 
 invoking it in ECLiPSe produces the following output: 
@@ -45,6 +68,202 @@ Delayed goals:
 Yes (0.09s cpu)
 
 The resultant output files are in ./output and labeled test_10_row.txt and test_10_freq.txt
+
+===========================================================================
+
+test_15.ecl is the ECLiPSe file for a 15 X 15 fictional matrix (./data/test_15.tsv)
+
+invoking it in ECLiPSe produces the following output: 
+
+[eclipse 2]: maximize("test_15_row.txt", "test_15_freq.txt", R).
+Found a solution with cost 0
+Found a solution with cost -7
+Found a solution with cost -10
+Found a solution with cost -15
+Found a solution with cost -22
+Found a solution with cost -23
+Found a solution with cost -24
+Found a solution with cost -31
+Found a solution with cost -33
+Found a solution with cost -37
+Found a solution with cost -39
+Found a solution with cost -46
+Found a solution with cost -48
+Found a solution with cost -49
+Found a solution with cost -54
+Found a solution with cost -56
+Found a solution with cost -57
+Found a solution with cost -58
+Found a solution with cost -61
+Found a solution with cost -63
+Found a solution with cost -64
+Found a solution with cost -69
+Found a solution with cost -71
+Found a solution with cost -73
+Found a solution with cost -82
+Found a solution with cost -84
+Found a solution with cost -86
+Found a solution with cost -88
+Found a solution with cost -90
+Found a solution with cost -91
+Found a solution with cost -92
+Found a solution with cost -93
+Found a solution with cost -94
+Found a solution with cost -103
+Found a solution with cost -105
+Found no solution with cost -182.0 .. -106.0
+
+R = [10, 0, 8, 7, 15, 14, 0, 0, 13, 0, 12, 0, 0, 0, 0]
+
+
+Delayed goals:
+	gfd : gfd_do_propagate(gfd_prob(nvars(269)))
+Yes (45.16s cpu)
+
+The resultant output files are in ./output and labeled test_15_row.txt and test_15_freq.txt
+
+===========================================================================
+
+test_17.ecl is the ECLiPSe file for a 17 X 17 fictional matrix (./data/test_17.tsv)
+
+invoking it in ECLiPSe produces the following output: 
+
+[eclipse 2]: maximize("test_17_row.txt", "test_17_freq.txt", R).
+Found a solution with cost 0
+Found a solution with cost -9
+Found a solution with cost -13
+Found a solution with cost -17
+Found a solution with cost -26
+Found a solution with cost -30
+Found a solution with cost -34
+Found a solution with cost -43
+Found a solution with cost -44
+Found a solution with cost -45
+Found a solution with cost -50
+Found a solution with cost -52
+Found a solution with cost -60
+Found a solution with cost -67
+Found a solution with cost -69
+Found a solution with cost -71
+Found a solution with cost -72
+Found a solution with cost -75
+Found a solution with cost -77
+Found a solution with cost -78
+Found a solution with cost -79
+Found a solution with cost -82
+Found a solution with cost -84
+Found a solution with cost -86
+Found a solution with cost -87
+Found a solution with cost -90
+Found a solution with cost -92
+Found a solution with cost -94
+Found a solution with cost -97
+Found a solution with cost -99
+Found a solution with cost -105
+Found a solution with cost -107
+Found a solution with cost -109
+Found a solution with cost -113
+Found a solution with cost -115
+Found a solution with cost -117
+Found a solution with cost -118
+Found a solution with cost -119
+Found a solution with cost -122
+Found a solution with cost -130
+Found a solution with cost -132
+Found a solution with cost -134
+Found no solution with cost -232.0 .. -135.0
+
+R = [0, 10, 9, 7, 17, 16, 0, 15, 0, 0, 14, 13, 0, 0, 0, 0, 0]
+
+
+Delayed goals:
+	gfd : gfd_do_propagate(gfd_prob(nvars(339)))
+Yes (245.26s cpu)
+
+The resultant output files are in ./output and labeled test_17_row.txt and test_17_freq.txt
+
+===========================================================================
+
+test_18.ecl is the ECLiPSe file for a 18 X 18 fictional matrix (./data/test_18.tsv)
+
+invoking it in ECLiPSe produces the following output: 
+
+[eclipse 2]: maximize("test_18_row.txt", "test_18_freq.txt", R).
+Found a solution with cost 0
+Found a solution with cost -9
+Found a solution with cost -13
+Found a solution with cost -14
+Found a solution with cost -15
+Found a solution with cost -24
+Found a solution with cost -28
+Found a solution with cost -30
+Found a solution with cost -32
+Found a solution with cost -41
+Found a solution with cost -45
+Found a solution with cost -46
+Found a solution with cost -49
+Found a solution with cost -58
+Found a solution with cost -59
+Found a solution with cost -62
+Found a solution with cost -63
+Found a solution with cost -65
+Found a solution with cost -66
+Found a solution with cost -75
+Found a solution with cost -79
+Found a solution with cost -80
+Found a solution with cost -82
+Found a solution with cost -83
+Found a solution with cost -84
+Found a solution with cost -85
+Found a solution with cost -86
+Found a solution with cost -87
+Found a solution with cost -88
+Found a solution with cost -90
+Found a solution with cost -94
+Found a solution with cost -95
+Found a solution with cost -97
+Found a solution with cost -100
+Found a solution with cost -101
+Found a solution with cost -102
+Found a solution with cost -103
+Found a solution with cost -104
+Found a solution with cost -105
+Found a solution with cost -107
+Found a solution with cost -115
+Found a solution with cost -117
+Found a solution with cost -122
+Found a solution with cost -132
+Found a solution with cost -134
+Found a solution with cost -136
+Found a solution with cost -137
+Found a solution with cost -138
+Found a solution with cost -139
+Found a solution with cost -140
+Found no solution with cost -237.0 .. -141.0
+
+R = [11, 10, 13, 8, 18, 17, 16, 0, 15, 0, 0, 14, 0, 0, 0, 0, 0, 0]
+
+Delayed goals:
+	gfd : gfd_do_propagate(gfd_prob(nvars(377)))
+Yes (584.63s cpu)
+
+The resultant output files are in ./output and labeled test_18_row.txt and test_18_freq.txt
+
+===========================================================================
+
+test_19.ecl is the ECLiPSe file for a 19 X 19 fictional matrix (./data/test_19.tsv)
+
+invoking it in ECLiPSe produces the following output: 
+
+The resultant output files are in ./output and labeled test_19_row.txt and test_19_freq.txt
+
+===========================================================================
+
+test_20.ecl is the ECLiPSe file for a 20 X 20 fictional matrix (./data/test_20.tsv)
+
+invoking it in ECLiPSe produces the following output: 
+
+The resultant output files are in ./output and labeled test_20_row.txt and test_20_freq.txt
 
 ===========================================================================
 
