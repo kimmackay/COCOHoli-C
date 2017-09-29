@@ -82,6 +82,9 @@ print ":- lib(gfd). \n";
 print ":- lib(gfd_search).\n";
 print ":- lib(branch_and_bound).\n\n";
 
+print "% define a structure for encoding an interaction\n";
+print ":- local struct( interaction(row, freq) ).\n\n";
+
 print "% alldifferent_except(Vars) is true if each term in list Vars is  \n";
 print "% pairwise different from every other term, or has a value    \n";
 print "% of zero.  \n";
@@ -122,26 +125,29 @@ print "alldifferent_except(Vars) :-  \n";
 		print "\t\t) \n";
 	print "\t).\n\n";
 
-print "% enforce_symmetry(Vars) ensures that for each \n";
-print "% for each term in Vars bound to a non-zero   \n";
+print "% % enforce_symmetry(AllVars, Rows) ensures that for each  \n";
+print "% for each term in AllVars bound to a non-zero   \n";
 print "% value the corresponding element at index 'term' in  \n";
-print "% Vars (ie. Var[term]) is bound to zero. This \n";
+print "% Rows (ie. Rows[term]) is bound to zero. This \n";
 print "% ensures that 	each genomic bin can only be involved \n";
 print "% in one selected interaction in the solution set.\n";
-print "enforce_symmetry(Vars) :- \n";
-	print "\t% for each terms in Vars, check if it is non-zero\n";
-	print "\t( foreach(X, Vars), param(Vars) do \n\n";
+print "enforce_symmetry(AllVars, Rows) :- \n";
+	print "\t% for each term in AllVars\n";
+	print "\t( fromto(AllVars, Vars, VarsRem, []), param(Rows) do \n\n";
 		
-		print "\t% chose a value for X from it's domain\n";
+		print "\t% chose a value for the freq element in Var from it's domain\n";
 		print "\tgfd_update,\n";
-		print "\tindomain(X, min), \n\n";
+		print "\tdelete(Var, Vars, VarsRem, 0, first_fail), \n";
+		print "\targ(freq of interaction, Var, F), \n";
+		print "\tindomain(F, max), % select a value\n\n";
 
-		print "\t\t% If the value bound to X is non-zero \n";
-		print "\t\t( (X \\= 0) -> \n\n";
+		print "\t\t% If the value bound to F is non-zero \n";
+		print "\t\t( (F \\= 0) -> \n\n";
 	
-			print "\t\t\t% The variable X is the list position of the element K \n";
-			print "\t\t\t% in Vars. Note in ECLiPSE, indexing starts at 1. \n";
-			print "\t\t\telement(X, Vars, K), \n\n";
+			print "\t\t\t% The variable row element in Var (R) is the list position of the element K \n";
+			print "\t\t\t% in Rows. Note in ECLiPSE, indexing starts at 1. \n";
+			print "\t\t\targ(row of interaction, Var, R), \n";
+			print "\t\t\telement(R, Rows, K), \n\n";
 		
 			print "\t\t\t% K must be bound to zero \n";
 			print "\t\t\tK #= 0 \n";
@@ -192,6 +198,22 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 			print "Freq".$i.", ";
 		}
 	}
+	
+	print "\t% The list Interactions has one variable for each interaction \n";
+	print "\t% in the solution set	\n";
+	print "\tInteractions = [";
+	for(my $i = 1; $i <=  $chr_size; $i++)
+	{
+		# account for the last variable, it won't have a comma
+		if($i == $chr_size)
+		{
+			print "interaction(Row".$i.", Freq".$i.")],\n\n";
+		}
+		else
+		{
+			print "interaction(Row".$i.", Freq".$i."), ";
+		}
+	}
 
 	print "\t% Representation of the Genome: \n";
 	print "\t% Each Row term can assume a value based on interacting bin \n";
@@ -218,6 +240,7 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 				# add the column to the rows domain
 				push @domain, $col_counter;
 			}
+			
 			# increment the column counter
 			$col_counter = $col_counter + 1;
 		}
@@ -338,7 +361,7 @@ print "maximize(RowFile, FreqFile, Rows) :-\n\n";
 	print "\t% enforce_symmetry/1 ensures each genomic bin is \n";
 	print "\t% involved in only one interaction in the solution set.\n";
 	print "\tCost #= -sum(Freqs), \n";
-	print "\tminimize(enforce_symmetry(Rows), Cost),\n\n";
+	print "\tminimize(enforce_symmetry(Interactions, Rows), Cost),\n\n";
 
 	print "\t%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
 	print "\t%% 	Output the results\n";
