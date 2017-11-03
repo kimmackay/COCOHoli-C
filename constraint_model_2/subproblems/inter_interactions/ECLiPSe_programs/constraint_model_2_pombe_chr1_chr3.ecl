@@ -109,7 +109,10 @@ enforce_symmetry(RowFile, FreqFile, AllVars, Rows, Freqs) :-
 				),
 				write(ROW_OUT, "\n")
 	),
-	close(ROW_OUT).
+	close(ROW_OUT),
+	
+	%% print the statistics
+	statistics.
 
 % maximize(RowFile, FreqFile, Rows) is true if the elements in Rows are all  
 % different or zero, the corresponding elements in Freqs  
