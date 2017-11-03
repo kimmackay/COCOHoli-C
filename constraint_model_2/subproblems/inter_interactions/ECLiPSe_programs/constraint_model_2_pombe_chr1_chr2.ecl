@@ -3,6 +3,9 @@
 % http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 
 % PO Box 1866, Mountain View, CA 94042, USA.
 
+% define a structure for encoding an interaction
+:- local struct( interaction(row, freq) ).
+
 % Load the relevant libraries 
 :- lib(gfd). 
 :- lib(gfd_search).
@@ -48,33 +51,65 @@ alldifferent_except(Vars) :-
 		) 
 	).
 
-% enforce_symmetry(Vars) ensures that for each 
-% for each term in Vars bound to a non-zero   
+% % enforce_symmetry(AllVars) ensures that for each  
+% for each term in AllVars bound to a non-zero   
 % value the corresponding element at index 'term' in  
-% Vars (ie. Var[term]) is bound to zero. This 
+% AllVars (ie. AllVars[term]) is bound to zero. This 
 % ensures that 	each genomic bin can only be involved 
 % in one selected interaction in the solution set.
-enforce_symmetry(Vars) :- 
-	% for each terms in Vars, check if it is non-zero
-	( foreach(X, Vars), param(Vars) do 
+enforce_symmetry(RowFile, FreqFile, AllVars, Rows, Freqs) :- 
+	% for each terms in AllVars
+	( fromto(AllVars, Vars, VarsRem, []), param(Rows) do 
 
 	% chose a value for X from it's domain
 	gfd_update,
-	indomain(X, min), 
+	delete(Var, Vars, VarsRem, 0, first_fail), % dynamic var-select
+	arg(freq of interaction, Var, F), % get the frequency of the interaction pair
+	indomain(F, max), % select a value
 
 		% If the value bound to X is non-zero 
-		( (X \= 0) -> 
+		( (F \= 0) -> 
 
-			% The variable X is the list position of the element K 
-			% in Vars. Note in ECLiPSE, indexing starts at 1. 
-			element(X, Vars, K), 
+			% The variable Var is the list position of the element K 
+			% in AllVars. Note in ECLiPSE, indexing starts at 1. 
+			arg(row of interaction, Var, R), % get the row of the interaction pair
+			element(R, Rows, K), 
 
 			% K must be bound to zero 
 			K #= 0 
 		; 
 			true 
 		) 
-	). 
+	),
+	
+	% output the results
+	open(FreqFile, 'write', FREQ_OUT),
+	%%list the frequencies
+	(foreach(X,Freqs),
+		param(FREQ_OUT) do
+			get_domain_as_list(X, DomList),
+				(foreach(Y,DomList),
+					param(FREQ_OUT) do
+						write(FREQ_OUT, Y),
+						write(FREQ_OUT, ' ')
+				),
+			write(FREQ_OUT, "\n")
+	),
+	close(FREQ_OUT),
+
+	%% list the potential rows
+	open(RowFile, 'write', ROW_OUT),
+	(foreach(X,Rows),
+		param(ROW_OUT) do
+			get_domain_as_list(X, DomList),
+				(foreach(Y,DomList),
+					param(ROW_OUT) do
+						write(ROW_OUT, Y),
+						write(ROW_OUT, ' ')
+				),
+				write(ROW_OUT, "\n")
+	),
+	close(ROW_OUT).
 
 % maximize(RowFile, FreqFile, Rows) is true if the elements in Rows are all  
 % different or zero, the corresponding elements in Freqs  
@@ -93,6 +128,10 @@ maximize(RowFile, FreqFile, Rows) :-
 	% The list Freqs has one variable for each row of the 
 	% whole-genome contact map	
 	Freqs = [Freq1, Freq2, Freq3, Freq4, Freq5, Freq6, Freq7, Freq8, Freq9, Freq10, Freq11, Freq12, Freq13, Freq14, Freq15, Freq16, Freq17, Freq18, Freq19, Freq20, Freq21, Freq22, Freq23, Freq24, Freq25, Freq26, Freq27, Freq28, Freq29, Freq30, Freq31, Freq32, Freq33, Freq34, Freq35, Freq36, Freq37, Freq38, Freq39, Freq40, Freq41, Freq42, Freq43, Freq44, Freq45, Freq46, Freq47, Freq48, Freq49, Freq50, Freq51, Freq52, Freq53, Freq54, Freq55, Freq56, Freq57, Freq58, Freq59, Freq60, Freq61, Freq62, Freq63, Freq64, Freq65, Freq66, Freq67, Freq68, Freq69, Freq70, Freq71, Freq72, Freq73, Freq74, Freq75, Freq76, Freq77, Freq78, Freq79, Freq80, Freq81, Freq82, Freq83, Freq84, Freq85, Freq86, Freq87, Freq88, Freq89, Freq90, Freq91, Freq92, Freq93, Freq94, Freq95, Freq96, Freq97, Freq98, Freq99, Freq100, Freq101, Freq102, Freq103, Freq104, Freq105, Freq106, Freq107, Freq108, Freq109, Freq110, Freq111, Freq112, Freq113, Freq114, Freq115, Freq116, Freq117, Freq118, Freq119, Freq120, Freq121, Freq122, Freq123, Freq124, Freq125, Freq126, Freq127, Freq128, Freq129, Freq130, Freq131, Freq132, Freq133, Freq134, Freq135, Freq136, Freq137, Freq138, Freq139, Freq140, Freq141, Freq142, Freq143, Freq144, Freq145, Freq146, Freq147, Freq148, Freq149, Freq150, Freq151, Freq152, Freq153, Freq154, Freq155, Freq156, Freq157, Freq158, Freq159, Freq160, Freq161, Freq162, Freq163, Freq164, Freq165, Freq166, Freq167, Freq168, Freq169, Freq170, Freq171, Freq172, Freq173, Freq174, Freq175, Freq176, Freq177, Freq178, Freq179, Freq180, Freq181, Freq182, Freq183, Freq184, Freq185, Freq186, Freq187, Freq188, Freq189, Freq190, Freq191, Freq192, Freq193, Freq194, Freq195, Freq196, Freq197, Freq198, Freq199, Freq200, Freq201, Freq202, Freq203, Freq204, Freq205, Freq206, Freq207, Freq208, Freq209, Freq210, Freq211, Freq212, Freq213, Freq214, Freq215, Freq216, Freq217, Freq218, Freq219, Freq220, Freq221, Freq222, Freq223, Freq224, Freq225, Freq226, Freq227, Freq228, Freq229, Freq230, Freq231, Freq232, Freq233, Freq234, Freq235, Freq236, Freq237, Freq238, Freq239, Freq240, Freq241, Freq242, Freq243, Freq244, Freq245, Freq246, Freq247, Freq248, Freq249, Freq250, Freq251, Freq252, Freq253, Freq254, Freq255, Freq256, Freq257, Freq258, Freq259, Freq260, Freq261, Freq262, Freq263, Freq264, Freq265, Freq266, Freq267, Freq268, Freq269, Freq270, Freq271, Freq272, Freq273, Freq274, Freq275, Freq276, Freq277, Freq278, Freq279, Freq280, Freq281, Freq282, Freq283, Freq284, Freq285, Freq286, Freq287, Freq288, Freq289, Freq290, Freq291, Freq292, Freq293, Freq294, Freq295, Freq296, Freq297, Freq298, Freq299, Freq300, Freq301, Freq302, Freq303, Freq304, Freq305, Freq306, Freq307, Freq308, Freq309, Freq310, Freq311, Freq312, Freq313, Freq314, Freq315, Freq316, Freq317, Freq318, Freq319, Freq320, Freq321, Freq322, Freq323, Freq324, Freq325, Freq326, Freq327, Freq328, Freq329, Freq330, Freq331, Freq332, Freq333, Freq334, Freq335, Freq336, Freq337, Freq338, Freq339, Freq340, Freq341, Freq342, Freq343, Freq344, Freq345, Freq346, Freq347, Freq348, Freq349, Freq350, Freq351, Freq352, Freq353, Freq354, Freq355, Freq356, Freq357, Freq358, Freq359, Freq360, Freq361, Freq362, Freq363, Freq364, Freq365, Freq366, Freq367, Freq368, Freq369, Freq370, Freq371, Freq372, Freq373, Freq374, Freq375, Freq376, Freq377, Freq378, Freq379, Freq380, Freq381, Freq382, Freq383, Freq384, Freq385, Freq386, Freq387, Freq388, Freq389, Freq390, Freq391, Freq392, Freq393, Freq394, Freq395, Freq396, Freq397, Freq398, Freq399, Freq400, Freq401, Freq402, Freq403, Freq404, Freq405, Freq406, Freq407, Freq408, Freq409, Freq410, Freq411, Freq412, Freq413, Freq414, Freq415, Freq416, Freq417, Freq418, Freq419, Freq420, Freq421, Freq422, Freq423, Freq424, Freq425, Freq426, Freq427, Freq428, Freq429, Freq430, Freq431, Freq432, Freq433, Freq434, Freq435, Freq436, Freq437, Freq438, Freq439, Freq440, Freq441, Freq442, Freq443, Freq444, Freq445, Freq446, Freq447, Freq448, Freq449, Freq450, Freq451, Freq452, Freq453, Freq454, Freq455, Freq456, Freq457, Freq458, Freq459, Freq460, Freq461, Freq462, Freq463, Freq464, Freq465, Freq466, Freq467, Freq468, Freq469, Freq470, Freq471, Freq472, Freq473, Freq474, Freq475, Freq476, Freq477, Freq478, Freq479, Freq480, Freq481, Freq482, Freq483, Freq484, Freq485, Freq486, Freq487, Freq488, Freq489, Freq490, Freq491, Freq492, Freq493, Freq494, Freq495, Freq496, Freq497, Freq498, Freq499, Freq500, Freq501, Freq502, Freq503, Freq504, Freq505, Freq506, Freq507, Freq508, Freq509, Freq510, Freq511, Freq512, Freq513, Freq514, Freq515, Freq516, Freq517, Freq518, Freq519, Freq520, Freq521, Freq522, Freq523, Freq524, Freq525, Freq526, Freq527, Freq528, Freq529, Freq530, Freq531, Freq532, Freq533, Freq534, Freq535, Freq536, Freq537, Freq538, Freq539, Freq540, Freq541, Freq542, Freq543, Freq544, Freq545, Freq546, Freq547, Freq548, Freq549, Freq550, Freq551, Freq552, Freq553, Freq554, Freq555, Freq556, Freq557, Freq558],
+
+	% The list Interactions has one variable for each interaction 
+	% in the solution set	
+	Interactions = [interaction(Row1, Freq1), interaction(Row2, Freq2), interaction(Row3, Freq3), interaction(Row4, Freq4), interaction(Row5, Freq5), interaction(Row6, Freq6), interaction(Row7, Freq7), interaction(Row8, Freq8), interaction(Row9, Freq9), interaction(Row10, Freq10), interaction(Row11, Freq11), interaction(Row12, Freq12), interaction(Row13, Freq13), interaction(Row14, Freq14), interaction(Row15, Freq15), interaction(Row16, Freq16), interaction(Row17, Freq17), interaction(Row18, Freq18), interaction(Row19, Freq19), interaction(Row20, Freq20), interaction(Row21, Freq21), interaction(Row22, Freq22), interaction(Row23, Freq23), interaction(Row24, Freq24), interaction(Row25, Freq25), interaction(Row26, Freq26), interaction(Row27, Freq27), interaction(Row28, Freq28), interaction(Row29, Freq29), interaction(Row30, Freq30), interaction(Row31, Freq31), interaction(Row32, Freq32), interaction(Row33, Freq33), interaction(Row34, Freq34), interaction(Row35, Freq35), interaction(Row36, Freq36), interaction(Row37, Freq37), interaction(Row38, Freq38), interaction(Row39, Freq39), interaction(Row40, Freq40), interaction(Row41, Freq41), interaction(Row42, Freq42), interaction(Row43, Freq43), interaction(Row44, Freq44), interaction(Row45, Freq45), interaction(Row46, Freq46), interaction(Row47, Freq47), interaction(Row48, Freq48), interaction(Row49, Freq49), interaction(Row50, Freq50), interaction(Row51, Freq51), interaction(Row52, Freq52), interaction(Row53, Freq53), interaction(Row54, Freq54), interaction(Row55, Freq55), interaction(Row56, Freq56), interaction(Row57, Freq57), interaction(Row58, Freq58), interaction(Row59, Freq59), interaction(Row60, Freq60), interaction(Row61, Freq61), interaction(Row62, Freq62), interaction(Row63, Freq63), interaction(Row64, Freq64), interaction(Row65, Freq65), interaction(Row66, Freq66), interaction(Row67, Freq67), interaction(Row68, Freq68), interaction(Row69, Freq69), interaction(Row70, Freq70), interaction(Row71, Freq71), interaction(Row72, Freq72), interaction(Row73, Freq73), interaction(Row74, Freq74), interaction(Row75, Freq75), interaction(Row76, Freq76), interaction(Row77, Freq77), interaction(Row78, Freq78), interaction(Row79, Freq79), interaction(Row80, Freq80), interaction(Row81, Freq81), interaction(Row82, Freq82), interaction(Row83, Freq83), interaction(Row84, Freq84), interaction(Row85, Freq85), interaction(Row86, Freq86), interaction(Row87, Freq87), interaction(Row88, Freq88), interaction(Row89, Freq89), interaction(Row90, Freq90), interaction(Row91, Freq91), interaction(Row92, Freq92), interaction(Row93, Freq93), interaction(Row94, Freq94), interaction(Row95, Freq95), interaction(Row96, Freq96), interaction(Row97, Freq97), interaction(Row98, Freq98), interaction(Row99, Freq99), interaction(Row100, Freq100), interaction(Row101, Freq101), interaction(Row102, Freq102), interaction(Row103, Freq103), interaction(Row104, Freq104), interaction(Row105, Freq105), interaction(Row106, Freq106), interaction(Row107, Freq107), interaction(Row108, Freq108), interaction(Row109, Freq109), interaction(Row110, Freq110), interaction(Row111, Freq111), interaction(Row112, Freq112), interaction(Row113, Freq113), interaction(Row114, Freq114), interaction(Row115, Freq115), interaction(Row116, Freq116), interaction(Row117, Freq117), interaction(Row118, Freq118), interaction(Row119, Freq119), interaction(Row120, Freq120), interaction(Row121, Freq121), interaction(Row122, Freq122), interaction(Row123, Freq123), interaction(Row124, Freq124), interaction(Row125, Freq125), interaction(Row126, Freq126), interaction(Row127, Freq127), interaction(Row128, Freq128), interaction(Row129, Freq129), interaction(Row130, Freq130), interaction(Row131, Freq131), interaction(Row132, Freq132), interaction(Row133, Freq133), interaction(Row134, Freq134), interaction(Row135, Freq135), interaction(Row136, Freq136), interaction(Row137, Freq137), interaction(Row138, Freq138), interaction(Row139, Freq139), interaction(Row140, Freq140), interaction(Row141, Freq141), interaction(Row142, Freq142), interaction(Row143, Freq143), interaction(Row144, Freq144), interaction(Row145, Freq145), interaction(Row146, Freq146), interaction(Row147, Freq147), interaction(Row148, Freq148), interaction(Row149, Freq149), interaction(Row150, Freq150), interaction(Row151, Freq151), interaction(Row152, Freq152), interaction(Row153, Freq153), interaction(Row154, Freq154), interaction(Row155, Freq155), interaction(Row156, Freq156), interaction(Row157, Freq157), interaction(Row158, Freq158), interaction(Row159, Freq159), interaction(Row160, Freq160), interaction(Row161, Freq161), interaction(Row162, Freq162), interaction(Row163, Freq163), interaction(Row164, Freq164), interaction(Row165, Freq165), interaction(Row166, Freq166), interaction(Row167, Freq167), interaction(Row168, Freq168), interaction(Row169, Freq169), interaction(Row170, Freq170), interaction(Row171, Freq171), interaction(Row172, Freq172), interaction(Row173, Freq173), interaction(Row174, Freq174), interaction(Row175, Freq175), interaction(Row176, Freq176), interaction(Row177, Freq177), interaction(Row178, Freq178), interaction(Row179, Freq179), interaction(Row180, Freq180), interaction(Row181, Freq181), interaction(Row182, Freq182), interaction(Row183, Freq183), interaction(Row184, Freq184), interaction(Row185, Freq185), interaction(Row186, Freq186), interaction(Row187, Freq187), interaction(Row188, Freq188), interaction(Row189, Freq189), interaction(Row190, Freq190), interaction(Row191, Freq191), interaction(Row192, Freq192), interaction(Row193, Freq193), interaction(Row194, Freq194), interaction(Row195, Freq195), interaction(Row196, Freq196), interaction(Row197, Freq197), interaction(Row198, Freq198), interaction(Row199, Freq199), interaction(Row200, Freq200), interaction(Row201, Freq201), interaction(Row202, Freq202), interaction(Row203, Freq203), interaction(Row204, Freq204), interaction(Row205, Freq205), interaction(Row206, Freq206), interaction(Row207, Freq207), interaction(Row208, Freq208), interaction(Row209, Freq209), interaction(Row210, Freq210), interaction(Row211, Freq211), interaction(Row212, Freq212), interaction(Row213, Freq213), interaction(Row214, Freq214), interaction(Row215, Freq215), interaction(Row216, Freq216), interaction(Row217, Freq217), interaction(Row218, Freq218), interaction(Row219, Freq219), interaction(Row220, Freq220), interaction(Row221, Freq221), interaction(Row222, Freq222), interaction(Row223, Freq223), interaction(Row224, Freq224), interaction(Row225, Freq225), interaction(Row226, Freq226), interaction(Row227, Freq227), interaction(Row228, Freq228), interaction(Row229, Freq229), interaction(Row230, Freq230), interaction(Row231, Freq231), interaction(Row232, Freq232), interaction(Row233, Freq233), interaction(Row234, Freq234), interaction(Row235, Freq235), interaction(Row236, Freq236), interaction(Row237, Freq237), interaction(Row238, Freq238), interaction(Row239, Freq239), interaction(Row240, Freq240), interaction(Row241, Freq241), interaction(Row242, Freq242), interaction(Row243, Freq243), interaction(Row244, Freq244), interaction(Row245, Freq245), interaction(Row246, Freq246), interaction(Row247, Freq247), interaction(Row248, Freq248), interaction(Row249, Freq249), interaction(Row250, Freq250), interaction(Row251, Freq251), interaction(Row252, Freq252), interaction(Row253, Freq253), interaction(Row254, Freq254), interaction(Row255, Freq255), interaction(Row256, Freq256), interaction(Row257, Freq257), interaction(Row258, Freq258), interaction(Row259, Freq259), interaction(Row260, Freq260), interaction(Row261, Freq261), interaction(Row262, Freq262), interaction(Row263, Freq263), interaction(Row264, Freq264), interaction(Row265, Freq265), interaction(Row266, Freq266), interaction(Row267, Freq267), interaction(Row268, Freq268), interaction(Row269, Freq269), interaction(Row270, Freq270), interaction(Row271, Freq271), interaction(Row272, Freq272), interaction(Row273, Freq273), interaction(Row274, Freq274), interaction(Row275, Freq275), interaction(Row276, Freq276), interaction(Row277, Freq277), interaction(Row278, Freq278), interaction(Row279, Freq279), interaction(Row280, Freq280), interaction(Row281, Freq281), interaction(Row282, Freq282), interaction(Row283, Freq283), interaction(Row284, Freq284), interaction(Row285, Freq285), interaction(Row286, Freq286), interaction(Row287, Freq287), interaction(Row288, Freq288), interaction(Row289, Freq289), interaction(Row290, Freq290), interaction(Row291, Freq291), interaction(Row292, Freq292), interaction(Row293, Freq293), interaction(Row294, Freq294), interaction(Row295, Freq295), interaction(Row296, Freq296), interaction(Row297, Freq297), interaction(Row298, Freq298), interaction(Row299, Freq299), interaction(Row300, Freq300), interaction(Row301, Freq301), interaction(Row302, Freq302), interaction(Row303, Freq303), interaction(Row304, Freq304), interaction(Row305, Freq305), interaction(Row306, Freq306), interaction(Row307, Freq307), interaction(Row308, Freq308), interaction(Row309, Freq309), interaction(Row310, Freq310), interaction(Row311, Freq311), interaction(Row312, Freq312), interaction(Row313, Freq313), interaction(Row314, Freq314), interaction(Row315, Freq315), interaction(Row316, Freq316), interaction(Row317, Freq317), interaction(Row318, Freq318), interaction(Row319, Freq319), interaction(Row320, Freq320), interaction(Row321, Freq321), interaction(Row322, Freq322), interaction(Row323, Freq323), interaction(Row324, Freq324), interaction(Row325, Freq325), interaction(Row326, Freq326), interaction(Row327, Freq327), interaction(Row328, Freq328), interaction(Row329, Freq329), interaction(Row330, Freq330), interaction(Row331, Freq331), interaction(Row332, Freq332), interaction(Row333, Freq333), interaction(Row334, Freq334), interaction(Row335, Freq335), interaction(Row336, Freq336), interaction(Row337, Freq337), interaction(Row338, Freq338), interaction(Row339, Freq339), interaction(Row340, Freq340), interaction(Row341, Freq341), interaction(Row342, Freq342), interaction(Row343, Freq343), interaction(Row344, Freq344), interaction(Row345, Freq345), interaction(Row346, Freq346), interaction(Row347, Freq347), interaction(Row348, Freq348), interaction(Row349, Freq349), interaction(Row350, Freq350), interaction(Row351, Freq351), interaction(Row352, Freq352), interaction(Row353, Freq353), interaction(Row354, Freq354), interaction(Row355, Freq355), interaction(Row356, Freq356), interaction(Row357, Freq357), interaction(Row358, Freq358), interaction(Row359, Freq359), interaction(Row360, Freq360), interaction(Row361, Freq361), interaction(Row362, Freq362), interaction(Row363, Freq363), interaction(Row364, Freq364), interaction(Row365, Freq365), interaction(Row366, Freq366), interaction(Row367, Freq367), interaction(Row368, Freq368), interaction(Row369, Freq369), interaction(Row370, Freq370), interaction(Row371, Freq371), interaction(Row372, Freq372), interaction(Row373, Freq373), interaction(Row374, Freq374), interaction(Row375, Freq375), interaction(Row376, Freq376), interaction(Row377, Freq377), interaction(Row378, Freq378), interaction(Row379, Freq379), interaction(Row380, Freq380), interaction(Row381, Freq381), interaction(Row382, Freq382), interaction(Row383, Freq383), interaction(Row384, Freq384), interaction(Row385, Freq385), interaction(Row386, Freq386), interaction(Row387, Freq387), interaction(Row388, Freq388), interaction(Row389, Freq389), interaction(Row390, Freq390), interaction(Row391, Freq391), interaction(Row392, Freq392), interaction(Row393, Freq393), interaction(Row394, Freq394), interaction(Row395, Freq395), interaction(Row396, Freq396), interaction(Row397, Freq397), interaction(Row398, Freq398), interaction(Row399, Freq399), interaction(Row400, Freq400), interaction(Row401, Freq401), interaction(Row402, Freq402), interaction(Row403, Freq403), interaction(Row404, Freq404), interaction(Row405, Freq405), interaction(Row406, Freq406), interaction(Row407, Freq407), interaction(Row408, Freq408), interaction(Row409, Freq409), interaction(Row410, Freq410), interaction(Row411, Freq411), interaction(Row412, Freq412), interaction(Row413, Freq413), interaction(Row414, Freq414), interaction(Row415, Freq415), interaction(Row416, Freq416), interaction(Row417, Freq417), interaction(Row418, Freq418), interaction(Row419, Freq419), interaction(Row420, Freq420), interaction(Row421, Freq421), interaction(Row422, Freq422), interaction(Row423, Freq423), interaction(Row424, Freq424), interaction(Row425, Freq425), interaction(Row426, Freq426), interaction(Row427, Freq427), interaction(Row428, Freq428), interaction(Row429, Freq429), interaction(Row430, Freq430), interaction(Row431, Freq431), interaction(Row432, Freq432), interaction(Row433, Freq433), interaction(Row434, Freq434), interaction(Row435, Freq435), interaction(Row436, Freq436), interaction(Row437, Freq437), interaction(Row438, Freq438), interaction(Row439, Freq439), interaction(Row440, Freq440), interaction(Row441, Freq441), interaction(Row442, Freq442), interaction(Row443, Freq443), interaction(Row444, Freq444), interaction(Row445, Freq445), interaction(Row446, Freq446), interaction(Row447, Freq447), interaction(Row448, Freq448), interaction(Row449, Freq449), interaction(Row450, Freq450), interaction(Row451, Freq451), interaction(Row452, Freq452), interaction(Row453, Freq453), interaction(Row454, Freq454), interaction(Row455, Freq455), interaction(Row456, Freq456), interaction(Row457, Freq457), interaction(Row458, Freq458), interaction(Row459, Freq459), interaction(Row460, Freq460), interaction(Row461, Freq461), interaction(Row462, Freq462), interaction(Row463, Freq463), interaction(Row464, Freq464), interaction(Row465, Freq465), interaction(Row466, Freq466), interaction(Row467, Freq467), interaction(Row468, Freq468), interaction(Row469, Freq469), interaction(Row470, Freq470), interaction(Row471, Freq471), interaction(Row472, Freq472), interaction(Row473, Freq473), interaction(Row474, Freq474), interaction(Row475, Freq475), interaction(Row476, Freq476), interaction(Row477, Freq477), interaction(Row478, Freq478), interaction(Row479, Freq479), interaction(Row480, Freq480), interaction(Row481, Freq481), interaction(Row482, Freq482), interaction(Row483, Freq483), interaction(Row484, Freq484), interaction(Row485, Freq485), interaction(Row486, Freq486), interaction(Row487, Freq487), interaction(Row488, Freq488), interaction(Row489, Freq489), interaction(Row490, Freq490), interaction(Row491, Freq491), interaction(Row492, Freq492), interaction(Row493, Freq493), interaction(Row494, Freq494), interaction(Row495, Freq495), interaction(Row496, Freq496), interaction(Row497, Freq497), interaction(Row498, Freq498), interaction(Row499, Freq499), interaction(Row500, Freq500), interaction(Row501, Freq501), interaction(Row502, Freq502), interaction(Row503, Freq503), interaction(Row504, Freq504), interaction(Row505, Freq505), interaction(Row506, Freq506), interaction(Row507, Freq507), interaction(Row508, Freq508), interaction(Row509, Freq509), interaction(Row510, Freq510), interaction(Row511, Freq511), interaction(Row512, Freq512), interaction(Row513, Freq513), interaction(Row514, Freq514), interaction(Row515, Freq515), interaction(Row516, Freq516), interaction(Row517, Freq517), interaction(Row518, Freq518), interaction(Row519, Freq519), interaction(Row520, Freq520), interaction(Row521, Freq521), interaction(Row522, Freq522), interaction(Row523, Freq523), interaction(Row524, Freq524), interaction(Row525, Freq525), interaction(Row526, Freq526), interaction(Row527, Freq527), interaction(Row528, Freq528), interaction(Row529, Freq529), interaction(Row530, Freq530), interaction(Row531, Freq531), interaction(Row532, Freq532), interaction(Row533, Freq533), interaction(Row534, Freq534), interaction(Row535, Freq535), interaction(Row536, Freq536), interaction(Row537, Freq537), interaction(Row538, Freq538), interaction(Row539, Freq539), interaction(Row540, Freq540), interaction(Row541, Freq541), interaction(Row542, Freq542), interaction(Row543, Freq543), interaction(Row544, Freq544), interaction(Row545, Freq545), interaction(Row546, Freq546), interaction(Row547, Freq547), interaction(Row548, Freq548), interaction(Row549, Freq549), interaction(Row550, Freq550), interaction(Row551, Freq551), interaction(Row552, Freq552), interaction(Row553, Freq553), interaction(Row554, Freq554), interaction(Row555, Freq555), interaction(Row556, Freq556), interaction(Row557, Freq557), interaction(Row558, Freq558)],
 
 	% Representation of the Genome: 
 	% Each Row term can assume a value based on interacting bin 
@@ -4662,36 +4701,4 @@ maximize(RowFile, FreqFile, Rows) :-
 	% enforce_symmetry/1 ensures each genomic bin is 
 	% involved in only one interaction in the solution set.
 	Cost #= -sum(Freqs), 
-	minimize(enforce_symmetry(Rows), Cost),
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%% 	Output the results
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	open(FreqFile, 'write', FREQ_OUT),
-	%%list the frequencies
-	(foreach(X,Freqs),
-		param(FREQ_OUT) do
-			get_domain_as_list(X, DomList),
-				(foreach(Y,DomList),
-					param(FREQ_OUT) do
-						write(FREQ_OUT, Y),
-						write(FREQ_OUT, ' ')
-				),
-			write(FREQ_OUT, "\n")
-	),
-	close(FREQ_OUT),
-
-	%% list the potential rows
-	open(RowFile, 'write', ROW_OUT),
-	(foreach(X,Rows),
-		param(ROW_OUT) do
-			get_domain_as_list(X, DomList),
-				(foreach(Y,DomList),
-					param(ROW_OUT) do
-						write(ROW_OUT, Y),
-						write(ROW_OUT, ' ')
-				),
-				write(ROW_OUT, "\n")
-	),
-	close(ROW_OUT).
+	minimize(enforce_symmetry(RowFile, FreqFile, Interactions, Rows, Freqs), Cost).
