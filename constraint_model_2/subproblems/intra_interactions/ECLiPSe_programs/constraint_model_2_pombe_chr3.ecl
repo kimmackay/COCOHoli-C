@@ -51,28 +51,28 @@ alldifferent_except(Vars) :-
 		) 
 	).
 
-% % enforce_symmetry(AllVars, Rows) ensures that for each  
+% % enforce_symmetry(AllVars) ensures that for each  
 % for each term in AllVars bound to a non-zero   
 % value the corresponding element at index 'term' in  
-% Rows (ie. Rows[term]) is bound to zero. This 
+% AllVars (ie. AllVars[term]) is bound to zero. This 
 % ensures that 	each genomic bin can only be involved 
 % in one selected interaction in the solution set.
-enforce_symmetry(AllVars, Rows) :- 
-	% for each term in AllVars
+enforce_symmetry(RowFile, FreqFile, AllVars, Rows, Freqs) :- 
+	% for each terms in AllVars
 	( fromto(AllVars, Vars, VarsRem, []), param(Rows) do 
 
-	% chose a value for the freq element in Var from it's domain
+	% chose a value for X from it's domain
 	gfd_update,
-	delete(Var, Vars, VarsRem, 0, first_fail), 
-	arg(freq of interaction, Var, F), 
+	delete(Var, Vars, VarsRem, 0, first_fail), % dynamic var-select
+	arg(freq of interaction, Var, F), % get the frequency of the interaction pair
 	indomain(F, max), % select a value
 
-		% If the value bound to F is non-zero 
+		% If the value bound to X is non-zero 
 		( (F \= 0) -> 
 
-			% The variable row element in Var (R) is the list position of the element K 
-			% in Rows. Note in ECLiPSE, indexing starts at 1. 
-			arg(row of interaction, Var, R), 
+			% The variable Var is the list position of the element K 
+			% in AllVars. Note in ECLiPSE, indexing starts at 1. 
+			arg(row of interaction, Var, R), % get the row of the interaction pair
 			element(R, Rows, K), 
 
 			% K must be bound to zero 
@@ -80,7 +80,36 @@ enforce_symmetry(AllVars, Rows) :-
 		; 
 			true 
 		) 
-	). 
+	),
+	
+	% output the results
+	open(FreqFile, 'write', FREQ_OUT),
+	%%list the frequencies
+	(foreach(X,Freqs),
+		param(FREQ_OUT) do
+			get_domain_as_list(X, DomList),
+				(foreach(Y,DomList),
+					param(FREQ_OUT) do
+						write(FREQ_OUT, Y),
+						write(FREQ_OUT, ' ')
+				),
+			write(FREQ_OUT, "\n")
+	),
+	close(FREQ_OUT),
+
+	%% list the potential rows
+	open(RowFile, 'write', ROW_OUT),
+	(foreach(X,Rows),
+		param(ROW_OUT) do
+			get_domain_as_list(X, DomList),
+				(foreach(Y,DomList),
+					param(ROW_OUT) do
+						write(ROW_OUT, Y),
+						write(ROW_OUT, ' ')
+				),
+				write(ROW_OUT, "\n")
+	),
+	close(ROW_OUT).
 
 % maximize(RowFile, FreqFile, Rows) is true if the elements in Rows are all  
 % different or zero, the corresponding elements in Freqs  
@@ -15130,36 +15159,5 @@ maximize(RowFile, FreqFile, Rows) :-
 	% enforce_symmetry/1 ensures each genomic bin is 
 	% involved in only one interaction in the solution set.
 	Cost #= -sum(Freqs), 
-	minimize(enforce_symmetry(Interactions, Rows), Cost),
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%% 	Output the results
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	open(FreqFile, 'write', FREQ_OUT),
-	%%list the frequencies
-	(foreach(X,Freqs),
-		param(FREQ_OUT) do
-			get_domain_as_list(X, DomList),
-				(foreach(Y,DomList),
-					param(FREQ_OUT) do
-						write(FREQ_OUT, Y),
-						write(FREQ_OUT, ' ')
-				),
-			write(FREQ_OUT, "\n")
-	),
-	close(FREQ_OUT),
-
-	%% list the potential rows
-	open(RowFile, 'write', ROW_OUT),
-	(foreach(X,Rows),
-		param(ROW_OUT) do
-			get_domain_as_list(X, DomList),
-				(foreach(Y,DomList),
-					param(ROW_OUT) do
-						write(ROW_OUT, Y),
-						write(ROW_OUT, ' ')
-				),
-				write(ROW_OUT, "\n")
-	),
-	close(ROW_OUT).
+	minimize(enforce_symmetry(RowFile, FreqFile, Interactions, Rows, Freqs), Cost).
+	
