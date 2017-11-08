@@ -1,0 +1,30 @@
+times:                   [52.14, 2.6, 76.5] seconds
+session_time:            76.5 seconds
+event_time:              76.5 seconds
+hr_time:                 1510078081.24247 seconds
+global_stack_used:       306724240 bytes
+global_stack_allocated:  1373728768 bytes
+global_stack_peak:       2026860544 bytes
+trail_stack_used:        1647640 bytes
+trail_stack_allocated:   2002944 bytes
+trail_stack_peak:        71602176 bytes
+control_stack_used:      22992 bytes
+control_stack_allocated: 94208 bytes
+control_stack_peak:      94208 bytes
+local_stack_used:        35240 bytes
+local_stack_allocated:   167936 bytes
+local_stack_peak:        167936 bytes
+shared_heap_allocated:   19492864 bytes
+shared_heap_used:        9722240 bytes
+private_heap_allocated:  167936 bytes
+private_heap_used:       145344 bytes
+gc_number:               12 
+gc_collected:            3246832832.0 bytes
+gc_area:                 273491008 bytes
+gc_ratio:                98.9317217676049 %
+gc_time:                 0.68 seconds
+dictionary_entries:      7513 
+dict_hash_usage:         4065 / 8192 
+dict_hash_collisions:    1637 / 4065 
+dict_gc_number:          7 
+dict_gc_time:            0.0 seconds
